@@ -5,8 +5,8 @@
     
     <entry>
       <title>006-列表</title>
-      <link href="/posts/67e8a72f.html"/>
-      <url>/posts/67e8a72f.html</url>
+      <link href="/2022/12/24/006-%E5%88%97%E8%A1%A8/"/>
+      <url>/2022/12/24/006-%E5%88%97%E8%A1%A8/</url>
       
         <content type="html"><![CDATA[<h3 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h3><p><img src="/images/markdownPic/pasted-43.png" alt="玖涯博客"></p><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><blockquote><p>特点:</p><blockquote><ol><li>ul里面只能放li, li里面可以放其他标签</li><li>type<blockquote><div class="note success no-icon flat"><p>D:●[disc]、○[circle]、■[square]、none[不显示标号] 👉 用的多</p></div><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>蒸羊羔<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>蒸熊掌<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>烧花鸭<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure><p><img src="/images/markdownPic/pasted-46.png" alt="玖涯博客"></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">ul</span> <span class="attr">type</span>=<span class="string">&quot;none&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>蒸羊羔<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>蒸熊掌<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>烧花鸭<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure><p><img src="/images/markdownPic/pasted-47.png" alt="玖涯博客"></p></blockquote></li></ol></blockquote></blockquote><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><blockquote><p>特点:</p><blockquote><ol><li>li里面可以随意放标签，但是ol里面只能放置li</li><li>数字（标号）是自动生成的。 </li><li>type<blockquote><div class="note success no-icon flat"><p>D:1, a, A, i, I</p></div></blockquote></li><li>start: 取值只能是一个数字 =&gt;例： start=”27”<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span> <span class="attr">type</span>=<span class="string">&quot;1&quot;</span> <span class="attr">start</span>=<span class="string">&quot;27&quot;</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">li</span>&gt;</span>把冰箱打开<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">li</span>&gt;</span>大象装进去<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">li</span>&gt;</span>冰箱关上<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure></li></ol></blockquote></blockquote><p><img src="/images/markdownPic/pasted-45.png" alt="玖涯博客"></p><h3 id="自定义列表"><a href="#自定义列表" class="headerlink" title="自定义列表"></a>自定义列表</h3><p><img src="/images/markdownPic/pasted-48.png" alt="玖涯博客"></p>]]></content>
       
@@ -26,8 +26,8 @@
     
     <entry>
       <title>005-div和span标签</title>
-      <link href="/posts/9f6fbc36.html"/>
-      <url>/posts/9f6fbc36.html</url>
+      <link href="/2022/12/24/005-div%E5%92%8Cspan%E6%A0%87%E7%AD%BE/"/>
+      <url>/2022/12/24/005-div%E5%92%8Cspan%E6%A0%87%E7%AD%BE/</url>
       
         <content type="html"><![CDATA[<h3 id="div和span标签"><a href="#div和span标签" class="headerlink" title="div和span标签"></a>div和span标签</h3><p><img src="/images/markdownPic/pasted-26.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-27.png" alt="玖涯博客"></p><h3 id="div标签"><a href="#div标签" class="headerlink" title="div标签"></a>div标签</h3><p><img src="/images/markdownPic/pasted-28.png" alt="玖涯博客"></p><h3 id="span标签"><a href="#span标签" class="headerlink" title="span标签"></a>span标签</h3><p><img src="/images/markdownPic/pasted-29.png" alt="玖涯博客"></p><h3 id="Emmet语法"><a href="#Emmet语法" class="headerlink" title="Emmet语法"></a>Emmet语法</h3><p><img src="/images/markdownPic/pasted-30.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-31.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-32.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-33.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-34.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-36.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-37.png" alt="玖涯博客"><br><img src="/images/markdownPic/pasted-38.png" alt="玖涯博客"><br><img src="/images/markdownPic/pasted-39.png" alt="玖涯博客"><br><img src="/images/markdownPic/pasted-40.png" alt="玖涯博客"><br><img src="/images/markdownPic/pasted-41.png" alt="玖涯博客"><br><img src="/images/markdownPic/pasted-42.png" alt="玖涯博客"></p>]]></content>
       
@@ -47,8 +47,8 @@
     
     <entry>
       <title>004-特殊符号</title>
-      <link href="/posts/9f42193a.html"/>
-      <url>/posts/9f42193a.html</url>
+      <link href="/2022/12/24/004-%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7/"/>
+      <url>/2022/12/24/004-%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7/</url>
       
         <content type="html"><![CDATA[<h3 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h3><p><img src="/images/markdownPic/pasted-24.png" alt="玖涯博客"><br><div class="note info simple"><p>快速生成矮一些字符</p></div></p><p><img src="/images/markdownPic/pasted-25.png" alt="玖涯博客"></p>]]></content>
       
@@ -68,8 +68,8 @@
     
     <entry>
       <title>003-不一般的hr</title>
-      <link href="/posts/c0fdaf75.html"/>
-      <url>/posts/c0fdaf75.html</url>
+      <link href="/2022/12/24/003-%E4%B8%8D%E4%B8%80%E8%88%AC%E7%9A%84hr/"/>
+      <url>/2022/12/24/003-%E4%B8%8D%E4%B8%80%E8%88%AC%E7%9A%84hr/</url>
       
         <content type="html"><![CDATA[<h3 id="HTML基础语法"><a href="#HTML基础语法" class="headerlink" title="HTML基础语法"></a>HTML基础语法</h3><p><img src="/images/markdownPic/pasted-19.png" alt="玖涯博客"></p><h3 id="不一般的hr"><a href="#不一般的hr" class="headerlink" title="不一般的hr"></a>不一般的hr</h3><p><img src="/images/markdownPic/pasted-21.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-22.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-23.png" alt="玖涯博客"></p>]]></content>
       
@@ -89,8 +89,8 @@
     
     <entry>
       <title>002-HTML文本格式化标签</title>
-      <link href="/posts/cf7ec5a1.html"/>
-      <url>/posts/cf7ec5a1.html</url>
+      <link href="/2022/12/24/002-HTML%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%A0%87%E7%AD%BE/"/>
+      <url>/2022/12/24/002-HTML%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%A0%87%E7%AD%BE/</url>
       
         <content type="html"><![CDATA[<h3 id="标题标签"><a href="#标题标签" class="headerlink" title="标题标签"></a>标题标签</h3><p><img src="/images/markdownPic/pasted-12.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-13.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-14.png" alt="玖涯博客"></p><h3 id="HTML注释"><a href="#HTML注释" class="headerlink" title="HTML注释"></a>HTML注释</h3><p><img src="/images/markdownPic/pasted-15.png" alt="玖涯博客"></p><h3 id="其他文本标签"><a href="#其他文本标签" class="headerlink" title="其他文本标签"></a>其他文本标签</h3><p><img src="/images/markdownPic/pasted-16.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-17.png" alt="玖涯博客"></p><h3 id="百度词条案例"><a href="#百度词条案例" class="headerlink" title="百度词条案例"></a>百度词条案例</h3><p><img src="/images/markdownPic/pasted-18.png" alt="玖涯博客"></p>]]></content>
       
@@ -110,8 +110,8 @@
     
     <entry>
       <title>001-文档声明与字符编码</title>
-      <link href="/posts/453d3a90.html"/>
-      <url>/posts/453d3a90.html</url>
+      <link href="/2022/12/24/001-%E6%96%87%E6%A1%A3%E5%A3%B0%E6%98%8E%E4%B8%8E%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/"/>
+      <url>/2022/12/24/001-%E6%96%87%E6%A1%A3%E5%A3%B0%E6%98%8E%E4%B8%8E%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</url>
       
         <content type="html"><![CDATA[<h3 id="文档声明标签"><a href="#文档声明标签" class="headerlink" title="文档声明标签"></a>文档声明标签</h3><p><img src="/images/markdownPic/pasted-0.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-7.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-9.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-10.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-11.png" alt="玖涯博客"></p><h3 id="HTML元素语法"><a href="#HTML元素语法" class="headerlink" title="HTML元素语法"></a>HTML元素语法</h3><p><img src="/images/markdownPic/pasted-1.png" alt="玖涯博客"></p><h3 id="嵌套的HTML元素"><a href="#嵌套的HTML元素" class="headerlink" title="嵌套的HTML元素"></a>嵌套的HTML元素</h3><p><img src="/images/markdownPic/pasted-2.png" alt="玖涯博客"><br><div class="note warning simple"><p>不要忘记结束标签</p></div></p><p><img src="/images/markdownPic/pasted-3.png" alt="玖涯博客"></p><h3 id="HTML空元素"><a href="#HTML空元素" class="headerlink" title="HTML空元素"></a>HTML空元素</h3><p><img src="/images/markdownPic/pasted-4.png" alt="玖涯博客"></p><h3 id="完整的HTML页面"><a href="#完整的HTML页面" class="headerlink" title="完整的HTML页面"></a>完整的HTML页面</h3><p><img src="/images/markdownPic/pasted-5.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-6.png" alt="玖涯博客"></p><p><img src="/images/markdownPic/pasted-8.png" alt="玖涯博客"></p>]]></content>
       
@@ -133,44 +133,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/custom.css"/>
-      <url>/css/custom.css</url>
-      
-        <content type="html"><![CDATA[:root {  --trans-light: rgba(255, 255, 255, 0.88);  --trans-dark: rgba(25, 25, 25, 0.88);  --border-style: 1px solid rgb(169, 169, 169);  --backdrop-filter: blur(15px) saturate(150%);}/* 页脚与头图透明 */#footer {  background: transparent !important;}#page-header {  background: transparent !important;}/* 白天模式遮罩透明 */#footer::before {  background: transparent !important;}#page-header::before {  background: transparent !important;}/* 夜间模式遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}@font-face {  /* 为载入的字体取名字(随意) */  font-family: 'yoren';  /* 字体文件地址(相对或者绝对路径都可以) */  src: url(/font/AaBanRuoKaiShu-2.ttf);  /* 定义加粗样式(加粗多少) */  font-weight: normal;  /* 定义字体样式(斜体/非斜体) */  font-style: normal;  /* 定义显示样式 */  font-display: block;}@font-face {  /* 为载入的字体取名字(随意) */  font-family: 'code';  /* 字体文件地址(相对或者绝对路径都可以) */  src: url(/font/HeFengShuDaoZhaoHeFeiLongTi-2.ttf);  /* 定义加粗样式(加粗多少) */  font-weight: normal;  /* 定义字体样式(斜体/非斜体) */  font-style: normal;  /* 定义显示样式 */  font-display: block;}/* 翻页按钮居中 */#pagination {  width: 100%;  margin: auto;}/* 一级菜单居中 */#nav .menus_items {  position: absolute !important;  width: fit-content !important;  left: 50% !important;  transform: translateX(-50%) !important;}/* 子菜单横向展示 */#nav .menus_items .menus_item:hover .menus_item_child {  display: flex !important;}/* 这里的2是代表导航栏的第5个元素，即有子菜单的元素，可以按自己需求修改 */.menus_items .menus_item:nth-child(5) .menus_item_child {  left: -38px;}/* 夜间模式菜单栏发光字 */[data-theme="dark"] #nav .site-page,[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {  text-shadow: 0 0 2px #22b130 !important;}/* 手机端适配 */[data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {  text-shadow: 0 0 2px #22b130 !important;}/* 背景宇宙星光  */#universe{  display: block;  position: fixed;  margin: 0;  padding: 0;  border: 0;  outline: 0;  left: 0;  top: 0;  width: 100%;  height: 100%;  pointer-events: none;  /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */  z-index: -1;}/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}/* 首页文章卡片 */#recent-posts > .recent-post-item {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 25px;  border: var(--border-style);}/* 首页侧栏卡片 */#aside-content .card-widget {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 18px;  border: var(--border-style);}/* 文章页、归档页、普通页面 */div#post,div#page,div#archive {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border: var(--border-style);  border-radius: 20px;}/* 导航栏 */#page-header.nav-fixed #nav {  background: rgba(255, 255, 255, 0.75);  backdrop-filter: var(--backdrop-filter);}[data-theme="dark"] #page-header.nav-fixed #nav {  background: rgba(0, 0, 0, 0.7) !important;}/* 夜间模式遮罩 */[data-theme="dark"] #recent-posts > .recent-post-item,[data-theme="dark"] #aside-content .card-widget,[data-theme="dark"] div#post,[data-theme="dark"] div#archive,[data-theme="dark"] div#page {  background: var(--trans-dark);}/* 夜间模式页脚页头遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 阅读模式 */.read-mode #aside-content .card-widget {  background: rgba(158, 204, 171, 0.5) !important;}.read-mode div#post {  background: rgba(158, 204, 171, 0.5) !important;}/* 夜间模式下的阅读模式 */[data-theme="dark"] .read-mode #aside-content .card-widget {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}[data-theme="dark"] .read-mode div#post {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}/* 滚动条 */::-webkit-scrollbar {  width: 8px;  height: 8px;} ::-webkit-scrollbar-track {  background-color: rgba(73, 177, 245, 0.2);  border-radius: 2em;} ::-webkit-scrollbar-thumb {  background-color: #49b1f5;  background-image: -webkit-linear-gradient(    45deg,    rgba(255, 255, 255, 0.4) 25%,    transparent 25%,    transparent 50%,    rgba(255, 255, 255, 0.4) 50%,    rgba(255, 255, 255, 0.4) 75%,    transparent 75%,    transparent  );  border-radius: 2em;} ::-webkit-scrollbar-corner {  background-color: transparent;} ::-moz-selection {  color: #fff;  background-color: #49b1f5;}/* 文章页H1-H6图标样式效果 *//* 控制风车转动速度 4s那里可以自己调节快慢 */h1::before,h2::before,h3::before,h4::before,h5::before,h6::before {  -webkit-animation: ccc 4s linear infinite;  animation: ccc 4s linear infinite;}/* 控制风车转动方向 -1turn 为逆时针转动，1turn 为顺时针转动，相同数字部分记得统一修改 */@-webkit-keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}@keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}/* 设置风车颜色 */#content-inner.layout h1::before {  color: #ef50a8;  margin-left: -1.55rem;  font-size: 1.3rem;  margin-top: -0.23rem;}#content-inner.layout h2::before {  color: #fb7061;  margin-left: -1.35rem;  font-size: 1.1rem;  margin-top: -0.12rem;}#content-inner.layout h3::before {  color: #ffbf00;  margin-left: -1.22rem;  font-size: 0.95rem;  margin-top: -0.09rem;}#content-inner.layout h4::before {  color: #a9e000;  margin-left: -1.05rem;  font-size: 0.8rem;  margin-top: -0.09rem;}#content-inner.layout h5::before {  color: #57c850;  margin-left: -0.9rem;  font-size: 0.7rem;  margin-top: 0rem;}#content-inner.layout h6::before {  color: #5ec1e0;  margin-left: -0.9rem;  font-size: 0.66rem;  margin-top: 0rem;}/* s设置风车hover动效 6s那里可以自己调节快慢*/#content-inner.layout h1:hover,#content-inner.layout h2:hover,#content-inner.layout h3:hover,#content-inner.layout h4:hover,#content-inner.layout h5:hover,#content-inner.layout h6:hover {  color: var(--theme-color);}#content-inner.layout h1:hover::before,#content-inner.layout h2:hover::before,#content-inner.layout h3:hover::before,#content-inner.layout h4:hover::before,#content-inner.layout h5:hover::before,#content-inner.layout h6:hover::before {  color: var(--theme-color);  -webkit-animation: ccc 6s linear infinite;  animation: ccc 6s linear infinite;}.pace {  -webkit-pointer-events: none;  pointer-events: none;  -webkit-user-select: none;  -moz-user-select: none;  user-select: none;  z-index: 2000;  position: fixed;  margin: auto;  top: 4px;  left: 0;  right: 0;  height: 8px;  border-radius: 8px;  width: 7rem;  background: #eaecf2;  border: 1px #e3e8f7;  overflow: hidden}.pace-inactive .pace-progress {  opacity: 0;  transition: .3s ease-in}.pace .pace-progress {  -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  -ms-box-sizing: border-box;  -o-box-sizing: border-box;  box-sizing: border-box;  -webkit-transform: translate3d(0, 0, 0);  -moz-transform: translate3d(0, 0, 0);  -ms-transform: translate3d(0, 0, 0);  -o-transform: translate3d(0, 0, 0);  transform: translate3d(0, 0, 0);  max-width: 200px;  position: absolute;  z-index: 2000;  display: block;  top: 0;  right: 100%;  height: 100%;  width: 100%;  /* linear-gradient(to right, #3494e6, #ec6ead) */  background: linear-gradient(to right, #43cea2, #3866ca);  animation: gradient 2s ease infinite;  background-size: 200%}.pace.pace-inactive {  opacity: 0;  transition: .3s;  top: -8px}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>友链</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
       
         <content type="html"><![CDATA[<!-- GitCalendar容器 --><div id="gitZone"></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/footer_beautify.js"/>
-      <url>/js/footer_beautify.js</url>
-      
-        <content type="html"><![CDATA[/* * @Author: yoren * @Date: 2022-12-26 13:46:52 * @LastEditTime: 2022-12-26 13:58:21 * @FilePath: \materiald:\黄轩宇\我的个人博客\source\js\footer_beautify.js * @Tips: 纵使前路黑暗，也有可以照亮你的星光，而你自身就是光 */var now = new Date;function createtime() {    now.setTime(now.getTime() + 1e3);    var e = new Date("2022/12/24 00:00:00"),        t = Math.trunc(234e8 + (now - e) / 1e3 * 17),        a = (t / 1496e5).toFixed(6),        r = new Date("2022/12/24 00:00:00"),        n = (now - r) / 1e3 / 60 / 60 / 24,        o = Math.floor(n),        i = (now - r) / 1e3 / 60 / 60 - 24 * o,        s = Math.floor(i);    1 == String(s).length && (s = "0" + s);    var l = (now - r) / 1e3 / 60 - 1440 * o - 60 * s,        c = Math.floor(l);    1 == String(c).length && (c = "0" + c);    var d = (now - r) / 1e3 - 86400 * o - 3600 * s - 60 * c,        g = Math.round(d);    1 == String(g).length && (g = "0" + g);    let b = "";    b = s < 18 && s >= 9 ?        `<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> 本站居然运行了 ${o} 天 ${s} 小时 ${c} 分 ${g} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀` :        `<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> 本站居然运行了 ${o} 天 ${s} 小时 ${c} 分 ${g} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀`,        document.getElementById("workboard") && (document.getElementById("workboard").innerHTML = b)}setInterval((() => {    createtime()}), 1e3);]]></content>
       
     </entry>
     
@@ -188,17 +155,6 @@
     
     
     <entry>
-      <title></title>
-      <link href="/js/light.js"/>
-      <url>/js/light.js</url>
-      
-        <content type="html"><![CDATA[/* * @Author: yoren * @Date: 2022-12-23 19:07:20 * @LastEditTime: 2022-12-23 19:07:20 * @FilePath: \materiald:\黄轩宇\我的个人博客\source\js\light.js * @Tips: 纵使前路黑暗，也有可以照亮你的星光，而你自身就是光 */// 霓虹灯效果// 颜色数组var arr = ["#39c5bb", "#f14747", "#f1a247", "#f1ee47", "#b347f1", "#1edbff", "#ed709b", "#5636ed"];// 颜色索引var idx = 0;// 切换颜色function changeColor() {    // 仅夜间模式才启用    if (document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark') {        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";        } catch {                    }        idx++;        if (idx == 8) {            idx = 0;        }    } else {        // 白天模式恢复默认        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";        } catch {                    }    }}// 开启计时器window.onload = setInterval(changeColor, 1200);]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>电影</title>
       <link href="/movies/index.html"/>
       <url>/movies/index.html</url>
@@ -210,11 +166,44 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/footer_beautify.js"/>
+      <url>/js/footer_beautify.js</url>
+      
+        <content type="html"><![CDATA[/* * @Author: yoren * @Date: 2022-12-26 13:46:52 * @LastEditTime: 2022-12-26 13:58:21 * @FilePath: \materiald:\黄轩宇\我的个人博客\source\js\footer_beautify.js * @Tips: 纵使前路黑暗，也有可以照亮你的星光，而你自身就是光 */var now = new Date;function createtime() {    now.setTime(now.getTime() + 1e3);    var e = new Date("2022/12/24 00:00:00"),        t = Math.trunc(234e8 + (now - e) / 1e3 * 17),        a = (t / 1496e5).toFixed(6),        r = new Date("2022/12/24 00:00:00"),        n = (now - r) / 1e3 / 60 / 60 / 24,        o = Math.floor(n),        i = (now - r) / 1e3 / 60 / 60 - 24 * o,        s = Math.floor(i);    1 == String(s).length && (s = "0" + s);    var l = (now - r) / 1e3 / 60 - 1440 * o - 60 * s,        c = Math.floor(l);    1 == String(c).length && (c = "0" + c);    var d = (now - r) / 1e3 - 86400 * o - 3600 * s - 60 * c,        g = Math.round(d);    1 == String(g).length && (g = "0" + g);    let b = "";    b = s < 18 && s >= 9 ?        `<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> 本站居然运行了 ${o} 天 ${s} 小时 ${c} 分 ${g} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀` :        `<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> 本站居然运行了 ${o} 天 ${s} 小时 ${c} 分 ${g} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀`,        document.getElementById("workboard") && (document.getElementById("workboard").innerHTML = b)}setInterval((() => {    createtime()}), 1e3);]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/light.js"/>
+      <url>/js/light.js</url>
+      
+        <content type="html"><![CDATA[/* * @Author: yoren * @Date: 2022-12-23 19:07:20 * @LastEditTime: 2022-12-23 19:07:20 * @FilePath: \materiald:\黄轩宇\我的个人博客\source\js\light.js * @Tips: 纵使前路黑暗，也有可以照亮你的星光，而你自身就是光 */// 霓虹灯效果// 颜色数组var arr = ["#39c5bb", "#f14747", "#f1a247", "#f1ee47", "#b347f1", "#1edbff", "#ed709b", "#5636ed"];// 颜色索引var idx = 0;// 切换颜色function changeColor() {    // 仅夜间模式才启用    if (document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark') {        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = arr[idx] + " 0 0 15px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = arr[idx] + " 0 0 10px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = arr[idx] + " 0 0 5px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = arr[idx] + " 0 0 12px";            document.getElementsByClassName("author-info__description")[0].style.textShadow = arr[idx] + " 0 0 12px";        } catch {                    }        idx++;        if (idx == 8) {            idx = 0;        }    } else {        // 白天模式恢复默认        if (document.getElementById("site-name"))            document.getElementById("site-name").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-title"))            document.getElementById("site-title").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("site-subtitle"))            document.getElementById("site-subtitle").style.textShadow = "#1e1e1ee0 1px 1px 1px";        if (document.getElementById("post-info"))            document.getElementById("post-info").style.textShadow = "#1e1e1ee0 1px 1px 1px";        try {            document.getElementsByClassName("author-info__name")[0].style.textShadow = "";            document.getElementsByClassName("author-info__description")[0].style.textShadow = "";        } catch {                    }    }}// 开启计时器window.onload = setInterval(changeColor, 1200);]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
+      
+        <content type="html"><![CDATA[:root {  --trans-light: rgba(255, 255, 255, 0.88);  --trans-dark: rgba(25, 25, 25, 0.88);  --border-style: 1px solid rgb(169, 169, 169);  --backdrop-filter: blur(15px) saturate(150%);}/* 页脚与头图透明 */#footer {  background: transparent !important;}#page-header {  background: transparent !important;}/* 白天模式遮罩透明 */#footer::before {  background: transparent !important;}#page-header::before {  background: transparent !important;}/* 夜间模式遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}@font-face {  /* 为载入的字体取名字(随意) */  font-family: 'yoren';  /* 字体文件地址(相对或者绝对路径都可以) */  src: url(/font/AaBanRuoKaiShu-2.ttf);  /* 定义加粗样式(加粗多少) */  font-weight: normal;  /* 定义字体样式(斜体/非斜体) */  font-style: normal;  /* 定义显示样式 */  font-display: block;}@font-face {  /* 为载入的字体取名字(随意) */  font-family: 'code';  /* 字体文件地址(相对或者绝对路径都可以) */  src: url(/font/HeFengShuDaoZhaoHeFeiLongTi-2.ttf);  /* 定义加粗样式(加粗多少) */  font-weight: normal;  /* 定义字体样式(斜体/非斜体) */  font-style: normal;  /* 定义显示样式 */  font-display: block;}/* 翻页按钮居中 */#pagination {  width: 100%;  margin: auto;}/* 一级菜单居中 */#nav .menus_items {  position: absolute !important;  width: fit-content !important;  left: 50% !important;  transform: translateX(-50%) !important;}/* 子菜单横向展示 */#nav .menus_items .menus_item:hover .menus_item_child {  display: flex !important;}/* 这里的2是代表导航栏的第5个元素，即有子菜单的元素，可以按自己需求修改 */.menus_items .menus_item:nth-child(5) .menus_item_child {  left: -38px;}/* 夜间模式菜单栏发光字 */[data-theme="dark"] #nav .site-page,[data-theme="dark"] #nav .menus_items .menus_item .menus_item_child li a {  text-shadow: 0 0 2px #22b130 !important;}/* 手机端适配 */[data-theme="dark"] #sidebar #sidebar-menus .menus_items .site-page {  text-shadow: 0 0 2px #22b130 !important;}/* 背景宇宙星光  */#universe{  display: block;  position: fixed;  margin: 0;  padding: 0;  border: 0;  outline: 0;  left: 0;  top: 0;  width: 100%;  height: 100%;  pointer-events: none;  /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */  z-index: -1;}/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}/* 首页文章卡片 */#recent-posts > .recent-post-item {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 25px;  border: var(--border-style);}/* 首页侧栏卡片 */#aside-content .card-widget {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 18px;  border: var(--border-style);}/* 文章页、归档页、普通页面 */div#post,div#page,div#archive {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border: var(--border-style);  border-radius: 20px;}/* 导航栏 */#page-header.nav-fixed #nav {  background: rgba(255, 255, 255, 0.75);  backdrop-filter: var(--backdrop-filter);}[data-theme="dark"] #page-header.nav-fixed #nav {  background: rgba(0, 0, 0, 0.7) !important;}/* 夜间模式遮罩 */[data-theme="dark"] #recent-posts > .recent-post-item,[data-theme="dark"] #aside-content .card-widget,[data-theme="dark"] div#post,[data-theme="dark"] div#archive,[data-theme="dark"] div#page {  background: var(--trans-dark);}/* 夜间模式页脚页头遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 阅读模式 */.read-mode #aside-content .card-widget {  background: rgba(158, 204, 171, 0.5) !important;}.read-mode div#post {  background: rgba(158, 204, 171, 0.5) !important;}/* 夜间模式下的阅读模式 */[data-theme="dark"] .read-mode #aside-content .card-widget {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}[data-theme="dark"] .read-mode div#post {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}/* 滚动条 */::-webkit-scrollbar {  width: 8px;  height: 8px;} ::-webkit-scrollbar-track {  background-color: rgba(73, 177, 245, 0.2);  border-radius: 2em;} ::-webkit-scrollbar-thumb {  background-color: #49b1f5;  background-image: -webkit-linear-gradient(    45deg,    rgba(255, 255, 255, 0.4) 25%,    transparent 25%,    transparent 50%,    rgba(255, 255, 255, 0.4) 50%,    rgba(255, 255, 255, 0.4) 75%,    transparent 75%,    transparent  );  border-radius: 2em;} ::-webkit-scrollbar-corner {  background-color: transparent;} ::-moz-selection {  color: #fff;  background-color: #49b1f5;}/* 文章页H1-H6图标样式效果 *//* 控制风车转动速度 4s那里可以自己调节快慢 */h1::before,h2::before,h3::before,h4::before,h5::before,h6::before {  -webkit-animation: ccc 4s linear infinite;  animation: ccc 4s linear infinite;}/* 控制风车转动方向 -1turn 为逆时针转动，1turn 为顺时针转动，相同数字部分记得统一修改 */@-webkit-keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}@keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}/* 设置风车颜色 */#content-inner.layout h1::before {  color: #ef50a8;  margin-left: -1.55rem;  font-size: 1.3rem;  margin-top: -0.23rem;}#content-inner.layout h2::before {  color: #fb7061;  margin-left: -1.35rem;  font-size: 1.1rem;  margin-top: -0.12rem;}#content-inner.layout h3::before {  color: #ffbf00;  margin-left: -1.22rem;  font-size: 0.95rem;  margin-top: -0.09rem;}#content-inner.layout h4::before {  color: #a9e000;  margin-left: -1.05rem;  font-size: 0.8rem;  margin-top: -0.09rem;}#content-inner.layout h5::before {  color: #57c850;  margin-left: -0.9rem;  font-size: 0.7rem;  margin-top: 0rem;}#content-inner.layout h6::before {  color: #5ec1e0;  margin-left: -0.9rem;  font-size: 0.66rem;  margin-top: 0rem;}/* s设置风车hover动效 6s那里可以自己调节快慢*/#content-inner.layout h1:hover,#content-inner.layout h2:hover,#content-inner.layout h3:hover,#content-inner.layout h4:hover,#content-inner.layout h5:hover,#content-inner.layout h6:hover {  color: var(--theme-color);}#content-inner.layout h1:hover::before,#content-inner.layout h2:hover::before,#content-inner.layout h3:hover::before,#content-inner.layout h4:hover::before,#content-inner.layout h5:hover::before,#content-inner.layout h6:hover::before {  color: var(--theme-color);  -webkit-animation: ccc 6s linear infinite;  animation: ccc 6s linear infinite;}.pace {  -webkit-pointer-events: none;  pointer-events: none;  -webkit-user-select: none;  -moz-user-select: none;  user-select: none;  z-index: 2000;  position: fixed;  margin: auto;  top: 4px;  left: 0;  right: 0;  height: 8px;  border-radius: 8px;  width: 7rem;  background: #eaecf2;  border: 1px #e3e8f7;  overflow: hidden}.pace-inactive .pace-progress {  opacity: 0;  transition: .3s ease-in}.pace .pace-progress {  -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  -ms-box-sizing: border-box;  -o-box-sizing: border-box;  box-sizing: border-box;  -webkit-transform: translate3d(0, 0, 0);  -moz-transform: translate3d(0, 0, 0);  -ms-transform: translate3d(0, 0, 0);  -o-transform: translate3d(0, 0, 0);  transform: translate3d(0, 0, 0);  max-width: 200px;  position: absolute;  z-index: 2000;  display: block;  top: 0;  right: 100%;  height: 100%;  width: 100%;  /* linear-gradient(to right, #3494e6, #ec6ead) */  background: linear-gradient(to right, #43cea2, #3866ca);  animation: gradient 2s ease infinite;  background-size: 200%}.pace.pace-inactive {  opacity: 0;  transition: .3s;  top: -8px}]]></content>
       
     </entry>
     
@@ -232,9 +221,20 @@
     
     
     <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>友链</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
