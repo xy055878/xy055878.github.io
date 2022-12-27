@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>002-前端学习整和02</title>
+      <link href="/2022/12/27/002-%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%95%B4%E5%92%8C02/"/>
+      <url>/2022/12/27/002-%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%95%B4%E5%92%8C02/</url>
+      
+        <content type="html"><![CDATA[<h3 id="第一篇-HTML-列表"><a href="#第一篇-HTML-列表" class="headerlink" title="第一篇 HTML 列表"></a>第一篇 HTML 列表</h3><div class="tabs" id="列表"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#列表-1">有序列表</button></li><li class="tab"><button type="button" data-href="#列表-2">无序列表</button></li><li class="tab"><button type="button" data-href="#列表-3">自定义列表</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="列表-1"><ol><li>有序列表始于 <code>&lt;ul&gt;</code> 标签。每个列表项始于 <code>&lt;li&gt;</code> 标签。</li><li><code>&lt;ul&gt;</code> 标签的type属性：<font color=green>D: ●[disc]、○[circle]、■[square]、none[不显示标号] </font></li><li>代码如下：</li></ol><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>蒸羊羔<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>蒸熊掌<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>烧花鸭<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure><p><img src="https://cdn.staticaly.com/gh/xy055878/markdownSource@main/images/202212271210545.png" alt="image-20221227121046067"></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">type</span>=<span class="string">&quot;none&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>蒸羊羔<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>蒸熊掌<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span>烧花鸭<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure><p><img src="https://cdn.staticaly.com/gh/xy055878/markdownSource@main/images/202212271210756.png" alt="image-20221227121050702"></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="列表-2"><ol><li>无序列表始于 <code>&lt;ol&gt;</code> 标签。每个列表项始于 <code>&lt;li&gt;</code> 标签。</li><li><code>&lt;ol&gt;</code> 标签的type属性：<font color=green>D: 1、a、A、i、I</font></li><li><code>&lt;ol&gt;</code> 标签的start属性：只能是一个数字 → 例：<code>start=&quot;2&quot;</code></li><li>代码如下：</li></ol><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">li</span>&gt;</span>把冰箱打开<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">li</span>&gt;</span>大象装进去<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">li</span>&gt;</span>冰箱关上<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure><p><img src="https://cdn.staticaly.com/gh/xy055878/markdownSource@main/images/202212271219024.png" alt="image-20221227121928510"></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span> <span class="attr">type</span>=<span class="string">&quot;A&quot;</span> <span class="attr">start</span>=<span class="string">&quot;2&quot;</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">li</span>&gt;</span>把冰箱打开<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">li</span>&gt;</span>大象装进去<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">li</span>&gt;</span>冰箱关上<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure><p><img src="https://cdn.staticaly.com/gh/xy055878/markdownSource@main/images/202212271219286.png" alt="image-20221227121923866"></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="列表-3"><ol><li>自定义列表不仅仅是一列项目，而是项目及其注释的组合。</li><li>自定义列表以 <code>&lt;dl&gt;</code> 标签开始。<ul><li>每个自定义列表项以 <code>&lt;dt&gt;</code> 开始。</li><li>每个自定义列表项的定义以 <code>&lt;dd&gt;</code> 开始。</li></ul></li></ol><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dt</span>&gt;</span>我是图片<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dd</span>&gt;</span>我是文字<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dt</span>&gt;</span>我是图片<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dd</span>&gt;</span>我是文字<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dt</span>&gt;</span>11111<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dd</span>&gt;</span>2222<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure><p><img src="https://cdn.staticaly.com/gh/xy055878/markdownSource@main/images/202212271230467.png" alt="image-20221227123022166"></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div><div class="note info flat"><p><strong>提示:</strong> <code>列表项内部</code>可以使用段落、换行符、图片、链接以及其他列表等等。</p></div><hr><h3 id="第二篇-图像标签"><a href="#第二篇-图像标签" class="headerlink" title="第二篇 图像标签"></a>第二篇 图像标签</h3><div class="tabs" id="imgtip"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#imgtip-1">img标签</button></li><li class="tab"><button type="button" data-href="#imgtip-2">map标签</button></li><li class="tab"><button type="button" data-href="#imgtip-3">area标签</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="imgtip-1"><ul><li><p><code>&lt;img /&gt;</code>标签的属性</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;图片路径&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure><ul><li><p>路径分类：<font color=red><strong>绝对路径、相对路径</strong></font></p><ol><li><p>绝对路径</p><ul><li><p>绝对路径是指文件在硬盘上真正存在的路径。</p><ul><li><p>例如“bg.jpg”这个图片是存放在硬盘的“E:\book\网页布局代码\第2章”目录下，那么 “bg.jpg”这个图片的绝对路径就是“E:\book\网页布\代码\第2章\bg.jpg”。</p><div class="note info flat"><p>注意：绝对路径在实际的开发过程中很少去使用</p></div></li></ul></li><li><p>绝对路径可以使用<code>&quot;\&quot;</code>或<code>&quot;/&quot;</code>字符作为目录的分隔字符</p></li></ul></li><li><p>相对路径</p><ul><li>相对路径，就是相对于自己的目标文件位置。</li></ul></li></ol></li></ul></li><li><p>当前文件（网页文件）与目标文件（其他文件）在同一目录下，<strong>写法如下：</strong></p></li></ul><blockquote><p><font color=blue>直接书写目标文件的文件名</font>+扩展名 → <code>&lt;img src=&quot;暑期作息时间.png&quot; /&gt;</code></p><p><img src="https://cdn.staticaly.com/gh/xy055878/markdownSource@main/images/202212271317584.png" alt="image-20221227131742140"></p></blockquote><ul><li>当前文件与目标文件所处的文件夹在同一目录下，<strong>写法如下：</strong></li></ul><blockquote><p><font color=blue>文件夹名/目标文件全称</font>+扩展名 → <code>&lt;img src=&quot;img/暑期作息时间.png&quot;/&gt;</code></p><p><img src="https://cdn.staticaly.com/gh/xy055878/markdownSource@main/images/202212271406123.png" alt="image-20221227140625894"></p></blockquote><ul><li>当前文件所处的文件夹和目标文件在同一目录下，<strong>写法如下：</strong></li></ul><blockquote><p><font color=blue>../目标文件文件名</font>+扩展名 → <code>&lt;img src=&quot;../暑期作息时间.png&quot; /&gt;·</code></p><p><img src="https://cdn.staticaly.com/gh/xy055878/markdownSource@main/images/202212271406642.png" alt="image-20221227140648626"></p></blockquote><hr><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> </span></span><br><span class="line"><span class="tag">     <span class="attr">title</span>=<span class="string">&quot;鼠标悬停上去之后的提示信息&quot;</span></span></span><br><span class="line"><span class="tag">     <span class="attr">alt</span>=<span class="string">&quot;图片不显示之后（加载失败）的提示信息&quot;</span></span></span><br><span class="line"><span class="tag">     <span class="attr">width</span>=<span class="string">&quot;200[px]&quot;</span> <span class="attr">height</span>=<span class="string">&quot;200[px]&quot;</span></span></span><br><span class="line"><span class="tag">     /&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><div class="note info flat"><p><strong>提示：</strong></p><ol><li>如果img只使用了width属性，而没有使用height属性那么图片会<strong>按照一定比例进行缩放</strong>，从而导致图片不失真</li><li>width/height可以只用数字，因为默认的单位是 <code>px</code></li></ol></div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="imgtip-2"><ul><li><strong>标签定义及使用说明</strong><ul><li><code>&lt;map&gt;</code> 标签用于在图像上创建图像映射。图像映射指带有可点击区域的一幅图像。</li><li><code>&lt;img&gt;</code>中的 <strong>usemap</strong> 属性可引用 <code>&lt;map&gt;</code> 中的 <strong>id</strong> 或 <strong>name</strong> 属性（取决于浏览器），所以我们应同时向 <code>&lt;map&gt;</code> 添加 id 和 name 属性。</li></ul></li></ul><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="imgtip-3"><ul><li><p><strong>标签定义及使用说明</strong></p><ul><li><p><area> 标签定义图像映射内部的区域（图像映射指的是带有可点击区域的图像）。</p></li><li><p><code>&lt;area&gt;</code> 元素<font color=green>仅</font>在 <code>&lt;map&gt;</code> 标签内部使用。</p></li></ul></li></ul><p><strong>属性</strong></p><div class="table-container"><table><thead><tr><th style="text-align:left">属性</th><th style="text-align:left">值</th><th style="text-align:left">描述</th></tr></thead><tbody><tr><td style="text-align:left"><a href="https://www.runoob.com/tags/att-area-shape.html">shape</a></td><td style="text-align:left">rect circle poly</td><td style="text-align:left">形状</td></tr><tr><td style="text-align:left"><a href="https://www.runoob.com/tags/att-area-coords.html">coords</a></td><td style="text-align:left">数值</td><td style="text-align:left">坐标（单位为像素）</td></tr><tr><td style="text-align:left"><a href="https://www.runoob.com/tags/att-area-href.html"><font color=red>href</font></a></td><td style="text-align:left">URL</td><td style="text-align:left">目标 URL</td></tr><tr><td style="text-align:left"><a href="https://www.runoob.com/tags/att-area-alt.html">alt</a></td><td style="text-align:left">text</td><td style="text-align:left">替代文本。如果使用 href 属性，则该属性是<font color=red>必需的</font></td></tr><tr><td style="text-align:left"><a href="https://www.runoob.com/tags/att-area-target.html">target</a></td><td style="text-align:left">_blank  _parent  <strong>D：_self</strong>  _top   <em>framename</em></td><td style="text-align:left">以什么方式打开链接文档</td></tr></tbody></table></div><p><strong>示例<code>&quot;创建图像映射&quot;</code>中的代码：</strong></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;路径&quot;</span> <span class="attr">usemap</span>=<span class="string">&quot;#planetmap&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">map</span> <span class="attr">name</span>=<span class="string">&quot;planetmap&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">area</span> <span class="attr">shape</span>=<span class="string">&quot;rect&quot;</span> <span class="attr">coords</span>=<span class="string">&quot;左上,右下(100,200)&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;Sun&quot;</span> <span class="attr">href</span>=<span class="string">&quot;sun.html&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">area</span> <span class="attr">shape</span>=<span class="string">&quot;circle&quot;</span> <span class="attr">coords</span>=<span class="string">&quot;x,y,r(50,30,5)&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;Mercury&quot;</span> <span class="attr">href</span>=<span class="string">&quot;mercur.html&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">area</span> <span class="attr">shape</span>=<span class="string">&quot;poly&quot;</span> <span class="attr">coords</span>=<span class="string">&quot;x0,y0,x1,y1(150,120,130,150)&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;Venus&quot;</span> <span class="attr">href</span>=<span class="string">&quot;venus.html&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">map</span>&gt;</span></span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+          <category> HTML </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>001-前端学习整和01</title>
       <link href="/2022/12/26/001-%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%95%B4%E5%92%8C01/"/>
       <url>/2022/12/26/001-%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E6%95%B4%E5%92%8C01/</url>
@@ -25,6 +46,28 @@
     
   
   
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电影</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
     
     
     <entry>
@@ -50,31 +93,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>友链</title>
       <link href="/link/index.html"/>
       <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>电影</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -94,22 +115,11 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/universe.js"/>
-      <url>/js/universe.js</url>
-      
-        <content type="html"><![CDATA[/* * @Author: yoren * @Date: 2022-12-23 19:16:37 * @LastEditTime: 2022-12-23 19:16:37 * @FilePath: \materiald:\黄轩宇\我的个人博客\source\js\universe.js * @Tips: 纵使前路黑暗，也有可以照亮你的星光，而你自身就是光 */function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
       
     </entry>
     
@@ -127,9 +137,20 @@
     
     
     <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title></title>
+      <link href="/js/universe.js"/>
+      <url>/js/universe.js</url>
+      
+        <content type="html"><![CDATA[/* * @Author: yoren * @Date: 2022-12-23 19:16:37 * @LastEditTime: 2022-12-23 19:16:37 * @FilePath: \materiald:\黄轩宇\我的个人博客\source\js\universe.js * @Tips: 纵使前路黑暗，也有可以照亮你的星光，而你自身就是光 */function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
