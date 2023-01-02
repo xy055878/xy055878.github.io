@@ -1,10 +1,3 @@
-/*
- * @Author: yoren
- * @Date: 2023-01-02 12:25:10
- * @LastEditTime: 2023-01-02 12:25:10
- * @FilePath: \materiald:\黄轩宇\我的个人博客\source\js\readPercent.js
- * @Tips: 纵使前路黑暗，也有可以照亮你的星光，而你自身就是光
- */
 window.onscroll = percent;// 执行函数
 // 页面百分比
 function percent() {
