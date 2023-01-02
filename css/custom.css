@@ -242,40 +242,7 @@ div#archive {
   color: #ffffff;
 }
 
-/* 滚动条 */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
- 
-::-webkit-scrollbar-track {
-  background-color: rgba(73, 177, 245, 0.2);
-  border-radius: 2em;
-}
- 
-::-webkit-scrollbar-thumb {
-  background-color: #49b1f5;
-  background-image: -webkit-linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.4) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0.4) 75%,
-    transparent 75%,
-    transparent
-  );
-  border-radius: 2em;
-}
- 
-::-webkit-scrollbar-corner {
-  background-color: transparent;
-}
- 
-::-moz-selection {
-  color: #fff;
-  background-color: #49b1f5;
-}
+
 
 /* 文章页H1-H6图标样式效果 */
 /* 控制风车转动速度 4s那里可以自己调节快慢 */
@@ -469,19 +436,19 @@ table th:nth-of-type(4){
 } 
 
 
-/* 滚动条样式 */
+/* 滚动条 */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
-
+ 
 ::-webkit-scrollbar-track {
   background-color: rgba(73, 177, 245, 0.2);
   border-radius: 2em;
 }
-
+ 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--theme-color);
+  background-color: #49b1f5;
   background-image: -webkit-linear-gradient(
     45deg,
     rgba(255, 255, 255, 0.4) 25%,
@@ -494,12 +461,12 @@ table th:nth-of-type(4){
   );
   border-radius: 2em;
 }
-
+ 
 ::-webkit-scrollbar-corner {
   background-color: transparent;
 }
-
+ 
 ::-moz-selection {
   color: #fff;
-  background-color: var(--theme-color);
+  background-color: #49b1f5;
 }
