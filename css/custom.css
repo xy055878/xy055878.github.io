@@ -4,6 +4,7 @@
   --border-style: 1px solid rgb(169, 169, 169);
   --backdrop-filter: blur(15px) saturate(150%);
 }
+
 /* 页脚与头图透明 */
 #footer {
   background: transparent !important;
@@ -71,10 +72,12 @@
   left: 50% !important;
   transform: translateX(-50%) !important;
 }
+
 /* 子菜单横向展示 */
 #nav .menus_items .menus_item:hover .menus_item_child {
   display: flex !important;
 }
+
 /* 这里的2是代表导航栏的第5个元素，即有子菜单的元素，可以按自己需求修改 */
 .menus_items .menus_item:nth-child(5) .menus_item_child {
   left: -38px;
@@ -92,7 +95,7 @@
 }
 
 /* 背景宇宙星光  */
-#universe{
+#universe {
   display: block;
   position: fixed;
   margin: 0;
@@ -109,15 +112,13 @@
 }
 
 /* 侧边栏个人信息卡片动态渐变色 */
-#aside-content > .card-widget.card-info {
-  background: linear-gradient(
-    -45deg,
-    #e8d8b9,
-    #eccec5,
-    #a3e9eb,
-    #bdbdf0,
-    #eec1ea
-  );
+#aside-content>.card-widget.card-info {
+  background: linear-gradient(-45deg,
+      #e8d8b9,
+      #eccec5,
+      #a3e9eb,
+      #bdbdf0,
+      #eec1ea);
   box-shadow: 0 0 5px rgb(66, 68, 68);
   position: relative;
   background-size: 400% 400%;
@@ -125,53 +126,62 @@
   -moz-animation: Gradient 10s ease infinite;
   animation: Gradient 10s ease infinite !important;
 }
+
 @-webkit-keyframes Gradient {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
+
 @-moz-keyframes Gradient {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
+
 @keyframes Gradient {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
 
 /* 黑夜模式适配 */
-[data-theme="dark"] #aside-content > .card-widget.card-info {
+[data-theme="dark"] #aside-content>.card-widget.card-info {
   background: #191919ee;
 }
 
 /* 个人信息Follow me按钮 */
-#aside-content > .card-widget.card-info > #card-info-btn {
+#aside-content>.card-widget.card-info>#card-info-btn {
   background-color: #3eb8be;
   border-radius: 8px;
 }
 
 /* 首页文章卡片 */
-#recent-posts > .recent-post-item {
+#recent-posts>.recent-post-item {
   background: var(--trans-light);
   backdrop-filter: var(--backdrop-filter);
   border-radius: 25px;
@@ -207,7 +217,7 @@ div#archive {
 }
 
 /* 夜间模式遮罩 */
-[data-theme="dark"] #recent-posts > .recent-post-item,
+[data-theme="dark"] #recent-posts>.recent-post-item,
 [data-theme="dark"] #aside-content .card-widget,
 [data-theme="dark"] div#post,
 [data-theme="dark"] div#archive,
@@ -220,6 +230,7 @@ div#archive {
 [data-theme="dark"] #footer::before {
   background: transparent !important;
 }
+
 [data-theme="dark"] #page-header::before {
   background: transparent !important;
 }
@@ -228,6 +239,7 @@ div#archive {
 .read-mode #aside-content .card-widget {
   background: rgba(158, 204, 171, 0.5) !important;
 }
+
 .read-mode div#post {
   background: rgba(158, 204, 171, 0.5) !important;
 }
@@ -237,6 +249,7 @@ div#archive {
   background: rgba(25, 25, 25, 0.9) !important;
   color: #ffffff;
 }
+
 [data-theme="dark"] .read-mode div#post {
   background: rgba(25, 25, 25, 0.9) !important;
   color: #ffffff;
@@ -255,27 +268,32 @@ h6::before {
   -webkit-animation: ccc 4s linear infinite;
   animation: ccc 4s linear infinite;
 }
+
 /* 控制风车转动方向 -1turn 为逆时针转动，1turn 为顺时针转动，相同数字部分记得统一修改 */
 @-webkit-keyframes ccc {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(-1turn);
     transform: rotate(-1turn);
   }
 }
+
 @keyframes ccc {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(-1turn);
     transform: rotate(-1turn);
   }
 }
+
 /* 设置风车颜色 */
 #content-inner.layout h1::before {
   color: #ef50a8;
@@ -283,36 +301,42 @@ h6::before {
   font-size: 1.3rem;
   margin-top: -0.23rem;
 }
+
 #content-inner.layout h2::before {
   color: #fb7061;
   margin-left: -1.35rem;
   font-size: 1.1rem;
   margin-top: -0.12rem;
 }
+
 #content-inner.layout h3::before {
   color: #ffbf00;
   margin-left: -1.22rem;
   font-size: 0.95rem;
   margin-top: -0.09rem;
 }
+
 #content-inner.layout h4::before {
   color: #a9e000;
   margin-left: -1.05rem;
   font-size: 0.8rem;
   margin-top: -0.09rem;
 }
+
 #content-inner.layout h5::before {
   color: #57c850;
   margin-left: -0.9rem;
   font-size: 0.7rem;
   margin-top: 0rem;
 }
+
 #content-inner.layout h6::before {
   color: #5ec1e0;
   margin-left: -0.9rem;
   font-size: 0.66rem;
   margin-top: 0rem;
 }
+
 /* s设置风车hover动效 6s那里可以自己调节快慢*/
 #content-inner.layout h1:hover,
 #content-inner.layout h2:hover,
@@ -322,6 +346,7 @@ h6::before {
 #content-inner.layout h6:hover {
   color: var(--theme-color);
 }
+
 #content-inner.layout h1:hover::before,
 #content-inner.layout h2:hover::before,
 #content-inner.layout h3:hover::before,
@@ -393,80 +418,116 @@ h6::before {
 
 table {
   table-layout: fixed;
-  width: 1000px; /*表格宽度*/
-  max-width: 1000px; /*表格最大宽度，避免表格过宽*/
-  border: 1px solid #dedede; /*表格外边框设置*/
-  margin: 15px auto; /*外边距*/
-  border-collapse: collapse; /*使用单一线条的边框*/
-  word-break:break-all;
-  word-wrap:break-word;
-  empty-cells: show; /*单元格无内容依旧绘制边框*/
+  width: 1000px;
+  /*表格宽度*/
+  max-width: 1000px;
+  /*表格最大宽度，避免表格过宽*/
+  border: 1px solid #dedede;
+  /*表格外边框设置*/
+  margin: 15px auto;
+  /*外边距*/
+  border-collapse: collapse;
+  /*使用单一线条的边框*/
+  word-break: break-all;
+  word-wrap: break-word;
+  empty-cells: show;
+  /*单元格无内容依旧绘制边框*/
 }
+
 table th,
 table td {
-  height: 35px; /*统一每一行的默认高度*/
-  border: 1px solid #dedede; /*内部边框样式*/
-  padding: 0 10px; /*内边距*/
+  height: 35px;
+  /*统一每一行的默认高度*/
+  border: 1px solid #dedede;
+  /*内部边框样式*/
+  padding: 0 10px;
+  /*内边距*/
 }
+
 table th {
-  font-weight: bold; /*加粗*/
-  text-align: center !important; /*内容居中，加上 !important 避免被 Markdown 样式覆盖*/
-  background: rgba(158,188,226,0.2); /*背景色*/
+  font-weight: bold;
+  /*加粗*/
+  text-align: center !important;
+  /*内容居中，加上 !important 避免被 Markdown 样式覆盖*/
+  background: rgba(158, 188, 226, 0.2);
+  /*背景色*/
 }
 
 table tbody tr:nth-child(2n) {
-  background: rgba(158,188,226,0.12);
+  background: rgba(158, 188, 226, 0.12);
 }
 
 table th {
-  white-space: nowrap; /*表头内容强制在一行显示*/
+  white-space: nowrap;
+  /*表头内容强制在一行显示*/
 }
 
-table th:nth-of-type(1){
+table th:nth-of-type(1) {
   width: 20%;
 }
-table th:nth-of-type(2){
+
+table th:nth-of-type(2) {
   width: 20%;
 }
-table th:nth-of-type(3){
+
+table th:nth-of-type(3) {
   width: 20%;
 }
-table th:nth-of-type(4){
+
+table th:nth-of-type(4) {
   width: 40%;
-} 
+}
 
 
 /* 滚动条 */
+.highlight.html::-webkit-scrollbar {
+  display: none;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
- 
+
 ::-webkit-scrollbar-track {
   background-color: rgba(73, 177, 245, 0.2);
   border-radius: 2em;
 }
- 
+
+
 ::-webkit-scrollbar-thumb {
   background-color: #49b1f5;
-  background-image: -webkit-linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.4) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0.4) 75%,
-    transparent 75%,
-    transparent
-  );
+  background-image: -webkit-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.4) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0.4) 75%,
+      transparent 75%,
+      transparent);
   border-radius: 2em;
 }
- 
+
+
+::-webkit-scrollbar-thumb {
+  display: block;
+  background-color: #49b1f5;
+  background-image: -webkit-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.4) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0.4) 75%,
+      transparent 75%,
+      transparent);
+  border-radius: 2em;
+}
+
 ::-webkit-scrollbar-corner {
   background-color: transparent;
 }
- 
+
 ::-moz-selection {
   color: #fff;
   background-color: #49b1f5;
-} 
+}
