@@ -480,7 +480,7 @@ table th:nth-of-type(4) {
 
 
 /* 滚动条 */
-.highlight.html::-webkit-scrollbar {
+figure::-webkit-scrollbar {
   display: none;
 }
 
