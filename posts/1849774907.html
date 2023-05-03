@@ -1,0 +1,2465 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>006.CSS3的概念和优势 🔜 字体引入 | 时光の荏苒ฅ</title><meta name="author" content="糖丸"><meta name="copyright" content="糖丸"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="第一篇CSS3的概念和优势 CSS3是CSS技术的升级版本，  CSS3语言开发是朝着模块化发展的，  以前的规范作为一个模块  实在是太庞大而且比较复杂，  所以，把它分解为一些小的模块，  更多新的模块也被加入进来。     这些模块包括  盒子模型、列表模块、超链接方式、 语言模块、背景和边框、文字特效、多栏布局等。     css3的优点  CSS3将完全向后兼容，  所以没有必要修改现在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="006.CSS3的概念和优势 🔜 字体引入">
+<meta property="og:url" content="https://xy055878.github.io/posts/1849774907.html">
+<meta property="og:site_name" content="时光の荏苒ฅ">
+<meta property="og:description" content="第一篇CSS3的概念和优势 CSS3是CSS技术的升级版本，  CSS3语言开发是朝着模块化发展的，  以前的规范作为一个模块  实在是太庞大而且比较复杂，  所以，把它分解为一些小的模块，  更多新的模块也被加入进来。     这些模块包括  盒子模型、列表模块、超链接方式、 语言模块、背景和边框、文字特效、多栏布局等。     css3的优点  CSS3将完全向后兼容，  所以没有必要修改现在">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291110463.jpg">
+<meta property="article:published_time" content="2023-03-25T08:31:51.000Z">
+<meta property="article:modified_time" content="2023-05-03T13:06:31.383Z">
+<meta property="article:author" content="糖丸">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291110463.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://xy055878.github.io/posts/1849774907"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"YLZKNIPGTL","apiKey":"5cb803d644bd0c9e349ca3777d104cf3","indexName":"myBolgData","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":250},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":60,"languages":{"author":"作者: 糖丸","link":"链接: ","source":"来源: 时光の荏苒ฅ","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '006.CSS3的概念和优势 🔜 字体引入',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-05-03 21:06:31'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/zjk.css"><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" type="text/css" href="/css/mainColor.css"><link rel="stylesheet" type="text/css" href="/css/poem.css"><link rel="stylesheet" href="/css/anima.css"  media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/rightmenu.css"><link rel="stylesheet" href="/css/iconfont.css"><link rel="stylesheet" href="/css/musicCustom.css"  media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134092.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw icon-wode"></i><span> 我的</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw icon-yinle"></i><span> 音乐馆</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw icon-xiangce"></i><span> 相册集</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw icon-wenzhang"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw icon-biaoqian"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw icon-fenlei"></i><span> 分类</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw icon-guidang"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw icon-youqinglianjie"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw icon-guanyuwomen"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291110463.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">时光の荏苒ฅ</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw icon-wode"></i><span> 我的</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw icon-yinle"></i><span> 音乐馆</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw icon-xiangce"></i><span> 相册集</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw icon-wenzhang"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw icon-biaoqian"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw icon-fenlei"></i><span> 分类</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw icon-guidang"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw icon-youqinglianjie"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw icon-guanyuwomen"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">006.CSS3的概念和优势 🔜 字体引入</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-25T08:31:51.000Z" title="发表于 2023-03-25 16:31:51">2023-03-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-05-03T13:06:31.383Z" title="更新于 2023-05-03 21:06:31">2023-05-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%89%8D%E7%AB%AF/CSS/">CSS</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">9176</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>34分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="006.CSS3的概念和优势 🔜 字体引入"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="第一篇"><a href="#第一篇" class="headerlink" title="第一篇"></a>第一篇</h1><h2 id="CSS3的概念和优势"><a href="#CSS3的概念和优势" class="headerlink" title="CSS3的概念和优势"></a>CSS3的概念和优势</h2><ul>
+<li><p>CSS3是CSS技术的升级版本，</p>
+<ul>
+<li><p>CSS3语言开发是<font color='#FF2D00'>朝着模块化发展</font>的，</p>
+</li>
+<li><p>以前的规范作为一个模块</p>
+<ul>
+<li><p>实在是太庞大而且比较复杂，</p>
+</li>
+<li><p>所以，把它分解为一些小的模块，</p>
+<ul>
+<li>更多新的模块也被加入进来。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>这些模块包括</p>
+<ul>
+<li>盒子模型、列表模块、超链接方式、</li>
+<li>语言模块、背景和边框、文字特效、多栏布局等。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>css3的优点</p>
+<ul>
+<li><p>CSS3将完全<font color='#b0d46a'>向后兼容</font>，</p>
+<ul>
+<li>所以没有必要修改现在的设计来让它们继续运作。</li>
+</ul>
+</li>
+<li><p>网络浏览器也还将继续支持CSS2</p>
+<ul>
+<li>对我们来说，<ul>
+<li>CSS3主要的影响是将可以使用<font color='#3498DB'>新的选择器和属性</font>，</li>
+<li>这些会允许实现新的设计效果（譬如动态和渐变），</li>
+<li>而且可以很简单的设计出现在的设计效果<ul>
+<li>🍒例如<ul>
+<li>使用分栏。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="渐进增强和优雅降级"><a href="#渐进增强和优雅降级" class="headerlink" title="渐进增强和优雅降级"></a>渐进增强和优雅降级</h2><ul>
+<li><strong>渐进增强</strong><ul>
+<li><font color='#FF2D00'>针对低版本浏览器</font>进行构建页面，<font color='#b0d46a'>保证</font>最基本的功能，<ul>
+<li>然后再<font color='#FF2D00'>针对高级浏览器</font>进行效果、交互等改进和追加功能<ul>
+<li>达到更好的<font color='#b0d46a'>用户体验</font>。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>优雅降级</strong><ul>
+<li><font color='#3498DB'>一开始就构建完整的功能</font>，<ul>
+<li>然后再<font color='#b0d46a'>针对低版本浏览器</font>进行<font color='#FF2D00'>兼容</font>。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>🍂差异<ul>
+<li>渐进增强<ul>
+<li>是从一个非常基础的，能够起作用的版本开始，并不断扩充，<ul>
+<li>以适应未来环境的需要。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>优雅降级<ul>
+<li>是从复杂的现状开始，<ul>
+<li>并试图减少用户体验的供给。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>🪄总结</p>
+<ul>
+<li>优雅降级意味着往回看，</li>
+<li>而渐进增强则意味着朝前看，<ul>
+<li><font color='#FF2D00'>同时保证其根基处于安全地带。</font>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>💫图例</p>
+</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001545.png" alt=""></p>
+<h2 id="CSS选择器"><a href="#CSS选择器" class="headerlink" title="CSS选择器"></a>CSS选择器</h2><h3 id="CSS层次选择器"><a href="#CSS层次选择器" class="headerlink" title="CSS层次选择器"></a>CSS层次选择器</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M N</td>
+<td>后代选择器，<br />选择M元素<strong>内部</strong><font color='#FF2D00'>所有</font>后代N元素</td>
+</tr>
+<tr>
+<td>M&gt;N</td>
+<td>子代选择器，<br />选择M元素<strong>内部</strong><font color='#FF2D00'>所有第①级</font>N元素</td>
+</tr>
+<tr>
+<td>M~N</td>
+<td>普通兄弟选择器，<br />选择M元素<strong>后</strong><font color='#b0d46a'>所有的同级</font>N元素。</td>
+</tr>
+<tr>
+<td>M+N</td>
+<td>相邻兄弟选择器，<br />选择M元素<strong>后</strong> <strong>相邻（<font color='#b0d46a'>不能间隔</font>）且同级</strong>的N元素</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>🔥案例</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001547.png" alt=""></p>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001548.png" alt=""></p>
+<h3 id="CSS属性选择器"><a href="#CSS属性选择器" class="headerlink" title="CSS属性选择器"></a>CSS属性选择器</h3><ul>
+<li><p>🔱前言</p>
+<ul>
+<li><code>[]，=，~=，^=，$=，*=，|=</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>🔉说明</p>
+<ul>
+<li>属性选择器通过<code>[]</code>来定义，<ul>
+<li><code>[]</code>内部为元素的属性，</li>
+<li>属性选择器的<font color='#FF2D00'>权重要</font><font color='#FF2D00'>高于</font>标签选择器。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>🪄分类</p>
+<ul>
+<li>标准属性：id、class、type、src、href <ul>
+<li>原始属性。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>自定义属性：data- <ul>
+<li>以<code>data-</code>开头的属性。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>语法</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>E[attr]</code></td>
+<td>只使用属性名，但没有确定任何属性值。</td>
+</tr>
+<tr>
+<td><code>E[attr=&quot;value&quot;]</code></td>
+<td>指定属性名，并指定了该属性的属性值。</td>
+</tr>
+<tr>
+<td><code>E[attr~=&quot;value&quot;]</code></td>
+<td>指定属性名，并且具有属性值，<br />此属性值是一个<font color='#FF2D00'>属性值列表</font>，并且<font color='#b0d46a'>以空格隔开</font>，<br />其中属性值列表中包含了一个value词。</td>
+</tr>
+<tr>
+<td><code>E[attr^=&quot;value&quot;]</code></td>
+<td>指定了属性名，并且有属性值，<br />属性值是<font color='#3498DB'>以value开头</font>的。</td>
+</tr>
+<tr>
+<td><code>E[attr$=&quot;value&quot;]</code></td>
+<td>指定了属性名，并且有属性值，<br />属性值是<font color='#3498DB'>以value结束</font>的。</td>
+</tr>
+<tr>
+<td><code>E[attr*=&quot;value&quot;]</code></td>
+<td>指定了属性名，并且有属性值，<br />而且属性值中<font color='#FF2D00'>包含了value</font>。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><p>👻特别的</p>
+<ul>
+<li><code>E[attr|=&quot;value&quot;]</code>  <ul>
+<li>选择attr属性的值是 <code>val</code> 或值以<code>val-</code>开头的元素。</li>
+</ul>
+</li>
+<li>❗注意<ul>
+<li>这里的<code>&#39;-&#39;</code><strong>不是一个错误</strong>。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>🔉说明</p>
+<ul>
+<li><strong>E 🔜 Element（元素）</strong><ul>
+<li>E可以省略，<ul>
+<li>如果省略则表示可以<font color='#b0d46a'>匹配满足条件的任意元素</font>。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>E可以是id（#a）、class（.b）、元素名（div）等。</li>
+<li><strong>attr 🔜 属性</strong><ul>
+<li>属性值一般可以加引号也可以不加，<ul>
+<li>但在属性值为<font color='#FF2D00'>符号或包含空格</font>的时候<font color='#b0d46a'>必须要加引号</font>。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>🔔提示</p>
+<ul>
+<li>可以根据多个属性进行选择，<ul>
+<li>只需将属性选择器<font color='#3498DB'>链接在一起</font>即可。</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>🍒例如</p>
+<ul>
+<li>同时将拥有 href 和 title 属性的 <ul>
+<li>HTML 超链接的文本设置为红色。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-attr">[href]</span><span class="selector-attr">[title]</span> &#123;<span class="attribute">color</span>:red;&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="区分E-attr-val-和E-attr-val-的使用方法"><a href="#区分E-attr-val-和E-attr-val-的使用方法" class="headerlink" title="区分E[attr*=val]和E[attr~=val]的使用方法"></a>区分<code>E[attr*=val]</code>和<code>E[attr~=val]</code>的使用方法</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;demo&quot;</span>&gt;</span>    </span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;links item&quot;</span> <span class="attr">title</span>=<span class="string">&quot;website link&quot;</span>&gt;</span>1<span class="tag">&lt;/<span class="name">a</span>&gt;</span>   </span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;links item&quot;</span> <span class="attr">title</span>=<span class="string">&quot;open the website&quot;</span>&gt;</span>2<span class="tag">&lt;/<span class="name">a</span>&gt;</span>   </span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;links item&quot;</span> <span class="attr">title</span>=<span class="string">&quot;close the website&quot;</span>&gt;</span>3<span class="tag">&lt;/<span class="name">a</span>&gt;</span>    </span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;linksitem last&quot;</span> <span class="attr">title</span>=<span class="string">&quot;websiteitem link&quot;</span>&gt;</span>4<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用<code>E[attr*=val]</code>，</li>
+<li>🪶即<code>a[class*=links]&#123;background: green;&#125;</code>,<ul>
+<li>此时，我们是给所有class不管是“links”，还是“linksitem”,</li>
+<li>标签a1、a2、a3、a4背景都变成绿色了。</li>
+</ul>
+</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001549.png" alt=""></p>
+<ul>
+<li><p>然后，我们来使用<code>E[attr~=val]</code></p>
+</li>
+<li><p>🪶即<code>a[title ~=website]&#123;background: yellow;&#125;</code></p>
+</li>
+<li><p>前三个标签都变成黄色，</p>
+<ul>
+<li>只有最后一个没有变黄。</li>
+</ul>
+</li>
+<li><p>我们上去看一下</p>
+<ul>
+<li>第四个标签的title代码:title=”websiteitem link”,</li>
+<li>原来第4个的title是websiteitem。</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001550.png" alt=""></p>
+</li>
+</ul>
+<blockquote>
+<p>🪄总结</p>
+<ul>
+<li>E[attr*=val]匹配的是元素属性值中只要包含val字符串就可以了，</li>
+<li>而E[attr~=val]匹配的是元素属性值中要<font color='#FF2D00'>包含“val”这个值</font>，<ul>
+<li>而不是在字符串中包含val。</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="结构性伪类选择器"><a href="#结构性伪类选择器" class="headerlink" title="结构性伪类选择器"></a>结构性伪类选择器</h2><blockquote>
+<p>🔱前言</p>
+<ul>
+<li>selector 🔜 选择器</li>
+</ul>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>伪类选择器</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>以下均相对于<font color='#FF2D00'>兄弟元素</font></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>以下为不同类型</strong></td>
+</tr>
+<tr>
+<td>selector:first-child</td>
+<td>用来定位一组兄弟元素中的<strong>第一个</strong>元素。</td>
+</tr>
+<tr>
+<td>selector:last-child</td>
+<td>用来定位一组兄弟元素中的<strong>最后一个</strong>元素。</td>
+</tr>
+<tr>
+<td>selector:nth-child(n)<br />（n从‘<font color='#FF2D00'>1</font>’开始）</td>
+<td>用来定位一组兄弟元素中的<strong>第n个</strong>元素。</td>
+</tr>
+<tr>
+<td>selector:nth-last-child(n)</td>
+<td>用来定位一组兄弟元素中<font color='#b0d46a'>倒序方式</font>的<strong>第n个</strong>元素。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>以下为同类型</strong></td>
+</tr>
+<tr>
+<td>selector:first<strong>-of-type</strong></td>
+<td>用来定位一组同类型的兄弟元素中的第一个元素。</td>
+</tr>
+<tr>
+<td>selector:last-of-type</td>
+<td>用来定位一组同类型的兄弟元素中的最后一个元素。</td>
+</tr>
+<tr>
+<td>selector:nth<strong>-of-type(n)</strong></td>
+<td>用来定位一组同类型的兄弟元素中的第n个元素。</td>
+</tr>
+<tr>
+<td>selector:nth-last-of-type(n)</td>
+<td>用来定位一组同类型的兄弟元素中倒序方式的第n个元素。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>selector:only-child</td>
+<td>用来定位一个<font color='#3498DB'>没有任何兄弟元素</font>的元素。</td>
+</tr>
+<tr>
+<td>selector:only-of-type</td>
+<td>用来定位一个<strong>没有任何<font color='#FF2D00'>同类型</font>兄弟元素</strong>的元素。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>selector:empty</td>
+<td>用来定位一个没有子级元素的元素，<br /><font color='#FF2D00'>并且</font>该元素也没有任何文本内容。</td>
+</tr>
+<tr>
+<td>selector:root</td>
+<td>用来定位HTML页面中的根元素（<code>&lt;html&gt;</code>）。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>🔔提示</p>
+<ul>
+<li>CSS中的结构伪类选择器是<ul>
+<li>根据HTML页面中元素之间的关系来定位HTML元素，</li>
+<li>从而减少对HTML元素的id属性和class。</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>💫图例</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001551.png" alt=""></p>
+<p>🐱序言</p>
+<ul>
+<li><p><code>:first-child</code>伪类可以使用<code>:nth-child(n)</code>伪类</p>
+<ul>
+<li><p>改写为<code>:nth-child(1)</code>。</p>
+</li>
+<li><p>而:last-child伪类可以使用<code>:nth-last-child(n)</code>伪类</p>
+<ul>
+<li>改写为<code>:nth-last-child(1)</code>。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>:first-child</code>伪类和<code>:last-child</code>伪类经常会引起误解。</p>
+</li>
+</ul>
+<p>🍒例如</p>
+<ul>
+<li><p><code>li:first-child</code> 是用来定位所有<code>&lt;li&gt;</code>元素中第一个作为子级元素的，</p>
+<ul>
+<li>而不是定位<code>&lt;li&gt;</code>元素的第一个子级元素，</li>
+</ul>
+</li>
+<li><p>🪶即定位所有父级元素中的第一个li元素。</p>
+</li>
+</ul>
+<p>🔥案例</p>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001552.png" alt=""></p>
+<p>🐱序言</p>
+<ul>
+<li>css选择器中<code>:first-child</code>与<code>:first-of-type</code>的区别<ul>
+<li><code>:first-child</code>选择器从字面意思上来看也很好理解，<ul>
+<li>就是第一个子元素。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>🍒例如</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>第一个子元素<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>第二个子元素<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span>第三个子元素<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>第四个子元素<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>👁️‍🗨️分析</p>
+<ol>
+<li>p:first-child 匹配到的是p元素，<ul>
+<li>因为p元素是div的<font color='#FF2D00'>第一个子元素</font>。</li>
+</ul>
+</li>
+<li>h1:first-child 匹配不到任何元素，<ul>
+<li>因为在这里h1是div的第二个子元素，而<font color='#b0d46a'>不是第一个</font>。</li>
+</ul>
+</li>
+<li>span:first-child 匹配不到任何元素，<ul>
+<li>因为在这里两个span元素<font color='#FF2D00'>都不是</font>div的<font color='#3498DB'>第一个子元素</font>。</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<ul>
+<li>:first-of-type选择器，跟:first-child选择器有什么区别呢?<ul>
+<li>🔥案例</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>第一个子元素<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>第二个子元素<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span>第三个子元素<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>第四个子元素<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>👁️‍🗨️分析</p>
+<ol>
+<li>p:first-of-type 匹配到的是p元素，<ul>
+<li>因为p是div的<font color='#FF2D00'>所有类型为p的子元素</font>中的<strong>第一个</strong>。</li>
+</ul>
+</li>
+<li>h1:first-of-type 匹配到的是h1元素，<ul>
+<li>因为h1是div的所有类型为h1的子元素中的<strong>第一个</strong>。</li>
+</ul>
+</li>
+<li>span:first-of-type <strong>匹配到</strong>的是<font color='#b0d46a'>第三个子元素span</font>。<ul>
+<li>这里div有两个为span的子元素，匹配到的是它们中的<strong>第一个</strong>。</li>
+</ul>
+</li>
+</ol>
+<p>🪄总结</p>
+<ul>
+<li><p><code>:first-child</code>伪类是定位一组兄弟元素中的第一个元素，</p>
+<ul>
+<li>这些兄弟元素不一定是同类型的。</li>
+</ul>
+</li>
+<li><p><code>:first-of-type</code>伪类是定位一组<font color='#FF2D00'>同类型</font>的兄弟元素中的第一个元素，</p>
+<ul>
+<li>不管这个元素在兄弟元素中的位置如何。</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>🐱序言</p>
+<ul>
+<li><code>:nth-child(n)</code>伪类和<code>:nth-last-child(n)</code>伪类<ul>
+<li>这两个选择器的用法基本上是一致的。</li>
+</ul>
+</li>
+</ul>
+<p>🍂差异</p>
+<ul>
+<li><p>:nth-last-child(n)伪类是倒序方式定位元素，</p>
+</li>
+<li><p>也就是说，</p>
+<ul>
+<li>:nth-last-child(n)伪类是从一组元素的<font color='#FF2D00'>结尾开始</font>的。</li>
+</ul>
+</li>
+<li><p>:nth-child(n)伪类中的n参数的含义具有3种情况</p>
+<ul>
+<li>数字值<ul>
+<li>任意一个<font color='#FF2D00'>大于0的正整数</font>。</li>
+<li>🍒例如<ul>
+<li><code>#example td:nth-child(1)</code></li>
+<li>表示定位id为example的父元素下，<ul>
+<li>所有<code>&lt;td&gt;</code>元素中的第一个元素。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>关键字<ul>
+<li><code>odd</code>表示<font color='#b0d46a'>奇数</font>，等同于<code>:nth-child(2n-1)</code></li>
+<li><code>even</code>表示<font color='#b0d46a'>偶数</font>，等同于<code>:nth-child(2n)</code></li>
+</ul>
+</li>
+<li>格式为<code>（an+b）</code>的公式：<ul>
+<li>a：步长</li>
+<li>n：计数器（从<font color='#FF2D00'>0</font>开始）</li>
+<li>b：偏移值</li>
+</ul>
+</li>
+<li>列举一些公式用法<ul>
+<li>🔔提示<ul>
+<li><strong>n∈自然数（0、1、2、…）</strong></li>
+<li>当索引为0 或 负数 或 超出元素个数时，<ul>
+<li><font color='#FF2D00'>将舍弃</font>。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>:nth-child()<ul>
+<li>定位元素的序号是<ul>
+<li>0[=5×0]、5[=5×1]、</li>
+<li>10[=5×2]、15[=5×3]等。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>:nth-child(3n+4)<ul>
+<li>定位元素的序号是<ul>
+<li>4[=(3×0)+4]、7[=(3×1)+4]、</li>
+<li>10[=(3×2)+4]、13[=(3×3)+4]等。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>:nth-child（-n+3）<ul>
+<li>定位元素的序号是<ul>
+<li>3[=-0+3]、2[=-1+3]、1[=-2+3]。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>🔥案例</p>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span>3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span>4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">   <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">   <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">   <span class="attribute">margin-right</span>: <span class="number">10px</span>;</span><br><span class="line">   <span class="attribute">background-color</span>: palegoldenrod;</span><br><span class="line">   <span class="attribute">text-align</span>: center;</span><br><span class="line">   <span class="attribute">line-height</span>: <span class="number">100px</span>;</span><br><span class="line">   <span class="attribute">float</span>: left;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> <span class="selector-tag">div</span><span class="selector-pseudo">:nth-child</span>(-n+<span class="number">3</span>) &#123; <span class="comment">/*  n 从 0 开始 */</span></span><br><span class="line">   <span class="attribute">color</span>: red;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>💫图例</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001553.png" alt=""></p>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001554.png" alt=""></p>
+<ul>
+<li><code>:empty</code>伪类选择器<ul>
+<li>是用来定位<strong>没有任何子级元素<font color='#FF2D00'>或</font>文本内容</strong>的元素，</li>
+<li>其中文本内容<font color='#b0d46a'>包含了空白</font></li>
+<li>但是HTML的<font color='#3498DB'>注释是不影响</font><ul>
+<li><code>:empty</code>伪类定位元素的。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="comment">&lt;!-- 仅注释 --&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 有空白 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">margin-right</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: palegoldenrod;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="selector-tag">div</span><span class="selector-pseudo">:empty</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">&#x27;空元素&#x27;</span>;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001555.png" alt=""></p>
+<ul>
+<li><code>:root</code>伪类选择器<ul>
+<li>代表的就是<code>&lt;html&gt;</code>元素。</li>
+</ul>
+</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001556.png" alt=""></p>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001557.png" alt=""></p>
+<h2 id="目标伪类选择器"><a href="#目标伪类选择器" class="headerlink" title="目标伪类选择器"></a>目标伪类选择器</h2><ul>
+<li><p>🔉说明</p>
+<ul>
+<li><p>目标伪类选择器是动态选择器，</p>
+<ul>
+<li><p>只有<font color='#FF2D00'>存在</font>URL指向该匹配元素时，样式效果才会生效。</p>
+</li>
+<li><p><code>E:target</code>选择匹配E的所有元素，</p>
+<ul>
+<li>并且匹配元素<font color='#b0d46a'>被相关URL指向</font>。 </li>
+</ul>
+</li>
+<li><p>目标伪类选择器<font color='#3498DB'>必须</font>要有的元素</p>
+<ul>
+<li><strong>超链接</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>❗注意</p>
+<ul>
+<li>超链接的href属性，</li>
+<li>可以需要div元素中的<code>id 或 name</code>属性进行绑定。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>🔥案例</p>
+<ul>
+<li>纯CSS3实现手风琴（折叠面板）效果。</li>
+</ul>
+</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001558.png" alt=""></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#aaa&quot;</span>&gt;</span>aaa<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;aaa&quot;</span> <span class="attr">class</span>=<span class="string">&quot;content&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#bbb&quot;</span>&gt;</span>bbb<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;bbb&quot;</span> <span class="attr">class</span>=<span class="string">&quot;content&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#ccc&quot;</span>&gt;</span>ccc<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;ccc&quot;</span> <span class="attr">class</span>=<span class="string">&quot;content&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">       </span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-tag">a</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">text-decoration</span>: none;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">color</span>: brown;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">display</span>: block;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">width</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-tag">div</span><span class="selector-class">.content</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">display</span>: none;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="comment">/* 匹配元素被相关URL指向 */</span></span></span><br><span class="line"><span class="language-css">	<span class="selector-tag">div</span><span class="selector-class">.content</span><span class="selector-pseudo">:target</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">display</span>: block;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">width</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">height</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">background-color</span>: blue;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001559.png" alt=""></p>
+<h2 id="UI元素状态伪类选择器"><a href="#UI元素状态伪类选择器" class="headerlink" title="UI元素状态伪类选择器"></a>UI元素状态伪类选择器</h2><ul>
+<li>UI伪类选择器，<ul>
+<li>指的是针对“<font color='#FF2D00'>元素的状态</font>”来选择元素的一种伪类选择器。</li>
+<li>UI，全称“UserInterface”，<ul>
+<li>也就是用户界面。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>元素的状态包括<ol>
+<li>可用、不可用、</li>
+<li>选中、未选中、</li>
+<li>获取焦点、失去焦点等。</li>
+</ol>
+</li>
+<li>UI伪类选择器<font color='#b0d46a'>共同特点</font><ul>
+<li>对于指定的样式，<font color='#FF2D00'>在默认状态下不起作用</font>，<ul>
+<li>只有当元素<font color='#3498DB'>处于某种状态时，才起作用</font>。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>此外，记住一点，<ul>
+<li>大多数UI伪类选择器都是<font color='#FF8C00'>针对表单元素</font>的。</li>
+</ul>
+</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E:focus</td>
+<td>选择E元素中获得光标<font color='#FF2D00'>焦点</font>的元素。</td>
+</tr>
+<tr>
+<td>E:checked</td>
+<td>选择E元素中所有<font color='#b0d46a'>被选中</font>的元素。</td>
+</tr>
+<tr>
+<td>E:selection</td>
+<td>改变E元素中被选择的网页文本的显示效果。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>E:enabled</td>
+<td>选择E元素中所有“可用”元素。</td>
+</tr>
+<tr>
+<td>E:disabled</td>
+<td>选择E元素中所有“不可用”元素。</td>
+</tr>
+<tr>
+<td>E:read-write</td>
+<td>选择E元素中所有“可读写”元素。</td>
+</tr>
+<tr>
+<td>E:read-only</td>
+<td>选择E元素中所有“只读”元素。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><p><strong>一、:focus</strong></p>
+<ul>
+<li>我们可以使用<code>:focus</code>选择器来定义元素<ul>
+<li>获取焦点时使用的样式。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>不过<strong>并不是</strong>所有的HTML元素<font color='#FF2D00'>都有焦点样式</font>，<ul>
+<li>具有“获取焦点”和“失去焦点”特点的元素只有<font color='#b0d46a'>两种</font>。<ol>
+<li>表单元素（<u>按钮、单选框、复选框、文本框、下拉列表</u>）</li>
+<li>超链接</li>
+<li><strong>判断一个元素是否具有焦点很简单，</strong><ol>
+<li>我们打开一个页面后<font color='#3498DB'>按Tab键</font>，</li>
+<li>能够被选中的就是带有焦点特性的元素。</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001560.png" alt=""></p>
+<ul>
+<li><strong>二、E:hover、E:active、 E:focus</strong><ul>
+<li>下图分别为<ul>
+<li>鼠标经过、鼠标点击（但未松开）、鼠标获得焦点（点击松开）。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001561.png" alt=""></p>
+<ul>
+<li><strong>:hover、:focus、:active结合</strong></li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">button</span><span class="selector-pseudo">:active</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: green;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">button</span><span class="selector-pseudo">:focus</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">button</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>🔔提示</p>
+<ul>
+<li>当你在进行交互时，只需要鼠标仍然悬停在元素上，<ul>
+<li><code>:hover</code>样式就会被触发，</li>
+<li>除非不适用于当前伪类，后续伪类才会生效。</li>
+</ul>
+</li>
+<li>当鼠标点击按钮并移出按钮时，<code>:hover</code> 伪类会失效，</li>
+<li>此时<code>:focus</code>会生效，<ul>
+<li>因此会出现蓝色。</li>
+</ul>
+</li>
+</ul>
+<p>🪄总结</p>
+<ul>
+<li>这就是为什么需要按照元素触发的顺序来定义伪类的原因。</li>
+<li>通常情况下，<ol>
+<li>用户会首先悬停(:hover）在元素上，</li>
+<li>然后获取元素的焦点（:focus），</li>
+<li>最后才会激活元素（:active）</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><strong>E:hover、E:active、 E:focus正确书写顺序</strong></li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">button</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">button</span><span class="selector-pseudo">:focus</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">button</span><span class="selector-pseudo">:active</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p><strong>三、::selection</strong></p>
+</li>
+<li><p><font color='#FF8C00'>默认情况下</font>，</p>
+<ul>
+<li>使用鼠标来选取页面的文本内容时，</li>
+<li>该文本内容都是以“<font color='#b0d46a'>蓝色背景、白色字体</font>”来显示的，</li>
+</ul>
+</li>
+<li><p>💫图例</p>
+</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001562.png" alt=""></p>
+<blockquote>
+<p>🔔提示</p>
+<ul>
+<li>我们可以使用<code>::selection</code>选择器来定义页面中被选中文本的样式。</li>
+</ul>
+<p>❗注意</p>
+<ul>
+<li><code>::selection</code>选择器使用的是双冒号，而不是单冒号。<ul>
+<li>实际上，单冒号往往都是伪类，<ul>
+<li><strong>而双冒号往往都是伪元素</strong>。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001563.png" alt=""></p>
+<blockquote>
+<p>🐱序言</p>
+<ul>
+<li>在实际开发中，我们很少单独对某个元素定义选中样式，<ul>
+<li>一般都是统一为整个页面的选中文本定义样式。</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>💫图例</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001564.png" alt=""></p>
+<h3 id="CSS3-appearance属性"><a href="#CSS3-appearance属性" class="headerlink" title="CSS3 appearance属性"></a>CSS3 appearance属性</h3><ul>
+<li>✨作用<ul>
+<li>修改元素的默认的样式。</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>❗注意</p>
+<ol>
+<li>所有主流浏览器都不支持 appearance 属性。</li>
+<li>Firefox支持替代的 -moz-appearance 属性。</li>
+<li>Safari和Chrome支持替代的 -webkit-appearance 属性。</li>
+</ol>
+</blockquote>
+<ul>
+<li>语法</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">appearance: none|normal;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>四、:checked</p>
+<ul>
+<li><p>单选框radio和复选框checkbox都有“选中”和“未选中”这两种状态。</p>
+</li>
+<li><p>我们可以使用<code>:checked</code>选择器</p>
+<ul>
+<li>来定义单选框或复选框被选中时的样式。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001565.png" alt=""></p>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001566.png" alt=""></p>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001567.png" alt=""></p>
+<ul>
+<li><p>五、:enabled和:disabled</p>
+<ul>
+<li><p>某些表单元素如文本框、单选框、复选框等，</p>
+<ul>
+<li>都有“可用”和“不可用”这两种状态。</li>
+</ul>
+</li>
+<li><p>我们可以使用<code>:enabled</code>选择器</p>
+<ul>
+<li>来定义表单元素“可用”时的样式，</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>也可以使用<code>:disabled</code>选择器<ul>
+<li>来定义表单元素“不可用”时的样式。</li>
+</ul>
+</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001568.png" alt=""></p>
+<ul>
+<li><p>六、:read-write 和 :read-only</p>
+<ul>
+<li><p>某些表单元素如单行文本框、多行文本框等，</p>
+<ul>
+<li>都有“可读写”和“只读”这两种状态。</li>
+</ul>
+</li>
+<li><p>我们可以使用<code>:read-write</code>选择器</p>
+<ul>
+<li>来定义表单元素“可读写”时的样式，</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>也可以使用<code>:read-only</code>选择器<ul>
+<li>来定义表单元素“只读”时的样式。</li>
+</ul>
+</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001569.png" alt=""></p>
+<h2 id="否定伪类选择器"><a href="#否定伪类选择器" class="headerlink" title="否定伪类选择器"></a>否定伪类选择器</h2><ul>
+<li>🔉说明<ul>
+<li>否定伪类选择器用来选择<ul>
+<li><font color='#FF2D00'>不满足</font>某些条件的元素。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>功能说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E:not(selector)</td>
+<td>选择未被选择器(selector)所选中，且类型为E的元素</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>🔔提示</p>
+<ul>
+<li>如果<font color='#FF2D00'>想对某个结构元素</font>使用样式，<ul>
+<li>但是<strong>又想<font color='#b0d46a'>排除</font>这个结构下的某些子结构</strong>时</li>
+<li>否定伪类选择器就非常有用，它可以过滤掉某些内容。</li>
+</ul>
+</li>
+<li>🍒例如<ul>
+<li>在美化表单时，<ul>
+<li>常常会给表单中所有的input添加一个边框，</li>
+<li>而单选按钮添加边框后就非常难看，</li>
+<li>这时，否定伪类就可以派上用场。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>🔥案例</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:not</span>(<span class="selector-attr">[type=<span class="string">&quot;radio&quot;</span>]</span>) &#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#ccc</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>👁️‍🗨️分析</p>
+<ul>
+<li>去除input元素中，所有<code>type=&quot;radio&quot;</code>的input元素</li>
+</ul>
+</blockquote>
+<h2 id="动态伪类选择器"><a href="#动态伪类选择器" class="headerlink" title="动态伪类选择器"></a>动态伪类选择器</h2><ul>
+<li>E:link<ul>
+<li>链接伪类选择器</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li><p>选择匹配的E元素，</p>
+<ul>
+<li>而且匹配元素<strong>被定义了超链接</strong><font color='#FF2D00'>未被访问</font>过。</li>
+</ul>
+</li>
+<li><p>常用于链接描点上</p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>E:visited<ul>
+<li>链接伪类选择器</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li><p>选择匹配的E元素，</p>
+<ul>
+<li>而且匹配元素<strong>被定义了超链接</strong><font color='#FF2D00'>已被访问</font>过。</li>
+</ul>
+</li>
+<li><p>常用于链接描点上</p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>E:active<ul>
+<li>用户行为选择器</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li><p>选择匹配的E元素，</p>
+<ul>
+<li>且匹配元素<font color='#FF2D00'>被激活</font>。</li>
+</ul>
+</li>
+<li><p>常用于链接描点和按钮上</p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>E:hover<ul>
+<li>用户行为选择器</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li>选择匹配的E元素，<ul>
+<li>且用户<font color='#FF2D00'>鼠标停留在元素E</font>上。</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<hr>
+<h1 id="第二篇"><a href="#第二篇" class="headerlink" title="第二篇"></a>第二篇</h1><h2 id="CSS3-text-shadow-属性"><a href="#CSS3-text-shadow-属性" class="headerlink" title="CSS3 text-shadow 属性"></a>CSS3 text-shadow 属性</h2><ul>
+<li><p>🔉说明</p>
+<ul>
+<li><strong>文本阴影</strong>通过 <code>text-shadow</code> 属性来设置，<ul>
+<li>通过该属性可以在<font color='#FF2D00'>同一文本</font>上<ul>
+<li>添加一个或多个阴影。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>🎯特性</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">默认值</th>
+<th>none</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">继承</td>
+<td>yes</td>
+</tr>
+<tr>
+<td style="text-align:left">JavaScript 语法</td>
+<td><em>object</em>.style.textShadow=”2px 2px #ff0000”</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>语法</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">text-shadow</span>: h-shadow v-shadow blur color;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>属性值</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">值</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">h-shadow</td>
+<td style="text-align:left">必需。<br /><font color='#FF2D00'>水平阴影</font>的位置，<br /><strong>可以是负值</strong>，正值向右偏移</td>
+</tr>
+<tr>
+<td style="text-align:left">v-shadow</td>
+<td style="text-align:left">必需。<br />  <font color='#FF2D00'>垂直阴影</font>的位置 ，<br /><strong>可以是负值</strong>，正值向下偏移</td>
+</tr>
+<tr>
+<td style="text-align:left">blur</td>
+<td style="text-align:left">可选。<br />阴影模糊距离（<font color='#b0d46a'>模糊的程度</font>）</td>
+</tr>
+<tr>
+<td style="text-align:left">color</td>
+<td style="text-align:left">可选。<br />阴影的颜色。参阅 <a target="_blank" rel="noopener" href="https://www.runoob.com/cssref/css-colors-legal.html">CSS 颜色值</a>。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>🔥案例</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>文字阴影<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>基本应用</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">    <span class="attribute">text-shadow</span>: <span class="number">6px</span> <span class="number">3px</span> <span class="number">3px</span> <span class="number">#f00</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001570.png" alt=""></p>
+<ul>
+<li>偏移量为负值时</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">    <span class="attribute">text-shadow</span>: -<span class="number">6px</span> -<span class="number">3px</span> <span class="number">3px</span> <span class="number">#0f0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001571.png" alt=""></p>
+<ul>
+<li>阴影也可以为多个，<ul>
+<li>多个阴影用<font color='#FF2D00'>逗号隔开</font></li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">    <span class="attribute">text-shadow</span>: </span><br><span class="line">    -<span class="number">9px</span> -<span class="number">6px</span> <span class="number">3px</span> <span class="number">#00f</span>, </span><br><span class="line">    <span class="number">6px</span> <span class="number">3px</span> <span class="number">3px</span> <span class="number">#f00</span>, </span><br><span class="line">    -<span class="number">6px</span> -<span class="number">3px</span> <span class="number">3px</span> <span class="number">#0f0</span>, </span><br><span class="line">    <span class="number">9px</span> <span class="number">6px</span> <span class="number">3px</span> yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001572.png" alt=""></p>
+<ul>
+<li>凹凸文字效果</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>凹凸文字<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h1</span>&gt;</span>凹凸文字<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: red;</span><br><span class="line">    <span class="attribute">background-color</span>: red;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">60px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">h1</span><span class="selector-pseudo">:nth-child</span>(<span class="number">1</span>) &#123;</span><br><span class="line">    <span class="attribute">text-shadow</span>: -<span class="number">1px</span> -<span class="number">1px</span> <span class="number">1px</span> <span class="number">#FFF</span>, <span class="number">1px</span> <span class="number">1px</span> <span class="number">1px</span> <span class="number">#000</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">h1</span><span class="selector-pseudo">:nth-child</span>(<span class="number">2</span>) &#123;</span><br><span class="line">    <span class="attribute">text-shadow</span>: -<span class="number">1px</span> -<span class="number">1px</span> <span class="number">1px</span> <span class="number">#000</span>, <span class="number">1px</span> <span class="number">1px</span> <span class="number">1px</span> <span class="number">#FFF</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="CSS3-box-shadow-属性"><a href="#CSS3-box-shadow-属性" class="headerlink" title="CSS3 box-shadow 属性"></a>CSS3 box-shadow 属性</h2><ul>
+<li><p>🔉说明</p>
+<ul>
+<li><strong>盒子阴影</strong>通过 <code>box-shadow</code>属性来设置，<ul>
+<li>通过该属性可以在<font color='#FF2D00'>同一个元素</font>上<ul>
+<li>添加一个或多个阴影。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>🎯特性</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">默认值</th>
+<th>none</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">继承</td>
+<td>no</td>
+</tr>
+<tr>
+<td style="text-align:left">JavaScript 语法</td>
+<td><em>object</em>.style.boxShadow=”10px 10px 5px #888888”</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>语法</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">box-shadow</span>: h-shadoy v-shadoy blur spread color inset;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>属性值</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">值</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">h-shadow</td>
+<td style="text-align:left">必需。<br /><font color='#FF2D00'>水平阴影</font>的位置，<br /><strong>可以是负值</strong>，正值向右偏移</td>
+</tr>
+<tr>
+<td style="text-align:left">v-shadow</td>
+<td style="text-align:left">必需。<br />  <font color='#FF2D00'>垂直阴影</font>的位置 ，<br /><strong>可以是负值</strong>，正值向下偏移</td>
+</tr>
+<tr>
+<td style="text-align:left">blur</td>
+<td style="text-align:left">可选。<br />阴影模糊距离（<font color='#b0d46a'>模糊的程度</font>）</td>
+</tr>
+<tr>
+<td style="text-align:left">spread</td>
+<td style="text-align:left">可选。<br />阴影的大小</td>
+</tr>
+<tr>
+<td style="text-align:left">color</td>
+<td style="text-align:left">可选。<br />阴影的颜色。在<a target="_blank" rel="noopener" href="https://www.runoob.com/cssref/css_colors_legal.aspx">CSS颜色值</a>寻找颜色值的完整列表</td>
+</tr>
+<tr>
+<td style="text-align:left">inset</td>
+<td style="text-align:left">可选。<br /><font color='#FF2D00'>内阴影</font></td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>❗注意</p>
+<ul>
+<li>这里 <code>inset</code>参数只能设置在<font color='#FF2D00'>第一或者最后</font>，<ul>
+<li><strong>其他位置无效！</strong></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>🔥案例</p>
+<ul>
+<li>h-shadow和v-shadow<ul>
+<li>水平阴影 和 垂直阴影的位置（<font color='#FF2D00'>必选</font>）。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">10px</span> <span class="number">10px</span> blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: -<span class="number">10px</span> -<span class="number">10px</span> blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box3</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: -<span class="number">10px</span> <span class="number">10px</span> blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box4</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">10px</span> -<span class="number">10px</span> blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001573.png" alt=""></p>
+<blockquote>
+<p>👁️‍🗨️分析</p>
+<ul>
+<li>从上面结果可以看出，<ul>
+<li>两个属性值可以取正值，<ul>
+<li>也可以取负值。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>🪄总结</p>
+<ul>
+<li><code>x轴</code>正值向右，负值向左。</li>
+<li><code>y轴</code>正值向下，负值向上。</li>
+</ul>
+</blockquote>
+<ul>
+<li>blur<ul>
+<li>设置阴影模糊距离。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">10px</span> <span class="number">10px</span> <span class="number">5px</span> blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">	<span class="comment">/* blur值为0 等同于 没设置模糊距离，🪶即没有模糊效果*/</span></span><br><span class="line">    <span class="attribute">box-shadow</span>: -<span class="number">10px</span> -<span class="number">10px</span> <span class="number">0px</span> blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box3</span> &#123;</span><br><span class="line">	<span class="comment">/* blur值不能为负数，为负数则阴影失效 */</span></span><br><span class="line">    <span class="attribute">box-shadow</span>: -<span class="number">10px</span> <span class="number">10px</span> -<span class="number">5px</span> blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box4</span> &#123;</span><br><span class="line">	<span class="comment">/* blur值越大越模糊 */</span></span><br><span class="line">    <span class="attribute">box-shadow</span>: -<span class="number">10px</span> <span class="number">10px</span> <span class="number">20px</span> blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001574.png" alt=""></p>
+<blockquote>
+<p>👁️‍🗨️分析</p>
+<ol>
+<li>如果<code>不写</code>blur值或者blur值为<code>0</code>，<ul>
+<li>则阴影<font color='#FF2D00'>完全实心</font>，<ul>
+<li>没有模糊效果。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>blur值越大<ul>
+<li>阴影越模糊。</li>
+</ul>
+</li>
+<li>blur值<font color='#b0d46a'>不能为负数</font>，<ul>
+<li>为负数则阴影<font color='#3498DB'>失效</font>。</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<ul>
+<li>spread<ul>
+<li>设置的阴影大小。</li>
+<li>🔔提示<ul>
+<li>这个值可以被看作是</li>
+<li>从元素到阴影的<code>距离</code>。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">	<span class="comment">/* spread为0（默认值） */</span></span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="number">10px</span> <span class="number">0px</span> blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">	<span class="comment">/* spread为5（正值会在元素的四个方向延伸阴影）*/</span></span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="number">10px</span> <span class="number">5px</span> blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box3</span> &#123;</span><br><span class="line">	<span class="comment">/* spread为-1(负值会使阴影变得比元素本身尺寸还要小) */</span></span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="number">10px</span> -<span class="number">1px</span> blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001575.png" alt=""></p>
+<blockquote>
+<p>👁️‍🗨️分析</p>
+<ol>
+<li>默认值“0”会让阴影变得<ul>
+<li>和元素的大小一样（<font color='#FF2D00'>无设置</font>）。</li>
+</ul>
+</li>
+<li><font color='#b0d46a'>正值</font>会在元素的四个方向<ul>
+<li>延伸阴影。</li>
+</ul>
+</li>
+<li><font color='#3498DB'>负值</font>会使阴影变得<ul>
+<li>比元素本身尺寸还要小。</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<ul>
+<li>color <ul>
+<li>设置阴影的颜色。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="number">10px</span> <span class="number">5px</span> blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="number">10px</span> <span class="number">5px</span> green;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box3</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="number">10px</span> <span class="number">5px</span> orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001576.png" alt=""></p>
+<ul>
+<li>inset <ul>
+<li>设置阴影为内侧。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> <span class="number">5px</span> blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> <span class="number">5px</span> blue inset;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001577.png" alt=""></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">10px</span> <span class="number">10px</span> blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">10px</span> <span class="number">10px</span> blue inset;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001578.png" alt=""></p>
+<blockquote>
+<p>👁️‍🗨️分析</p>
+<ul>
+<li>从表面上看，内阴影和外阴影的<ul>
+<li>水平阴影位置和垂直阴影位置相反。</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box1</span> &#123;</span><br><span class="line">    <span class="comment">/* box-shadow: 10px 10px blue; */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box2</span> &#123;</span><br><span class="line">    <span class="attribute">box-shadow</span>: <span class="number">10px</span> <span class="number">10px</span> blue inset;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001579.png" alt=""></p>
+<blockquote>
+<p>👁️‍🗨️分析</p>
+<ul>
+<li>内阴影和外阴影的 <ul>
+<li>水平阴影和垂直阴影 <ul>
+<li>距离方向相同 。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>不过是一个相对于内（<font color='#FF2D00'>内阴影</font>） ，<ul>
+<li>一个相对于外（<font color='#FF2D00'>外阴影</font>）。</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>🔥案例</p>
+<ul>
+<li>给div加外阴影实现彩虹。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box-shadow&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-class">.box-shadow</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">height</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">width</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">margin</span>: <span class="number">100px</span> auto;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">		<span class="attribute">border-radius</span>: <span class="number">100px</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span>; <span class="comment">/* 1/4 圆 */</span></span></span><br><span class="line"><span class="language-css">		</span></span><br><span class="line"><span class="language-css">		<span class="attribute">background</span>: red;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001580.png" alt=""></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box-shadow&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="selector-class">.box-shadow</span> &#123;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">height</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">width</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">        <span class="attribute">margin</span>: <span class="number">100px</span> auto;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="attribute">border-radius</span>: <span class="number">100px</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span>;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="comment">/* 参数依次为：颜色、水平阴影位置、垂直阴影位置、模糊距离、阴影大小 */</span></span></span><br><span class="line"><span class="language-css">        <span class="attribute">box-shadow</span>:</span></span><br><span class="line"><span class="language-css">            <span class="number">#f44336</span> -<span class="number">2px</span> -<span class="number">2px</span> <span class="number">0</span> <span class="number">1px</span>,</span></span><br><span class="line"><span class="language-css">            <span class="number">#ff9800</span> -<span class="number">4px</span> -<span class="number">4px</span> <span class="number">0</span> <span class="number">3px</span>,</span></span><br><span class="line"><span class="language-css">            <span class="number">#ffeb3b</span> -<span class="number">6px</span> -<span class="number">6px</span> <span class="number">0</span> <span class="number">5px</span>,</span></span><br><span class="line"><span class="language-css">            <span class="number">#8bc34a</span> -<span class="number">8px</span> -<span class="number">8px</span> <span class="number">0</span> <span class="number">7px</span>,</span></span><br><span class="line"><span class="language-css">            <span class="number">#00bcd4</span> -<span class="number">10px</span> -<span class="number">10px</span> <span class="number">0</span> <span class="number">9px</span>,</span></span><br><span class="line"><span class="language-css">            <span class="number">#2196f3</span> -<span class="number">12px</span> -<span class="number">12px</span> <span class="number">0</span> <span class="number">11px</span>,</span></span><br><span class="line"><span class="language-css">            <span class="number">#9c27b0</span> -<span class="number">14px</span> -<span class="number">14px</span> <span class="number">0</span> <span class="number">13px</span>;</span></span><br><span class="line"><span class="language-css">    &#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001581.png" alt=""></p>
+<hr>
+<h1 id="第三篇"><a href="#第三篇" class="headerlink" title="第三篇"></a>第三篇</h1><h2 id="CSS3-border-radius-属性"><a href="#CSS3-border-radius-属性" class="headerlink" title="CSS3 border-radius 属性"></a>CSS3 border-radius 属性</h2><ul>
+<li><p>✨作用</p>
+<ul>
+<li>设置元素的外边框圆角。</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>🔔提示</p>
+<ul>
+<li>当使用<font color='#FF2D00'>一个半径</font>时，<ul>
+<li>确定一个圆，</li>
+</ul>
+</li>
+<li>当使用<font color='#b0d46a'>两个半径</font>时，<ul>
+<li>确定一个椭圆。</li>
+</ul>
+</li>
+<li>这个圆 或 椭圆与边框的<font color='#3498DB'>交集</font>，<ul>
+<li>形成圆角效果。</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>💫图例</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001582.png" alt=""></p>
+<blockquote>
+<p>❗注意ass</p>
+<ul>
+<li>这个属性允许你为<font color='#FF8C00'>元素</font>添加圆角边框！</li>
+</ul>
+</blockquote>
+<ul>
+<li>🎯特性</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">默认值</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">继承</td>
+<td>no</td>
+</tr>
+<tr>
+<td style="text-align:left">JavaScript 语法</td>
+<td>object.style.borderRadius=”5px”</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>border-radius定义方法<ul>
+<li>border-radius属性有<font color='#FF2D00'>两种</font>定义方法 <ol>
+<li>一次性对四个角设置相同的值(<font color='#b0d46a'>简写属性</font>) 。</li>
+<li>对4个角分别设置圆角样式(<font color='#b0d46a'>单独属设性置</font>)。</li>
+</ol>
+</li>
+<li>🔔提示<ul>
+<li><strong><font color='#3498DB'>不允许负值</font></strong>。</li>
+</ul>
+</li>
+<li>常用取值<ul>
+<li>px</li>
+<li><strong>百分比</strong><ul>
+<li>水平、垂直方向<ul>
+<li>分别相对于<ul>
+<li>当前元素<strong>不包括margin</strong>的</li>
+<li><font color='#FF2D00'>总宽高计算</font>。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span><span class="selector-pseudo">:first</span>-child&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50px</span>; <span class="comment">/* 修改 */</span></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background</span>: red;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">margin</span>: auto;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 不包括 */</span></span><br><span class="line">    <span class="attribute">margin-top</span>: <span class="number">200px</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 包括 */</span></span><br><span class="line">    <span class="attribute">padding-right</span>: <span class="number">50px</span>;  </span><br><span class="line"></span><br><span class="line">    <span class="attribute">border</span>: <span class="number">10px</span> solid green;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001583.png" alt=""></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span><span class="selector-pseudo">:first</span>-child&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50px</span>; <span class="comment">/* 修改 */</span></span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background</span>: red;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">margin</span>: auto;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 不包括 */</span></span><br><span class="line">    <span class="attribute">margin-top</span>: <span class="number">200px</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 包括 */</span></span><br><span class="line">    <span class="attribute">padding-right</span>: <span class="number">10px</span>;  <span class="comment">/* 修改 */</span></span><br><span class="line"></span><br><span class="line">    <span class="attribute">border</span>: <span class="number">10px</span> solid green;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001584.png" alt=""></p>
+<ul>
+<li>（一）单独属性设置。</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">border-top-left-radius</span>：设置左上角边框的圆角样式；</span><br><span class="line"></span><br><span class="line"><span class="attribute">border-top-right-radius</span>：设置右上角边框的圆角样式；</span><br><span class="line"></span><br><span class="line"><span class="attribute">border-bottom-left-radius</span>：设置左下角边框的圆角样式；</span><br><span class="line"></span><br><span class="line"><span class="attribute">border-bottom-right-radius</span>：设置右下角边框的圆角样式；</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>❗注意</p>
+<ul>
+<li>边框的顺序<font color='#FF2D00'>不能打乱</font>，<ul>
+<li>🍒例如<ul>
+<li>border<strong>-top-left-</strong>radius就不可以写成</li>
+<li>border<font color='#b0d46a'><strong>-left-top-</strong></font>radius属性是固定的，</li>
+</ul>
+</li>
+<li>🪶即<font color='#3498DB'>垂直-水平圆角</font>。</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>（二）简写属性<ul>
+<li>一组值。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">border-radius</span>: 四个角;</span><br><span class="line"></span><br><span class="line"><span class="attribute">border-radius</span>: 左上右下 右上左下;</span><br><span class="line"></span><br><span class="line"><span class="attribute">border-radius</span>: 左上 右上左下 右下;</span><br><span class="line"></span><br><span class="line"><span class="attribute">border-radius</span>: 左上 右上 右下 左下;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>记忆💫图例</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001585.png" alt=""></p>
+<ul>
+<li>1、<code>border-radius</code>属性只设置一个值，<ul>
+<li>四个边框的圆角都采用相同的值。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 四个边框圆角为20px */</span></span><br><span class="line"><span class="attribute">border-radius</span>：<span class="number">20px</span>;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001586.png" alt=""></p>
+<ul>
+<li>2、<code>border-radius</code>属性设置两个值，<ul>
+<li>第一个值设置左上角和右下角，</li>
+<li>第二个值设置右上角和左下角。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 左上角和右下角20px，右上角和左下角50px */</span></span><br><span class="line"><span class="attribute">border-radius</span>: <span class="number">20px</span> <span class="number">50px</span>;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001587.png" alt=""></p>
+<ul>
+<li>3、<code>border-radius</code>属性设置三个值，<ul>
+<li>第一个值设置给左上角，</li>
+<li>第二个值设置给右上角和左下角，</li>
+<li>第三个值设置给右下角。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 左上角20px，右上角和左下角50px，右下角5px */</span></span><br><span class="line"><span class="attribute">border-radius</span>: <span class="number">20px</span> <span class="number">50px</span> <span class="number">5px</span>; </span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001588.png" alt=""></p>
+<ul>
+<li>4、为属性设置四个值，<ul>
+<li>第一个值设置给左上角，</li>
+<li>第二个值设置给右上角， </li>
+<li>第三个值右下角，</li>
+<li>第四个值左下角（<font color='#FF2D00'>按照顺时针方向</font>）。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 左上角20px，右下角50px，右下角5px ，左下角100px */</span></span><br><span class="line"><span class="attribute">border-radius</span>: <span class="number">20px</span> <span class="number">50px</span> <span class="number">5px</span> <span class="number">100px</span>; </span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001589.png" alt=""></p>
+<ul>
+<li>两组值<ul>
+<li>border-radius: 一组值/第二组值;<ul>
+<li>分别设置水平半径和垂直半径。</li>
+</ul>
+</li>
+<li>border-radius的语法</li>
+</ul>
+</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001590.png" alt=""></p>
+<blockquote>
+<p>🔔提示</p>
+<ol>
+<li>length<ul>
+<li>用于设置对象的圆角半径长度，<font color='#FF2D00'>不可为负值</font>。 </li>
+</ul>
+</li>
+<li>% <ul>
+<li>以百分比定义圆角的形状。</li>
+</ul>
+</li>
+<li>{1-4}<ul>
+<li>border-radius的参数个数范围为<code>1~4</code>个 。</li>
+</ul>
+</li>
+<li>如果“<font color='#FF2D00'>/</font>”前后的值<font color='#b0d46a'>都存在</font>，<ul>
+<li>“/”<strong>前面</strong>的值设置其<u>水平半径</u>，</li>
+<li>“/”<strong>后面</strong>的值设置其<u>垂直半径</u>。 </li>
+</ul>
+</li>
+<li>如果没有“/”,<ul>
+<li>水平和垂直半径<font color='#3498DB'>相等</font>。 </li>
+</ul>
+</li>
+<li>另外，其4个值是<ul>
+<li>按照 <ul>
+<li><strong>top-left、 top-right、</strong></li>
+<li><strong>bottom-right、bottom-left</strong> ，</li>
+<li>的顺序来设置的。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<ul>
+<li>记忆💫图例</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001591.png" alt=""></p>
+<ul>
+<li>🔥案例</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;                  <span class="comment">/* 水平半径 / 垂直半径 */</span></span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">20px</span> <span class="number">5px</span> <span class="number">100px</span>/<span class="number">15px</span> <span class="number">30px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>等价于</p>
+<ul>
+<li>水平半径、垂直半径</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">                     <span class="comment">/* 水平半径 垂直半径  */</span></span><br><span class="line">    <span class="attribute">border-top-left-radius</span>: <span class="number">20px</span> <span class="number">15px</span>;</span><br><span class="line">    <span class="attribute">border-top-right-radius</span>: <span class="number">5px</span> <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">border-bottom-right-radius</span>: <span class="number">100px</span> <span class="number">15px</span>;</span><br><span class="line">    <span class="attribute">border-bottom-left-radius</span>: <span class="number">5px</span> <span class="number">30px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001592.png" alt=""></p>
+<ul>
+<li>2.画圆弧</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background</span>: pink;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">50px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001593.png" alt=""></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">400px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: lightcoral;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">30px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001594.png" alt=""></p>
+<blockquote>
+<p>👁️‍🗨️分析</p>
+<ul>
+<li>一般长方形画圆弧<font color='#FF2D00'>使用绝对单位</font>。</li>
+</ul>
+</blockquote>
+<ul>
+<li>3.画正圆</li>
+</ul>
+<blockquote>
+<p>🔔提示</p>
+<ul>
+<li>画正圆的思路其实很简单 。<ol>
+<li>盒子的<strong>长和宽</strong>要相等 ，</li>
+<li>圆弧的半径，<ul>
+<li>要为盒子宽高（<font color='#FF2D00'>不是单独内容</font>）的一半 ，</li>
+<li>因为盒子是<ul>
+<li>由content、padding、border、margin构成 。</li>
+</ul>
+</li>
+<li>当然margin部分不计算。</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background</span>: pink;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">50%</span>; <span class="comment">/* 推荐 */</span></span><br><span class="line">    <span class="comment">/* 或 border-radius: 100px; */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>👁️‍🗨️分析</p>
+<ul>
+<li>很明显这里已经是一个圆了 。<ul>
+<li>这里我们来<font color='#FF2D00'>思考</font>为什么要设置圆弧设置盒子长的一半 ，</li>
+<li>其实很简单，要实现圆，那么长和宽就应该相等 ，</li>
+<li>同时它们的长度就是直径,<ul>
+<li>那么一半就是半径了 ，</li>
+<li>给<code>border-radius</code>设置<font color='#b0d46a'>任何大于或等于50%</font>的百分数，</li>
+<li>都可以实现圆形效果。  </li>
+</ul>
+</li>
+<li>🍒例如<ul>
+<li>设置border-radius: 70%；<ul>
+<li>同样可以得到一个圆形。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001595.png" alt=""></p>
+<ul>
+<li>4.画扇形 </li>
+</ul>
+<blockquote>
+<p>🔔提示</p>
+<ul>
+<li><p>画扇形的思路其实很简单 。</p>
+<ol>
+<li><p>盒子的<strong>长和宽</strong>要相等 ，</p>
+</li>
+<li><p>圆弧的半径，</p>
+<ul>
+<li><p>要为盒子宽高（<font color='#FF2D00'>不是单独内容</font>）。</p>
+</li>
+<li><p>因为盒子是</p>
+<ul>
+<li><p>由content、padding、border、margin构成 ，</p>
+</li>
+<li><p>当然margin部分不计算。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background</span>: lightcoral;</span><br><span class="line">    <span class="attribute">border-top-left-radius</span>: <span class="number">100px</span>; </span><br><span class="line">    <span class="comment">/* 或 border-top-left-radius: 100%; */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001596.png" alt=""></p>
+<ul>
+<li>5.椭圆 </li>
+</ul>
+<blockquote>
+<p>🔔提示</p>
+<ul>
+<li>画椭圆的思路其实很简单 。<ol>
+<li>盒子的长和宽要不相等（<font color='#FF2D00'>宽高是2倍关系</font>），</li>
+<li>圆弧的半径<ul>
+<li>要为盒子宽高（<font color='#b0d46a'>不是单独内容</font>）的一半 。</li>
+<li>因为盒子是<ul>
+<li>由content、padding、border、margin构成 ，</li>
+</ul>
+</li>
+<li>当然margin部分不计算。</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background</span>: pink;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">50%</span>; <span class="comment">/* 推荐 */</span></span><br><span class="line">    <span class="comment">/* 或 border-radius: 100px/50px; */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001597.png" alt=""></p>
+<ul>
+<li>6.半圆 </li>
+</ul>
+<blockquote>
+<p>🔔提示</p>
+<ul>
+<li>画半圆的思路其实很简单 。<ol>
+<li>盒子的长和宽要不相等（<font color='#FF2D00'>宽高是2倍关系</font>），</li>
+<li>圆弧的水平半径<ul>
+<li>要为盒子宽（<font color='#b0d46a'>不是单独内容</font>）的一半，</li>
+<li>垂直半径要为盒子的高（<font color='#b0d46a'>不是单独内容</font>） ，</li>
+<li>因为盒子是<ul>
+<li>由content、padding、border、margin构成 ，</li>
+</ul>
+</li>
+<li>当然margin部分不计算。</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background</span>: pink;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">100px</span> <span class="number">100px</span> <span class="number">0</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001598.png" alt=""></p>
+<ul>
+<li>7.圆角案例<ul>
+<li>💫图例</li>
+</ul>
+</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001599.png" alt=""></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;Search for CSS3 ,HTML5, jQuery... &quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;GO&quot;</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">            <span class="attribute">margin</span>:<span class="number">0</span>;</span><br><span class="line">            <span class="attribute">padding</span>:<span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="selector-tag">input</span> &#123;</span><br><span class="line">            <span class="attribute">outline</span>: none;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="selector-tag">div</span>&#123;</span><br><span class="line">            <span class="attribute">width</span>: <span class="number">935px</span>;</span><br><span class="line">            <span class="attribute">height</span>: <span class="number">120px</span>;</span><br><span class="line">            <span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#dedede</span>;</span><br><span class="line">            <span class="attribute">margin</span>:<span class="number">10px</span> auto;</span><br><span class="line">            <span class="attribute">background</span>:<span class="number">#eceaeb</span>;</span><br><span class="line"></span><br><span class="line">            <span class="attribute">border-radius</span>: <span class="number">15px</span>;</span><br><span class="line">            <span class="attribute">box-shadow</span>: </span><br><span class="line">                	<span class="number">4px</span> <span class="number">11px</span> <span class="number">7px</span> <span class="number">#bfbfbf</span>,-<span class="number">4px</span> <span class="number">11px</span> <span class="number">7px</span> <span class="number">#bfbfbf</span>;</span><br><span class="line">            		 <span class="comment">/*        左阴影              右阴影       */</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="selector-attr">[type=text]</span>&#123;</span><br><span class="line">            <span class="attribute">width</span>: <span class="number">683px</span>;</span><br><span class="line">            <span class="attribute">height</span>: <span class="number">86px</span>;</span><br><span class="line">            <span class="attribute">margin</span>:<span class="number">17px</span>;</span><br><span class="line">            <span class="attribute">border</span>:<span class="number">3px</span> solid <span class="number">#cccccc</span>;</span><br><span class="line">            <span class="attribute">font-size</span>: <span class="number">25px</span>;</span><br><span class="line">            <span class="attribute">text-indent</span>: <span class="number">11px</span>;</span><br><span class="line"></span><br><span class="line">            <span class="attribute">border-radius</span>: <span class="number">4px</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="selector-attr">[type=submit]</span>&#123;</span><br><span class="line">            <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">            <span class="attribute">height</span>: <span class="number">83px</span>;</span><br><span class="line">            <span class="attribute">background</span>:<span class="built_in">url</span>(<span class="string">1.png</span>);</span><br><span class="line">            <span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#5ca3b4</span>;</span><br><span class="line">            <span class="attribute">font-size</span>: <span class="number">23px</span>;</span><br><span class="line">            <span class="attribute">color</span>:white;</span><br><span class="line">            </span><br><span class="line">            <span class="attribute">border-radius</span>: <span class="number">5px</span>;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>过程🎭图示</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001600.png" alt=""></p>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001601.png" alt=""></p>
+<hr>
+<h1 id="第四篇"><a href="#第四篇" class="headerlink" title="第四篇"></a>第四篇</h1><h2 id="字体引入"><a href="#字体引入" class="headerlink" title="字体引入"></a>字体引入</h2><ul>
+<li><p>🔱前言</p>
+<ul>
+<li><code>font-family</code>属性的作用与用法?<ol>
+<li><font color='#FF2D00'>作用</font><ul>
+<li>可以用css代码设重页面上文字显示的字体样式，</li>
+<li>🍒例如<ul>
+<li>宋体，微软雅黑等等。</li>
+</ul>
+</li>
+<li>font-family属性设置不同的字体，<ul>
+<li>可以让页面显示效果更协调美观。</li>
+</ul>
+</li>
+<li>font-family 属性可以定义<strong>多个值（字体），用<font color='#b0d46a'>逗号隔开</font></strong>。</li>
+<li>如果浏览器不支持第一个字体，<ul>
+<li>则会尝试下一个，直到有一个可识别的。</li>
+<li>浏览器会使用它可识别的第一个值。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><font color='#FF2D00'>用法</font>
+
+
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">font-family</span>：&quot;设置字体名称&quot;;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>CSS怎么引入外部字体?</p>
+<ul>
+<li>一般浏览器常用的字体包括<ul>
+<li>宋体、黑体、微软雅黑等几种。</li>
+</ul>
+</li>
+<li>因为网页载入选择字体时候，<ul>
+<li>是调用访问者，<ul>
+<li><u>系统文字库</u>的文字字体，</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>如果<strong>没有找到</strong>字体那将<font color='#FF2D00'>显示默认的网页字体</font>。 </li>
+<li>而每个人安装的操作系统<strong>默认</strong>有这几种字体，<ul>
+<li>所以这些字体又称为<font color='#b0d46a'>安全字体</font>。 </li>
+</ul>
+</li>
+<li><p>但为了一些特殊的需要，</p>
+<ul>
+<li>显示有个性化的、好看的文字样式，</li>
+<li>我们可以引用一些外部字体。</li>
+</ul>
+</li>
+<li><p>CSS引入外部字体的方法（<code>@font-face</code>）</p>
+<ul>
+<li>背景<ul>
+<li>@font-face是CSS3中的一个模块，</li>
+<li>主要是把自己定义的Web字体嵌入到你的网页中，</li>
+<li>随着@font-face模块的出现，<ul>
+<li>我们在Web的开发中使用字体不怕只能使用Web安全字体。</li>
+</ul>
+</li>
+<li>🔔提示<ul>
+<li>@font-face这个功能早在<font color='#FF2D00'>IE4</font>就支持。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>介绍<ul>
+<li>@font-face 允许您在网页中，<ul>
+<li>使用电脑中没有安装的字体，<ul>
+<li><font color='#b0d46a'>完全摆脱安全字体的限制</font>。</li>
+</ul>
+</li>
+<li>只需将字体包安装在服务器上，</li>
+</ul>
+</li>
+<li>当用户加载网页时，<ul>
+<li>字体包会<font color='#3498DB'>自动下载</font>到用户机器上，</li>
+<li>保证字体能够正确渲染。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>语法</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@font-face</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: &lt;name&gt;;</span><br><span class="line">  <span class="attribute">src</span>: &lt;source&gt; [&lt;format&gt;][, &lt;source&gt; [&lt;format&gt;]]*;</span><br><span class="line">  <span class="selector-attr">[font-weight: &lt;weight&gt;;]</span> <span class="comment">/*字体粗细*/</span></span><br><span class="line">  <span class="selector-attr">[font-style: &lt;style&gt;;]</span> <span class="comment">/*字体样式*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>🔉说明</p>
+<ul>
+<li><p>符号</p>
+<ul>
+<li><p><code>&lt; &gt;</code></p>
+<ul>
+<li>必选。</li>
+</ul>
+</li>
+<li><p><code>[ ]</code></p>
+<ul>
+<li>可选。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>name</p>
+<ul>
+<li>自定义的字体名称，<ul>
+<li>他将被引用到你的Web元素中的font-family。</li>
+</ul>
+</li>
+<li>🍒例如<ul>
+<li><code>font-family: &quot;name&quot;;</code>。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>source<ul>
+<li>引用的字体文件的存放路径，<ul>
+<li>可以是相对路径也可以是绝路径。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>format<ul>
+<li>用于帮助浏览器识别字体。</li>
+<li>浏览器是<font color='#FF2D00'>不能</font><ul>
+<li>根据字体后缀</li>
+<li>去自动识别字体格式的，</li>
+</ul>
+</li>
+<li>所以使用<code>format</code>属性来帮助浏览器识别字体格式。</li>
+<li>🔱前言<ul>
+<li>字体格式有太多选择，<font color='#3498DB'>不幸的是</font><ul>
+<li><strong>始终没有</strong>一个能在所有的浏览器上通用。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><font color='#b0d46a'>字体格式</font><ul>
+<li><code>trueType格式(.ttf)</code><ul>
+<li>Windows和Mac上常见的字体格式，是一种原始格式，</li>
+<li>因此它并没有为网页进行优化处理。</li>
+</ul>
+</li>
+<li><code>OpenType格式(.otf)</code> <ul>
+<li>以<code>.ttf格式</code>为基础，<ul>
+<li>也是一种原始格式，但提供更多的功能。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Web Open Font格式(.woff)</code> <ul>
+<li><strong>针对网页进行特殊优化</strong>，<ul>
+<li>因此是Web字体中最佳格式。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>Embedded Open Type格式(.eot)</code> <ul>
+<li><font color='#FF2D00'>IE专用字体格式</font>。</li>
+</ul>
+</li>
+<li><code>SVG格式(.svg)</code>  <ul>
+<li>基于<font color='#b0d46a'>SVG</font>技术的字体格式。 </li>
+</ul>
+</li>
+<li>🔔提示<ul>
+<li>不同的浏览器支持的字体格式不同，</li>
+<li>以目前主流浏览器为参考，</li>
+<li>使用<code>@font-face</code><strong>至少</strong><ul>
+<li>需要<code>.woff、.eot、.SVG</code>三种格式字体。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>🔥案例</li>
+</ul>
+</li>
+</ul>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@font-face</span> &#123; <span class="comment">/* 字体引入并自定义字体名 */</span></span><br><span class="line">    <span class="attribute">font-family</span>：&#x27;myFont&#x27;;</span><br><span class="line">    <span class="attribute">src</span>： </span><br><span class="line">    	<span class="comment">/* 之所有有多个url</span></span><br><span class="line"><span class="comment">    	   就是因为浏览器兼容问题 */</span></span><br><span class="line">        url(&#x27;kaiti<span class="selector-class">.eto</span>&#x27;), </span><br><span class="line">        local(lishu<span class="selector-class">.woff</span>); <span class="comment">/* src参数带不带引号都可以 */</span> </span><br><span class="line">    	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 使用自定义字体 */</span> </span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>：&#x27;myFont&#x27;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>🔉说明</p>
+<ul>
+<li><code>local</code>表示本机地址</li>
+<li><code>url</code>表示网址<ul>
+<li>使用<font color='#b0d46a'>url</font>引入的字体，<ul>
+<li>网页加载时，会<font color='#3498DB'>自动从服务器</font><strong>下载字体</strong>，</li>
+<li>因此如果字体文件太大，<ul>
+<li>网页加载会比较慢。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>🔔提示</p>
+<ul>
+<li>如果在src上定义了多种字体，<ul>
+<li>是<font color='#b0d46a'>按顺序</font>的<strong>候选关系</strong>。</li>
+</ul>
+</li>
+<li>如果修改了定义的字体或顺序，<ul>
+<li>需要重新打开浏览器才能看到修改后的效果，</li>
+<li><font color='#3498DB'>刷新是无效的</font>。</li>
+</ul>
+</li>
+<li>在<code>@font-face</code>中<ul>
+<li>font-family的作用是<font color='#FF2D00'>声明字体变量</font>，</li>
+</ul>
+</li>
+<li>与普通选择器中的<code>font-family</code>是不一样的。</li>
+</ul>
+</blockquote>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@font-face</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;YourWebFontName&#x27;</span>;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&#x27;YourWebFontName.eot&#x27;</span>);  </span><br><span class="line">    							</span><br><span class="line">    <span class="attribute">src</span>:					  <span class="comment">/* 空格分隔 */</span></span><br><span class="line">        <span class="built_in">url</span>(<span class="string">&#x27;YourWebFontName.ttf&#x27;</span>) <span class="built_in">format</span>(<span class="string">&#x27;truetype&#x27;</span>), </span><br><span class="line">        <span class="built_in">url</span>(<span class="string">&#x27;YourWebFontName.otf&#x27;</span>) <span class="built_in">format</span>(<span class="string">&#x27;opentype&#x27;</span>), </span><br><span class="line">        </span><br><span class="line">        <span class="built_in">url</span>(<span class="string">&#x27;YourWebFontName.woff&#x27;</span>) <span class="built_in">format</span>(<span class="string">&#x27;woff&#x27;</span>),</span><br><span class="line">        <span class="built_in">url</span>(<span class="string">&#x27;YourWebFontName.eot&#x27;</span>) <span class="built_in">format</span>(<span class="string">&#x27;embedded-opentype&#x27;</span>),</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">url</span>(<span class="string">&#x27;YourWebFontName.svg&#x27;</span>) <span class="built_in">format</span>(<span class="string">&#x27;svg&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="第五篇"><a href="#第五篇" class="headerlink" title="第五篇"></a>第五篇</h1><h2 id="怪异盒模型"><a href="#怪异盒模型" class="headerlink" title="怪异盒模型"></a>怪异盒模型</h2><h2 id="CSS3-box-sizing-属性"><a href="#CSS3-box-sizing-属性" class="headerlink" title="CSS3 box-sizing 属性"></a>CSS3 box-sizing 属性</h2><ul>
+<li><p>🔉说明</p>
+<ul>
+<li>box-sizing 属性<ul>
+<li>定义如何计算一个元素的<code>总宽度</code>和<code>总高度</code>。</li>
+<li>主要设置是否<ul>
+<li>需要加上<font color='#b0d46a'>padding</font>和<font color='#b0d46a'>border</font>。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><font color='#FF8C00'>默认情况下</font>，</p>
+<ul>
+<li>元素的 <font color='#3498DB'>width </font>和 <font color='#3498DB'>height </font>计算方式如下。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>🔥案例</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">width</span>(宽度) + <span class="attribute">padding</span>(内边距) + <span class="attribute">border</span>(边框) = 元素实际宽度</span><br><span class="line"><span class="attribute">height</span>(高度) + <span class="attribute">padding</span>(内边距) + <span class="attribute">border</span>(边框) = 元素实际高度</span><br></pre></td></tr></table></figure>
+<ul>
+<li>🎯特性</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>默认值</th>
+<th>content-box</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>继承</td>
+<td>no</td>
+</tr>
+<tr>
+<td>JavaScript 语法</td>
+<td><em>object</em>.style.boxSizing=”border-box”</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>属性值</li>
+</ul>
+<blockquote>
+<p>W3C标准盒模型</p>
+<ul>
+<li><code>box-sizing: content-box;</code><ul>
+<li>🔉说明<ul>
+<li>padding和border的值<ul>
+<li>是<font color='#FF2D00'>不包含</font>在 width 内的。</li>
+</ul>
+</li>
+<li>如果你设置一个元素的宽为 100px，</li>
+<li>那么这个元素的内容区会有 100px 宽，</li>
+<li>并且设置任何边框和内边距的宽度<ul>
+<li>都会<font color='#b0d46a'>被增加到</font><ul>
+<li>最后绘制出来的<font color='#3498DB'>元素宽度中</font>。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>IE怪异盒模型</p>
+<ul>
+<li><code>box-sizing: border-box;</code>(<strong><font color='#FF8C00'>默认值</font>)</strong></li>
+<li>🔉说明<ul>
+<li>padding和border的值<ul>
+<li>是<font color='#FF2D00'>包含</font>在 width 内的。</li>
+</ul>
+</li>
+<li>如果你将一个元素的 width 设为 100px，</li>
+<li>那么这 100px 会包含它的 border 和 padding，<ul>
+<li>content的<font color='#b0d46a'>实际宽度</font>是<ul>
+<li><strong>width减 去 (border + padding) 的值。</strong></li>
+</ul>
+</li>
+<li>大多数情况下，<ul>
+<li>这使得我们更容易地设定一个元素的宽高。 </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>注：border-box <font color='#3498DB'>不包含</font> margin。</strong></li>
+</ul>
+</blockquote>
+<ul>
+<li>🔥案例</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-tag">div</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">width</span>: <span class="number">300px</span>;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">height</span>: <span class="number">50px</span>;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">		<span class="attribute">margin-top</span>: <span class="number">5px</span>;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">		<span class="attribute">border</span>: <span class="number">10px</span> solid red;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">padding</span>: <span class="number">5px</span>;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-class">.two</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">box-sizing</span>: content-box;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-class">.three</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">box-sizing</span>: border-box;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;one&quot;</span>&gt;</span>默认情况<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;two&quot;</span>&gt;</span>box-sizing: content-box;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;three&quot;</span>&gt;</span>box-sizing: border-box;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001602.png" alt=""></p>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001603.png" alt=""></p>
+<ul>
+<li>🐱序言</li>
+</ul>
+<blockquote>
+<p>直观通俗的解释</p>
+<ul>
+<li>content-box：指定盒模型为W3C标准模型，<ul>
+<li>设置border、padding 会增加元素 width与height的尺寸。</li>
+</ul>
+</li>
+<li>border-box：指定盒模型为IE模型（怪异模式），<ul>
+<li>设置border、padding不会影响元素width与height的尺寸。</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>记忆🎭图示</li>
+</ul>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001604.png" alt=""></p>
+<ul>
+<li><p>😼小技巧：<strong>文字垂直居中</strong></p>
+<ul>
+<li><p>🔱前言</p>
+<ul>
+<li>如何让文字垂直居中？<ul>
+<li><strong>设置行高为内容的高。</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>W3C标准盒模型</p>
+<ul>
+<li>公式<ul>
+<li><code>line-height = content height</code></li>
+<li>因为此时内容即<font color='#FF2D00'>元素的高</font><ul>
+<li>边框和填充是扩展外部空间的。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>IE怪异盒模型</p>
+<ul>
+<li><p>公式</p>
+<ul>
+<li><code>line-height =content height - padding*2 - border*2</code></li>
+<li><p>因为此时内容的</p>
+<ul>
+<li>其余空间被边框和填充占用，</li>
+</ul>
+</li>
+<li><p>所以是元素的<code>height</code>减去<code>padding</code>和<code>border</code>的空间，</p>
+<ul>
+<li><font color='#b0d46a'>剩余即为内容空间</font>。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>🔥案例</p>
+<ul>
+<li><font color='#FF2D00'>错误示范</font>
+
+
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-tag">body</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">padding</span>: <span class="number">120px</span>;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-tag">div</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">width</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">height</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">background-color</span>: red;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-class">.box1</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">line-height</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-class">.box2</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">padding</span>: <span class="number">20px</span> <span class="number">0</span>;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">box-sizing</span>: border-box;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">line-height</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box1&quot;</span>;&gt;</span>123456<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box2&quot;</span>;&gt;</span>123456<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001605.png" alt=""></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-tag">body</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">padding</span>: <span class="number">120px</span>;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-tag">div</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">width</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">height</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">background-color</span>: red;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">margin-bottom</span>: <span class="number">20px</span>;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-class">.box1</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">line-height</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-class">.box2</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">padding</span>: <span class="number">20px</span> <span class="number">0</span>;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">box-sizing</span>: border-box;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">line-height</span>: <span class="number">60px</span>;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box1&quot;</span>;&gt;</span>123456<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box2&quot;</span>;&gt;</span>123456<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001606.png" alt=""></p>
+<ul>
+<li><p>🔥怪异盒模型应用</p>
+<ul>
+<li>控制width 和 height不变。</li>
+</ul>
+</li>
+<li><font color='#FF2D00'>错误示范</font>
+
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-class">.box</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">width</span>: <span class="number">300px</span>;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">height</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">background</span>: yellow;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">margin</span>: <span class="number">0</span> auto;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-class">.box</span> <span class="selector-tag">div</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">width</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">height</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">		<span class="attribute">float</span>: left;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">padding</span>: <span class="number">10px</span>;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">		<span class="attribute">border</span>: <span class="number">10px</span> solid red;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">		<span class="comment">/* box-sizing: border-box; */</span></span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001607.png" alt=""></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-class">.box</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">width</span>: <span class="number">300px</span>;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">height</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">background</span>: yellow;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">margin</span>: <span class="number">0</span> auto;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">	<span class="selector-class">.box</span> <span class="selector-tag">div</span> &#123;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">width</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">height</span>: <span class="number">100px</span>;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">		<span class="attribute">float</span>: left;</span></span><br><span class="line"><span class="language-css">		<span class="attribute">padding</span>: <span class="number">10px</span>;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">		<span class="attribute">border</span>: <span class="number">10px</span> solid red;</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">		<span class="attribute">box-sizing</span>: border-box;</span></span><br><span class="line"><span class="language-css">	&#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291001608.png" alt=""></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://github.com/xy055878">糖丸</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://xy055878.github.io/posts/1849774907.html">https://xy055878.github.io/posts/1849774907.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://xy055878.github.io" target="_blank">时光の荏苒ฅ</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291110463.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/3459297216.html"><img class="prev-cover" src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291114543.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">005.宽高自定义 🔜 HTML5 新增表单标签</div></div></a></div><div class="next-post pull-right"><a href="/posts/242091884.html"><img class="next-cover" src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291114549.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">007.弹性盒</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AF%87"><span class="toc-text">第一篇</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS3%E7%9A%84%E6%A6%82%E5%BF%B5%E5%92%8C%E4%BC%98%E5%8A%BF"><span class="toc-text">CSS3的概念和优势</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%90%E8%BF%9B%E5%A2%9E%E5%BC%BA%E5%92%8C%E4%BC%98%E9%9B%85%E9%99%8D%E7%BA%A7"><span class="toc-text">渐进增强和优雅降级</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-text">CSS选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS%E5%B1%82%E6%AC%A1%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-text">CSS层次选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-text">CSS属性选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8C%BA%E5%88%86E-attr-val-%E5%92%8CE-attr-val-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">区分E[attr*&#x3D;val]和E[attr~&#x3D;val]的使用方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E6%80%A7%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-text">结构性伪类选择器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-text">目标伪类选择器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UI%E5%85%83%E7%B4%A0%E7%8A%B6%E6%80%81%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-text">UI元素状态伪类选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS3-appearance%E5%B1%9E%E6%80%A7"><span class="toc-text">CSS3 appearance属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%A6%E5%AE%9A%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-text">否定伪类选择器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E4%BC%AA%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="toc-text">动态伪类选择器</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AF%87"><span class="toc-text">第二篇</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS3-text-shadow-%E5%B1%9E%E6%80%A7"><span class="toc-text">CSS3 text-shadow 属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS3-box-shadow-%E5%B1%9E%E6%80%A7"><span class="toc-text">CSS3 box-shadow 属性</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AF%87"><span class="toc-text">第三篇</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS3-border-radius-%E5%B1%9E%E6%80%A7"><span class="toc-text">CSS3 border-radius 属性</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AF%87"><span class="toc-text">第四篇</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E4%BD%93%E5%BC%95%E5%85%A5"><span class="toc-text">字体引入</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AF%87"><span class="toc-text">第五篇</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%AA%E5%BC%82%E7%9B%92%E6%A8%A1%E5%9E%8B"><span class="toc-text">怪异盒模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS3-box-sizing-%E5%B1%9E%E6%80%A7"><span class="toc-text">CSS3 box-sizing 属性</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By 糖丸</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script><div class="js-pjax"></div><script type="text/javascript" src="/js/jq.js"></script><script defer src="/js/light.js"></script><canvas id="universe"></canvas><script defer src="/js/universe.js"></script><script async src="/js/elemecdn.js"></script><script defer src="/js/pjax.js"></script><script data-pace-options='{ "restartOnRequestAfter":false,"eventLag":false}' src="/js/pace.js"></script><script defer data-pjax src="/js/readPercent.js"></script><script async src="/js/vue.js"></script><script async src="/js/element-ui.js"></script><script async src="//at.alicdn.com/t/c/font_4029125_ralxu1priig.js"></script><script defer src="/js/copy.js"></script><script src="/js/sun_moon.js" async></script><script  data-pjax src="/js/dhl.js"></script><script type="text/javascript" src="/js/rightmenu.js"></script><script async data-pjax src="/js/custom.js"></script><script async data-pjax src="/js/hexo-anzhiyu-music.js"></script><script defer src="/js/runtime.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="30" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="https://xy055878.github.io/categories/前端/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍁 小糖の前端学习笔记 (7)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://xy055878.github.io/categories/数据库/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍃 小糖の数据库学习笔记 (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><a class="magnet_link_more"  href="https://xy055878.github.io/categories" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(50% - 5px);background: #f2f2f2;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: #b30070}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><script data-pjax>
+  function butterfly_clock_anzhiyu_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock_anzhiyu')
+    if(parent_div_git) {
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var qweather_key = '2b55b2f0d39a4bc087688e2ae5fd95d3';
+  var gaud_map_key = 'e2b04289e870b005374ee030148d64fd&s=rsv3';
+  var baidu_ak_key = 'undefined';
+  var flag = 0;
+  var clock_rectangle = '113.34532,23.15624';
+  var clock_default_rectangle_enable = 'false';
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/242091884.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291114549.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-04-05</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/242091884.html&quot;);" href="javascript:void(0);" alt="">007.弹性盒</a><div class="blog-slider__text">三杯清茶，两盏淡酒，有风、有景、有知己，便胜却人间无数。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/242091884.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/1849774907.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291110463.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-03-25</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/1849774907.html&quot;);" href="javascript:void(0);" alt="">006.CSS3的概念和优势 🔜 字体引入</a><div class="blog-slider__text">三杯清茶，两盏淡酒，有风、有景、有知己，便胜却人间无数。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/1849774907.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/3459297216.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291114543.png" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-03-11</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/3459297216.html&quot;);" href="javascript:void(0);" alt="">005.宽高自定义 🔜 HTML5 新增表单标签</a><div class="blog-slider__text">三杯清茶，两盏淡酒，有风、有景、有知己，便胜却人间无数。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/3459297216.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/2921331606.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291110449.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-01-23</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/2921331606.html&quot;);" href="javascript:void(0);" alt="">004.元素显示类型 🔜 精灵图</a><div class="blog-slider__text">三杯清茶，两盏淡酒，有风、有景、有知己，便胜却人间无数。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/2921331606.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/1436700789.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291134034.gif" data-lazy-src="https://cdn.staticaly.com/gh/xy055878/picgoDrawingBed@master/imgs/202304291110454.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-01-13</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/1436700789.html&quot;);" href="javascript:void(0);" alt="">003.背景属性 🔜 溢出属性</a><div class="blog-slider__text">三杯清茶，两盏淡酒，有风、有景、有知己，便胜却人间无数。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/1436700789.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '1s');
+    arr[i].setAttribute('data-wow-offset', '100');
+    arr[i].setAttribute('data-wow-iteration', '2');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax src="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('gitZone');
+      var item_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 280px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
+
+    if( document.getElementById('gitZone') && (location.pathname ==='/about/'|| '/about/' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("https://gitcalendar.fomal.cc/api?糖丸",['#d9e0df', '#c6e0dc', '#a8dcd4', '#9adcd2', '#89ded1', '#77e0d0', '#5fdecb', '#47dcc6', '#39dcc3', '#1fdabe', '#00dab9'],'糖丸')
+    }
+  </script><!-- hexo injector body_end end --></body></html>
