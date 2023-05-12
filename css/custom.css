@@ -64,7 +64,7 @@ u {
     padding-bottom: 3.5px;
     text-underline-offset: 3.5px;
     text-decoration: none !important;
-    border-bottom: #963694 1.5px solid !important;
+    border-bottom: #41e43f 1.5px solid !important;
   }
   
   [data-theme="dark"] u {
@@ -73,7 +73,7 @@ u {
     padding-bottom: 3.5px;
     text-underline-offset: 3.5px;
     text-decoration: none !important;
-    border-bottom: #963694 1.5px solid;
+    border-bottom: #41e43f 1.5px solid;
   }
   
   
@@ -83,7 +83,7 @@ u {
     width: 0;
     bottom: -3px;
     height: 1.8px;
-    background-color: #963694;
+    background-color: #41e43f;
   }
   
   u:hover {
@@ -97,7 +97,7 @@ u {
   }
 
   em {
-    background-color: #c792ea !important;
+    background-color: #603aaa !important;
     color: white !important;
   
     padding: 0.15rem .4rem;
