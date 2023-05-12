@@ -47,11 +47,62 @@
 
 body {
     cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
-      default;
+        default;
+}
+
+a,
+img {
+    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
+        default;
+}
+
+
+/* 动态波浪线 */
+u {
+    color: #4c4948 !important;
+    position: relative;
+    padding-bottom: 3.5px;
+    text-underline-offset: 3.5px;
+    text-decoration: none !important;
+    border-bottom: #963694 1.5px solid !important;
   }
   
-  a,
-  img {
-    cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
-      default;
+  [data-theme="dark"] u {
+    position: relative;
+    color: #b6b6b6 !important;
+    padding-bottom: 3.5px;
+    text-underline-offset: 3.5px;
+    text-decoration: none !important;
+    border-bottom: #963694 1.5px solid;
+  }
+  
+  
+  u:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    bottom: -3px;
+    height: 1.8px;
+    background-color: #963694;
+  }
+  
+  u:hover {
+    border: none !important;
+    text-decoration: none !important;
+  }
+  
+  u:hover:before {
+    width: 100%;
+    transition: all 1s;
+  }
+
+  em {
+    background-color: #c792ea !important;
+    color: white !important;
+  
+    padding: 0.15rem .4rem;
+    border-radius: 4px;
+    margin: 0 4px;
+    line-height: 2;
+    font-style: normal !important;
   }
