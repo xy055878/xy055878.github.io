@@ -80,6 +80,12 @@
         <content type="html"><![CDATA[<ul><li>写hexo博客时报错<ul><li><code>TypeError: Cannot read properties of undefined (reading &#39;trim&#39;)</code></li></ul></li></ul><ul><li>原因<ul><li>hexo转义时候发生的错误，<ul><li>你文章中可能出现了<code>&#123;&#123;&#125;&#125;，&#123;% %&#125;</code>这种hexo无法转义的字符。</li></ul></li></ul></li></ul><div calss='anzhiyu-tag-link'><a class="tag-Link" target="_blank" href="https://blog.csdn.net/kuashijidexibao/article/details/105517937">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left" style="background-image: url(https://ts1.cn.mm.bing.net/th?id=ODLS.0b3ab3c6-5a37-48a2-9392-fd2793d6c3ba&w=32&h=32&qlt=95&pcl=fffffa&o=6&pid=1.2);"></div>        <div class="tag-link-right">            <div class="tag-link-title">CSDN</div>            <div class="tag-link-sitename">解决方法</div>        </div>        <i class="anzhiyufont anzhiyu-icon-angle-right"></i>    </div>    </a></div>]]></content>
       
       
+      <categories>
+          
+          <category> Hexo + Markdown </category>
+          
+      </categories>
+      
       
         <tags>
             
@@ -101,7 +107,7 @@
       
       <categories>
           
-          <category> 其他 </category>
+          <category> Hexo + Markdown </category>
           
       </categories>
       
@@ -126,7 +132,9 @@
       
       <categories>
           
-          <category> 其他 </category>
+          <category> 前端导论 </category>
+          
+          <category> CSS </category>
           
       </categories>
       
@@ -151,14 +159,14 @@
       
       <categories>
           
-          <category> 其他 </category>
+          <category> Hexo + Markdown </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Markdown和hexo </tag>
+            <tag> 总结Hexo &amp; Markdown </tag>
             
         </tags>
       
