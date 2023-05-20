@@ -1,0 +1,199 @@
+
+
+# URL
+
+# url: https://xy055878.github.io
+url: https://tany.top
+
+
+# 在 Hexo 中使用 Hexo-abbrlink生成唯一文章链接
+# abbrlink config
+permalink: posts/:abbrlink.html # 此处可以自己设置，也可以直接使用 :/abbrlink
+abbrlink:
+  alg: crc32 #support crc16(default) and crc32
+  rep: dec #support dec(default) and hex
+  drafts: false #(true)Process draft,(false)Do not process draft. false(default)
+  # Generate categories from directory-tree
+  # depth: the max_depth of directory-tree you want to generate, should > 0
+  auto_category:
+    enable: true #true(default)
+    depth: #3(default)
+    over_write: false
+  auto_title: false #enable auto title, it can auto fill the title by path
+  auto_date: false #enable auto date, it can auto fill the date by time today
+  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink.
+
+# permalink_defaults:
+# pretty_urls:
+#   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+#   trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+
+# 页面文章显示数量
+# Pagination
+## Set per_page to 0 to disable pagination
+
+index_generator:
+  path: ''
+  per_page: 12
+  order_by: -date
+
+per_page: 12
+pagination_dir: page
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# 新版的搜索插件
+# plugins:
+#   - hexo-algoliasearch
+
+# algolia:
+#   appId: "YLZKNIPGTL"
+#   apiKey: "5cb803d644bd0c9e349ca3777d104cf3"
+#   adminApiKey: "52c01c5252e24294f747f0fb23670b35"
+#   chunkSize: 5000
+#   indexName: "myBolgData"
+#   fields:
+#     - content:strip:truncate,0,500
+#     - excerpt:strip
+#     - gallery
+#     - permalink
+#     - photos
+#     - slug
+#     - tags
+#     - title
+
+
+# 去除英文的引号会被渲染为中文的引号
+marked:
+  smartypants: false
+
+# APlayer
+# https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md
+aplayer:
+  meting: true
+  asset_inject: false
+
+
+# envelope_comment
+# see https://akilar.top/posts/e2d3c450/
+envelope_comment:
+  enable: true #控制开关
+  custom_pic:
+    cover: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg #信笺头部图片
+    line: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png #信笺底部图片
+    beforeimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png # 信封前半部分
+    afterimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png # 信封后半部分
+  message: #信笺正文，多行文本，写法如下
+    - 有什么想问的？
+    - 有什么想说的？
+    - 有什么想吐槽的？
+    - 哪怕是有什么想吃的，都可以告诉我哦~
+  bottom: 自动书记人偶竭诚为您服务！ #仅支持单行文本
+  height: #1024px，信封划出的高度
+  path: #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
+  front_matter: #【可选】comments页面的 front_matter 配置
+    title: 留言板 - 请留下您宝贵的意见吧！
+    comments: true
+    top_img: false
+    aside: false
+    type: envelope
+
+# Site
+# "，每一个时段有每一个时段的颜色"
+title: 糖丸
+subtitle: 岁月不居，时节如流
+description: ————愿————<br/>一袭青衣，染就一树芳华，<br/>两袖月光，诉说绝世风雅。
+keywords: 糖,糖丸,糖丸的博客,糖丸的日记本
+author: 糖丸
+language: zh-CN
+timezone: "Asia/Shanghai"
+
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: anzhiyu
+# 提交到仓库
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: git
+  repository: https://github.com/xy055878/xy055878.github.io.git
+  branch: main
+
+
+# hexo-admin默认参数
+metadata:
+  author_id: 糖丸9587
+  categories:
+    - 前端导论
+    - CSS
+  top_group_index:
+  swiper_index:  
+  sticky: 
+  cover:
+  highlight_shrink:

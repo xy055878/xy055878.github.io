@@ -1,0 +1,70 @@
+
+- class_name: 闲言碎语
+  essay_list:
+    - content: 终于把事情干完了😁 # 标题
+      date: 2023-5-14  # 时间
+
+    - content: 歌曲推荐
+      date: 2023-5-05
+      aplayer: # 歌曲 
+        server: tencent # 服务（QQ音乐） # # 服务的详情 https://github.com/metowolf/MetingJS
+        id: 001FGQba3i10mw # id
+    - content: 新增了小游戏页面哦😄可以前往导航栏玩耍呀
+      date: 2023-5-17
+      from: 糖丸  # 用户来源
+    - content: 我来人间一趟，无惧雨雪风霜。却为碎银几两，自此漂泊异乡。奈何岁月渐长，父母两鬓沧桑。年少囊中羞涩，如今难说无妨。
+      date: 2023-5-20
+      from:  快手 # 用户来源
+   
+
+# - content:  # 标题
+#       date:   # 时间
+# - content: 歌曲推荐
+#       date: 2023-5-05
+#       aplayer: # 歌曲 
+#         server: tencent # 服务（QQ音乐） # # 服务的详情 https://github.com/metowolf/MetingJS
+#         id: 001FGQba3i10mw # id
+#         # netease（网易云音乐），tencent（QQ音乐），kugou（酷狗音乐），xiami（虾米音乐），baidu（百度音乐）
+# - content:  # 标题
+#   date:  # 时间
+#   link:   # 链接
+# - content: 
+#   date: 
+#   from:   # 用户来源
+# - content: 
+#   date: 
+#   image: # 图片
+#     - 
+# - content: 歌曲推荐
+#   date:  
+#   aplayer: # 歌曲 
+#     server: tencent # 服务 # # 服务的详情 https://github.com/metowolf/MetingJS
+#     # netease（网易云音乐），tencent（QQ音乐），kugou（酷狗音乐），xiami（虾米音乐），baidu（百度音乐）
+#     id:   # id
+
+
+
+
+    # ----------------------预留----------------------------
+    # - content: 音乐支持了参数设置自定义歌单 # 标题
+    #   date: 2023/01/02 # 时间
+    #   link: https://anzhiy.cn/music/?id=7269231710&server=tencent # 链接
+    # - content: 搜索🔍支持缩略图显示啦（默认获取文章内容的第一张图片）
+    #   date: 2022/10/23
+    #   from: 糖丸 # 用户来源
+    # - content: 遇见彩虹🌈吃定彩虹
+    #   date: 2022/10/23
+    #   image: # 图片
+    #     - https://bu.dusays.com/2023/04/09/64329399e285d.webp
+    #     - https://bu.dusays.com/2023/04/09/64329399aa3bc.webp
+    #     - https://bu.dusays.com/2023/04/09/6432939996dd7.webp
+    # - content: 歌曲推荐
+    #   date: 2022/10/23 
+    #   aplayer: # 歌曲 
+    #     server: tencent # 服务（QQ音乐） # # 服务的详情 https://github.com/metowolf/MetingJS
+    #     id: 001FGQba3i10mw # id
+    #     # netease（网易云音乐），tencent（QQ音乐），kugou（酷狗音乐），xiami（虾米音乐），baidu（百度音乐）
+    # # - content:  # 标题
+
+
+

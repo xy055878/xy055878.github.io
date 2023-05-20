@@ -1,0 +1,581 @@
+# 当友链数目超过 50 以后会触发，与博主共同进步板块，可以自行配置 hundredSuffix: "!w120",
+# 该参数可以解决共同进步板块头像质量问题，配置后共同进步板块的头像会添加该后缀。
+
+- class_name: 推荐博客栏目 # 网站类别
+  flink_style: flexcard # 样式 flexcard || butterfly
+  link_list:
+    - name: 安知鱼`Blog # 名称
+      # hundredSuffix: "" # 当友链数目超过 50 以后会触发，与博主共同进步板块
+      link: https://anzhiy.cn/ # 网站地址
+      avatar: https://img02.anzhiy.cn/adminuploads/1/2022/09/15/63232b7d91d22.jpg
+      descr: 生活明朗，万物可爱 # 描述
+      # 背景图可以自动获取
+      siteshot: https://npm.elemecdn.com/butterfly-blog@1.1.6/img/post/common/anzhiy.cn.jpg # 背景图
+
+    - name: 张洪Heo # 名称
+      link: https://blog.zhheo.com/ # 网站地址
+      avatar: https://bu.dusays.com/2022/12/28/63ac2812183aa.png
+      descr: 分享设计与科技生活 # 提示信息
+      # siteshot: https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/6311fc3959f82.webp # 背景图
+
+    - name: guole's Blog
+      link: https://guole.fun/
+      avatar: https://guole.fun/img/gl.jpg
+      descr: 保持理智，相信明天。
+
+    - name: Ethan.Tzy
+      link: https://tzy1997.com/
+      avatar: https://bu.dusays.com/2022/05/02/626f92e193879.jpg
+      descr: 古今之成大事者，不惟有超世之才，亦必有坚忍不拔之志
+      # screenshot: https://bu.dusays.com/2022/06/01/6296ceb2e4935.jpg
+
+    - name: Fomalhaut🥝
+      link: https://www.fomal.cc/
+      avatar: https://www.fomal.cc/assets/avatar.webp
+      descr: Future is now 🍭🍭🍭
+      siteshot: https://source.fomal.cc/siteshot/www.fomal.cn.jpg
+    # - name:   # 名称
+    #   link:   # 网站地址
+    #   avatar: # 头像
+    #   descr:  # 描述
+    #   siteshot: #背景图 -- 有些可以自动获取
+
+    # - name:   # 名称
+    #   link:   # 网站地址
+    #   avatar: # 头像
+    #   descr:  # 描述
+    #   siteshot: #背景图 -- 有些可以自动获取
+
+- class_name: 网址导航栏目 # 网站类别
+
+  flink_style: butterfly # 样式 flexcard || butterfly
+  link_list:
+    - name: 网址导航 # 名称
+      link: https://tzy1997.com/nav/index.html # 网站地址
+      avatar: https://bu.dusays.com/2022/05/02/626f92e193879.jpg # 头像
+      descr: 唐先森的网址收藏 # 描述
+
+    - name: 程序员导航-CXY521 # 名称
+      link: https://cxy521.com/ # 网站地址
+      avatar: http://cxy521.com/static/img/logo.png # 头像
+      descr: 程序员一站式导航 #描述
+
+    - name: 爱达杂货铺 # 名称
+      link: https://www.widiz.com/sites/7104.html # 网站地址
+      avatar: https://www.widiz.com/wp-content/uploads/2021/06/minilogo.png # 头像
+      descr: 爱达杂货铺收集精品网络免费资源、包括免费视频、BT种子磁力搜索、网盘搜索、软件、网站和各类资源，欢迎前来探索。 #描述
+
+    # - name:   # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  #描述
+
+    # - name:   # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  #描述
+
+    # - name:   # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  #描述
+
+- class_name: 代码托管栏目 # 网站类别
+  flink_style: butterfly # 样式 flexcard || butterfly
+  link_list:
+    - name: Github # 名称
+      link: https://github.com/ # 网站地址
+      avatar: https://ts4.cn.mm.bing.net/th?id=ODLS.fe916855-7a5a-4f44-b52e-1c5c31f0329d&w=32&h=32&qlt=91&pcl=fffffa&o=6&pid=1.2 # 头像
+      descr: 全球最大的面向开源及私有软件项目的托管平台。 #描述
+
+    # - name:   # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  #描述
+
+    # - name:   # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  #描述
+
+    # - name:   # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  #描述
+
+    # - name:   # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  #描述
+
+- class_name: 前端学习栏目 # 网站类别
+
+- class_name: <h3>前端学习路线</h3> # 网站类别
+  flink_style: butterfly # 样式 flexcard || butterfly
+  link_list:
+    - name: 鱼皮编程学习路线 # 名称
+      link: https://gitee.com/liyupi/code-roadmap # 网站地址
+      avatar: https://foruda.gitee.com/avatar/1676989690111756581/1798405_yupi_1611646747.png!avatar200 # 头像
+      descr: 励志打造最贴心的编程学习路线 #描述
+
+    # - name:   # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  #描述
+
+- class_name: <h3>前端知识文档</h3> # 网站类别
+  flink_style: butterfly # 样式 flexcard || butterfly
+  link_list:
+    - name: 菜鸟教程 # 名称
+      link: https://www.runoob.com/ # 网站地址
+      avatar: https://ts1.cn.mm.bing.net/th?id=ODLS.cc1244f4-c576-40dc-8423-06895c0f5444&w=32&h=32&o=6&pid=13.1 # 头像
+      descr: 提供了编程的基础技术教程, 介绍了HTML、CSS、Javascript、Python，Java，Ruby，C，PHP , MySQL等各种编程语言的基础知识。 #描述
+
+    - name: 现代 JavaScript 教程 # 名称
+      link: https://zh.javascript.info/ # 网站地址
+      avatar: https://zh.javascript.info/img/favicon/apple-touch-icon-precomposed.png # 头像
+      descr: 以最新的 JavaScript 标准为基准。通过简单但足够详细的内容，为你讲解从基础到高阶的 JavaScript 相关知识。 #描述
+
+- class_name: 工具栏目 # 网站类别
+
+- class_name: <h3>综合工具箱</h3> # 网站类别
+  flink_style: butterfly # 样式 flexcard || butterfly
+  link_list:
+    - name: 兔二工具 # 名称
+      link: https://www.amp360.net/ # 网站地址
+      avatar: https://www.amp360.net/assets/icon/favicon.png # 头像
+      descr: 一个拥有很多工具的网站 # 提示信息
+
+    - name: 在线工具-你的工具箱 # 名称
+      link: https://tool.lu/ # 网站地址
+      avatar: https://tool.lu/favicon.ico # 头像
+      descr: 另一个拥有很多工具的网站 # 描述
+
+    - name: ToolTT在线工具箱 # 名称
+      link: https://tooltt.com/ # 网站地址
+      avatar: https://tooltt.com/static/images/icon/tooltt.jpg # 头像
+      descr: 一个各种文件转化的工具箱 #描述
+
+- class_name: <h3>编程</h3> # 网站类别
+
+  flink_style: butterfly # 样式 flexcard || butterfly
+  link_list:
+    - name: JS在线编辑器 # 名称
+      link: http://jsrun.net/new # 网站地址
+      avatar: data:image/png;base64,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 # 头像
+      descr: JS在线编辑器,JS在线运行,在线演示,调试测试代码 #描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  #描述
+
+    # - name:   # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  #描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  #描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  #描述
+
+- class_name: <h3>图片</h3> # 网站类别
+  flink_style: butterfly # 样式 flexcard || butterfly
+  link_list:
+    - name: Images Tool v3.0 # 名称
+      link: https://imagestool.com/webp2jpg-online/ # 网站地址
+      avatar: https://imagestool.com/webp2jpg-online/favicon.png # 头像
+      descr: 这是一个其他图片压缩网站 # 描述
+
+    - name: Images Tool # 名称
+      link: https://imagestool.com/zh_CN/compress-images.html # 网站地址
+      avatar: https://imagestool.com/webp2jpg-online/favicon.png # 头像
+      descr: 这是一个gif图片压缩网站 # 描述
+
+    - name: bgsub # 名称
+      link: https://www.aigei.com/bgremover/ # 网站地址
+      avatar: https://ts4.cn.mm.bing.net/th?id=ODLS.ad0f0312-f028-4b23-9dd0-85eb345cc510&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2 # 头像
+      descr: 在线图片去底工具 - 将纯色背景的图片转换为背景透明的图片 # 描述
+
+    - name: 互联二维码 # 名称
+      link: https://www.hlcode.cn/?p=bd-cs-scmf-20220310-2&bd_vid=11734063912170230821 # 网站地址
+      avatar: https://ts1.cn.mm.bing.net/th?id=ODLS.e8fc81c9-0cf7-4132-9a54-fd10d9c1c915&w=32&h=32&o=6&pid=13.1 # 头像
+      descr: 美化二维码、各种文件的二维码生成。# 描述
+
+    # - name:  # 名称
+    #   link:   # 网站地址
+    #   avatar:   # 头像
+    #   descr:   # 描述
+
+    # - name:  # 名称
+    #   link:   # 网站地址
+    #   avatar:   # 头像
+    #   descr:   # 描述
+
+    # - name:  # 名称
+    #   link:   # 网站地址
+    #   avatar:   # 头像
+    #   descr:   # 描述
+
+    # - name:  # 名称
+    #   link:   # 网站地址
+    #   avatar:   # 头像
+    #   descr:   # 描述
+
+- class_name: <h3>视频</h3> # 网站类别
+  flink_style: butterfly # 样式 flexcard || butterfly
+  link_list:
+    - name: Runway # 名称
+      link: https://runwayml.com/ # 网站地址
+      avatar: https://ts3.cn.mm.bing.net/th?id=ODLS.ce078948-4461-4791-9afc-edebd777d7e4&w=16&h=16&o=6&pid=1.2 # 头像
+      descr: 视频擦除 # 描述
+
+    # - name:  # 名称
+    #   link:   # 网站地址
+    #   avatar:   # 头像
+    #   descr:   # 描述
+
+- class_name: <h3>文档</h3> # 网站类别
+  flink_style: butterfly # 样式 flexcard || butterfly
+  link_list:
+    - name: I Love PDF # 名称
+      link: https://www.ilovepdf.com/zh-cn # 网站地址
+      avatar: https://www.ilovepdf.com/img/favicons-pdf/favicon-32x32.png # 头像
+      descr: 一个完全免费、便捷、强大的PDF在线工具 # 描述
+
+    - name: Kalvin在线工具 # 名称
+      link: http://patorjk.com/software/taag/#p=author&h=0&f=Doom&t=tany # 网站地址
+      avatar: https://ts3.cn.mm.bing.net/th?id=ODLS.e081e190-74da-4aad-85ab-fa313cdb0613&w=16&h=16&o=6&pid=1.2 # 头像
+      descr: ASCII字符画|字符画生成器 - # 描述
+
+    - name: MotionGo # 名称
+      link: http://motion.yoo-ai.com/ # 网站地址
+      avatar: data:image/jpeg;base64,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 # 头像
+      descr: AI自动生成PPT # 描述
+
+    - name: 周报生成器 # 名称
+      link: https://weeklyreport.avemaria.fun/zh # 网站地址
+      avatar: data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIGNsYXNzPSIiPjxyZWN0IGlkPSJyNCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHg9IjAiIHk9IjAiIHJ4PSIxMjgiIGZpbGw9InVybCgjcjUpIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMCIgc3Ryb2tlLW9wYWNpdHk9IjEwMCUiIHBhaW50LW9yZGVyPSJzdHJva2UiPjwvcmVjdD48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgZmlsbD0idXJsKCNyNikiIHJ4PSIxMjgiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogb3ZlcmxheTsiPjwvcmVjdD48Y2xpcFBhdGggaWQ9ImNsaXAiPjx1c2UgeGxpbms6aHJlZj0iI3I0Ij48L3VzZT48L2NsaXBQYXRoPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0icjUiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBncmFkaWVudFRyYW5zZm9ybT0icm90YXRlKDE4MCkiIHN0eWxlPSJ0cmFuc2Zvcm0tb3JpZ2luOiBjZW50ZXIgY2VudGVyOyI+PHN0b3Agc3RvcC1jb2xvcj0iIzVDNUM1QyI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzBGMTAxNSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJyNiIgY3g9IjAiIGN5PSIwIiByPSIxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSgyNTYpIHJvdGF0ZSg5MCkgc2NhbGUoNTEyKSI+PHN0b3Agc3RvcC1jb2xvcj0id2hpdGUiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IndoaXRlIiBzdG9wLW9wYWNpdHk9IjAiPjwvc3RvcD48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48c3ZnIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzUyIiBoZWlnaHQ9IjM1MiIgeD0iODAiIHk9IjgwIiBhbGlnbm1lbnQtYmFzZWxpbmU9Im1pZGRsZSIgc3R5bGU9ImNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7Ij48cGF0aCBkPSJNMTMuOTk4IDQuMDg3SDIuMDAyTTkuNSAxMi4wODdoLTNNMTEuNSA4LjA4N2gtNyIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg+PC9zdmc+PC9zdmc+ # 头像
+      descr: 生成完整周报 →. 请勿上传过于隐私的工作内容 # 描述
+
+    - name: Convertio # 名称
+      link: https://convertio.co/zh/font-converter/ # 网站地址
+      avatar: https://ts1.cn.mm.bing.net/th?id=ODLS.50b62dd1-d049-4d8d-8478-e67cd22757a1&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2 # 头像
+      descr: 在线转换任何格式的字体文件 # 描述
+
+    - name: FontConverter # 名称
+      link: https://fontconverter.com/zh/ # 网站地址
+      avatar: https://fontconverter.com/images/fontconverter/logo.svg # 头像
+      descr: 此字体转换器允许您将许多字体格式（包括稀有格式）转换为当今最流行的格式，例如 TTF、OTF、WOFF 等。 # 描述
+
+    - name: 在线字体裁剪工具 # 名称
+      link: https://font-subset.disidu.com/ # 网站地址
+      avatar: https://font-subset.disidu.com/jiandao.png # 头像
+      descr: 在线字体压缩工具 # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:   # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:   # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:   # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:   # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:   # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:   # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:   # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:   # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:   # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:   # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:   # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:   # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:   # 头像
+    #   descr:  # 描述
+
+- class_name: <h3>生活</h3> # 网站类别
+  flink_style: butterfly # 样式 flexcard || butterfly
+  link_list:
+    - name: 万物皆可对比 # 名称
+      link: https://versus.com/cn # 网站地址
+      avatar: https://ts1.cn.mm.bing.net/th?id=ODLS.c0ce75e6-9cf3-47a8-9574-87c7924b4161&w=32&h=32&o=6&pid=13.1 # 头像
+      descr: 从比较手机到比较 城市，脱去繁杂的营销外壳，呈现最真实的一面，让您轻松掌握一切资讯。 # 描述
+
+    - name: 亲戚计算器 # 名称
+      link: https://tool.lu/relationship/ # 网站地址
+      avatar: data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPuW3peWFtzwvdGl0bGU+CiAgICA8ZyBpZD0i5bel5YW3IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0i5bel5YW3566xIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxOS4wMDAwMDAsIDE5LjAwMDAwMCkiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJQYXRoIiBmaWxsPSIjMjAyNDI1IiBvcGFjaXR5PSIwLjAxIiBwb2ludHM9IjAgMCA0NzMgMCA0NzMgNDczIDAgNDczIj48L3BvbHlnb24+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNTcuNjY2NjY3LDMxLjUzMzMzMzUgQzE0MC4yNTEyODgsMzEuNTMzMzMzNSAxMjYuMTMzMzMzLDQ1LjY1MTI4NzcgMTI2LjEzMzMzMyw2My4wNjY2NjY1IEwxMjYuMTMzMzMzLDE1Ny42NjY2NjcgQzEyNi4xMzMzMzMsMTc1LjA4MjA0NiAxNDAuMjUxMjg3LDE4OS4yIDE1Ny42NjY2NjcsMTg5LjIgTDMxNS4zMzMzMzMsMTg5LjIgQzMzMi43NDg3MTMsMTg5LjIgMzQ2Ljg2NjY2NywxNzUuMDgyMDQ2IDM0Ni44NjY2NjcsMTU3LjY2NjY2NyBMMzQ2Ljg2NjY2Nyw2My4wNjY2NjY1IEMzNDYuODY2NjY3LDQ1LjY1MTI4NzcgMzMyLjc0ODcxMiwzMS41MzMzMzM1IDMxNS4zMzMzMzMsMzEuNTMzMzMzNSBMMTU3LjY2NjY2NywzMS41MzMzMzM1IFogTTE1Ny42NjY2NjcsNjMuMDY2NjY2NSBMMzE1LjMzMzMzMyw2My4wNjY2NjY1IEwzMTUuMzMzMzMzLDE1Ny42NjY2NjcgTDE1Ny42NjY2NjcsMTU3LjY2NjY2NyBMMTU3LjY2NjY2Nyw2My4wNjY2NjY1IFogTTMxLjUzMzMzMzUsMjgzLjggTDMxLjUzMzMzMzUsNDI1LjcgQzMxLjUzMzMzMzUsNDM0LjQwNzY4OSAzOC41OTIzMTA1LDQ0MS40NjY2NjcgNDcuMyw0NDEuNDY2NjY3IEw0MjUuNyw0NDEuNDY2NjY3IEM0MzQuNDA3Njg5LDQ0MS40NjY2NjcgNDQxLjQ2NjY2Nyw0MzQuNDA3Njg5IDQ0MS40NjY2NjcsNDI1LjcgTDQ0MS40NjY2NjcsMjgzLjggQzQ0MS40NjY2NjcsMjc1LjA5MjMxMSA0MzQuNDA3Njg5LDI2OC4wMzMzMzMgNDI1LjcsMjY4LjAzMzMzMyBMNDcuMywyNjguMDMzMzMzIEMzOC41OTIzMTA1LDI2OC4wMzMzMzMgMzEuNTMzMzMzNSwyNzUuMDkyMzExIDMxLjUzMzMzMzUsMjgzLjggWiIgaWQ9IlNoYXBlIiBmaWxsPSIjMDA5QTYxIj48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0zMS41MzMzMzM1LDEyNi4xMzMzMzMgQzMxLjUzMzMzMzUsMTIxLjk1MTc1MyAzMy4xOTQ0NTk1LDExNy45NDE0NCAzNi4xNTEyODMsMTE0Ljk4NDYxNiBDMzkuMTA4MTA2NiwxMTIuMDI3NzkzIDQzLjExODQyLDExMC4zNjY2NjcgNDcuMywxMTAuMzY2NjY3IEw0MjUuNywxMTAuMzY2NjY3IEM0MjkuODgxNTgsMTEwLjM2NjY2NyA0MzMuODkxODkzLDExMi4wMjc3OTMgNDM2Ljg0ODcxNywxMTQuOTg0NjE2IEM0MzkuODA1NTQxLDExNy45NDE0NCA0NDEuNDY2NjY3LDEyMS45NTE3NTMgNDQxLjQ2NjY2NywxMjYuMTMzMzMzIEw0NDEuNDY2NjY3LDIzNi41IEM0NDEuNDY2NjY3LDI0NS4yMDc2ODkgNDM0LjQwNzY4OSwyNTIuMjY2NjY3IDQyNS43LDI1Mi4yNjY2NjcgTDQ3LjMsMjUyLjI2NjY2NyBDMzguNTkyMzEwNSwyNTIuMjY2NjY3IDMxLjUzMzMzMzUsMjQ1LjIwNzY4OSAzMS41MzMzMzM1LDIzNi41IEwzMS41MzMzMzM1LDEyNi4xMzMzMzMgWiIgaWQ9IlBhdGgiIGZpbGw9IiNGRkFBNDQiPjwvcGF0aD4KICAgICAgICAgICAgPHBhdGggZD0iTTE3My40MzMzMzMsMjM2LjUgQzE3My40MzMzMzMsMjI3Ljc5MjMxMSAxODAuNDkyMzExLDIyMC43MzMzMzMgMTg5LjIsMjIwLjczMzMzMyBMMjgzLjgsMjIwLjczMzMzMyBDMjkyLjUwNzY4OSwyMjAuNzMzMzMzIDI5OS41NjY2NjcsMjI3Ljc5MjMxMSAyOTkuNTY2NjY3LDIzNi41IEwyOTkuNTY2NjY3LDI4My44IEMyOTkuNTY2NjY3LDI5Mi41MDc2ODkgMjkyLjUwNzY4OSwyOTkuNTY2NjY3IDI4My44LDI5OS41NjY2NjcgTDE4OS4yLDI5OS41NjY2NjcgQzE4MC40OTIzMTEsMjk5LjU2NjY2NyAxNzMuNDMzMzMzLDI5Mi41MDc2ODkgMTczLjQzMzMzMywyODMuOCBMMTczLjQzMzMzMywyMzYuNSBMMTczLjQzMzMzMywyMzYuNSBaIiBpZD0iUGF0aCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+ # 头像
+      descr: 快速简单的查询家庭亲戚称呼 # 描述
+
+    # - name:  # 名称
+    #   link: # 网站地址
+    #   avatar: # 头像
+    #   descr: # 描述
+
+    # - name:  # 名称
+    #   link: # 网站地址
+    #   avatar: # 头像
+    #   descr: # 描述
+
+- class_name: 技能学习栏目 # 网站类别
+
+- class_name: <h3>生活栏目</h3> # 网站类别
+
+  flink_style: butterfly # 样式 flexcard || butterfly
+  link_list:
+    - name: wikihow(中文版) # 名称
+      link: https://zh.wikihow.com/%E9%A6%96%E9%A1%B5 # 网站地址
+      avatar: https://ts3.cn.mm.bing.net/th?id=ODLS.4fbb2291-9e91-4766-ac3f-43903952796a&w=32&h=32&o=6&pid=13.1 # 头像
+      descr: 一个可以学很多生活常识的网站 # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  # 描述
+
+- class_name: <h3>其他栏目</h3> # 网站类别
+  flink_style: butterfly # 样式 flexcard || butterfly
+  link_list:
+    - name: IT DOG # 名称
+      link: https://www.itdog.cn/ping/ # 网站地址
+      avatar: https://www.itdog.cn/frame/images/logo.png?v=20230301A # 头像
+      descr: 网站速度检测 # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  # 描述
+
+- class_name: 资源栏目 # 网站类别
+
+- class_name: <h3>图片</h3> # 网站类别
+  flink_style: butterfly # 样式 flexcard || butterfly
+  link_list:
+    - name: 逗比拯救世界 # 名称
+      link: https://www.dbbqb.com/ # 网站地址
+      avatar: https://www.dbbqb.com/favicon.ico # 头像
+      descr: 专业的表情包搜索网站 # 描述
+
+    - name: 8个高清二次元&动漫壁纸网站推荐 # 名称
+      link: # 网站地址
+      avatar: https://ts4.cn.mm.bing.net/th?id=ODLS.9882fc6b-c6e0-4e80-808f-2f15e1d990f0&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2 # 头像
+      descr: 今天再分享些「高清二次元&动漫壁纸网站」，2K~8 # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  # 描述
+
+- class_name: <h3>图标</h3> # 网站类别
+  flink_style: butterfly # 样式 flexcard || butterfly
+  link_list:
+    - name: iconfont # 名称
+      link: https://www.iconfont.cn/ # 网站地址
+      avatar: https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/DM_20230507173151_001.svg # 头像
+      descr: 阿里妈妈MUX倾力打造的矢量图标管理、交流平台 # 描述
+
+- class_name: <h3>音乐</h3> # 网站类别
+  link_list:
+    - name: QQ音乐 # 名称
+      link: https://y.qq.com/n/ryqq/category?t1=3418 # 网站地址
+      avatar: https://ts2.cn.mm.bing.net/th?id=ODLS.07d947f8-8fdd-4949-8b9a-be5283268438&w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2 # 头像
+      descr: 分类歌单-千万正版音乐海量无损曲库新歌热歌天天畅听。 # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  # 描述
+
+    # - name:  # 名称
+    #   link:  # 网站地址
+    #   avatar:  # 头像
+    #   descr:  # 描述
+
+- class_name: <h3>字符</h3> # 网站类别
+  flink_style: butterfly # 样式 flexcard || butterfly
+  link_list:
+    - name: EmojiAll # 名称
+      link: https://www.emojiall.com/zh-hans/all-emojis?type=normal # 网站地址
+      avatar: https://ts3.cn.mm.bing.net/th?id=ODLS.9481e640-a751-4e35-a176-8e16499a8f60&w=32&h=32&o=6&pid=13.1 # 头像
+      descr: 基础Emoji(1879) | # 描述
+
+    - name: EmojiXD # 名称
+      link: https://emojixd.com/l # 网站地址
+      avatar: https://ts3.cn.mm.bing.net/th?id=ODLS.8aa2c996-d09e-4fb6-94a5-94226528e829&w=32&h=32&o=6&pid=13.1 # 头像
+      descr: 🤣 Emoji表情大全，颜文字百科 💌 # 描述
+
+    # - name: # 名称
+    #   link: # 网站地址
+    #   avatar: # 头像
+    #   descr: # 描述
+
+    # - name: # 名称
+    #   link: # 网站地址
+    #   avatar: # 头像
+    #   descr: # 描述
+
+# - class_name: 字符 # 网站类别
+#   flink_style: butterfly # 样式 flexcard || butterfly
+#   link_list:
+
+# - name: # 名称
+#   link: # 网站地址
+#   avatar: # 头像
+#   descr: # 描述
+
+# - name: # 名称
+#   link: # 网站地址
+#   avatar: # 头像
+#   descr: # 描述
+
+# - name: # 名称
+#   link: # 网站地址
+#   avatar: # 头像
+#   descr: # 描述
+
+# - name: # 名称
+#   link: # 网站地址
+#   avatar: # 头像
+#   descr: # 描述
+
+- class_name: 上帝之眼 # 网站类别
+  flink_style: butterfly # 样式 flexcard || butterfly
+  link_list:
+    - name: Google Earth # 名称
+      link: https://www.google.com/intl/zh-CN/earth/ # 网站地址
+      avatar: https://www.gstatic.com/earth/00-favicon.ico # 头像
+      descr: 世界上最详尽的地球仪 # 描述
+
+
+    # - name: # 名称
+    #   link: # 网站地址
+    #   avatar: # 头像
+    #   descr: # 描述
+
+    # - name: # 名称
+    #   link: # 网站地址
+    #   avatar: # 头像
+    #   descr: # 描述
+
+    # - name: # 名称
+    #   link: # 网站地址
+    #   avatar: # 头像
+    #   descr: # 描述
+
+    # - name: # 名称
+    #   link: # 网站地址
+    #   avatar: # 头像
+    #   descr: # 描述
+
+    # - name: # 名称
+    #   link: # 网站地址
+    #   avatar: # 头像
+    #   descr: # 描述
+
+    # - name: # 名称
+    #   link: # 网站地址
+    #   avatar: # 头像
+    #   descr: # 描述
+# - class_name: 推荐博客 # 网站类别
+#   flink_style: flexcard # 样式 flexcard || butterfly
+#   link_list:
+#     - name:  # 名称
+#       link:  # 网站地址
+#       avatar:  # 头像
+#       descr:  # 描述
+#       siteshot:  #背景图 -- 有些可以自动获取

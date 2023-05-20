@@ -1,0 +1,85 @@
+- class_name: 精美壁纸 # string 【必须】页面类 
+  path_name: /ExquisiteWallpaper # url 【必须】当前相册路径
+  type: 2 # number【必须】当前相册页面样式类型
+  description: 这里有我收藏的一些好看的壁纸，快邀请你的小伙伴来看看吧😎。 # string【必须】当前相册描述
+  cover: https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051922051.jpg # url【必须】当前相册 cover 图片
+  rowHeight: 220 # number【可选】仅当 type 为 2 时有效，当前相册 rowHeight
+  limit: 10 # number【可选】仅当 type 为 2 时有效，当前相册 一次懒加载的数量
+  lazyload: true # boolean【可选】仅当 type 为 2 时有效，当前相册 lazyload 是否开启懒加载，默认懒加载为滚动懒加载，type 为 1 时懒加载不可关闭。
+  btnLazyload: false # boolean【可选】仅当 type 为 2 且 lazyload 开启 时有效，当前相册 lazyload 懒加载的方式，默认为滚动懒加载，开启本选项后为按钮点击懒加载。
+  url: false  # url【可选】仅当 type 为 2 时有效，可以加载远程的 json 数据。
+  album_list: # list【必须】当前相册内图片列表
+    - date: 2023-5-12  # date【必须】当前图片创建时间，仅当 type 为 1 时有效
+      content:  # string 【可选】当前图片描述内容
+      address: 精美壁纸 # string【必须】当前图片地址标签
+      from: # string 【可选】当前图片的创建人，未填写则不显示
+      image: # list【必须】当前图片集，可以多张
+        # 已用
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051845518.png
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051845519.png
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051905848.png
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051905850.png
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051905851.png
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051915673.png
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051915674.png
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051915675.png
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051915676.png
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051915677.png
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051915678.png
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051915679.png
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051915682.png
+
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926046.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926048.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926049.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926050.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926052.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926053.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926054.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926055.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926058.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926060.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926061.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926062.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926063.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926064.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926066.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926068.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926069.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926070.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926071.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926073.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926074.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926075.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926076.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926077.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926078.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926079.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926080.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926081.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926082.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926083.jpg
+        - https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051926084.jpg
+
+# - class_name: 精美壁纸 # string 【必须】页面类 
+#   path_name: /ExquisiteWallpaper # url 【必须】当前相册路径
+#   type: 1 # number【必须】当前相册页面样式类型
+#   description: 这里有我收藏的一些好看的壁纸，快邀请你的小伙伴来看看吧😎。 # string【必须】当前相册描述
+#   cover: https://cdn.staticaly.com/gh/xy055878/picGoDrawingBed@main/imgs/202305051922051.jpg # url【必须】当前相册 cover 图片
+#   rowHeight: 220 # number【可选】仅当 type 为 2 时有效，当前相册 rowHeight
+#   limit: 10 # number【可选】仅当 type 为 2 时有效，当前相册 一次懒加载的数量
+#   lazyload: true # boolean【可选】仅当 type 为 2 时有效，当前相册 lazyload 是否开启懒加载，默认懒加载为滚动懒加载，type 为 1 时懒加载不可关闭。
+#   btnLazyload: false # boolean【可选】仅当 type 为 2 且 lazyload 开启 时有效，当前相册 lazyload 懒加载的方式，默认为滚动懒加载，开启本选项后为按钮点击懒加载。
+#   url: false  # url【可选】仅当 type 为 2 时有效，可以加载远程的 json 数据。
+#   album_list: # list【必须】当前相册内图片列表
+#     - date: 2023-5-12 16:16:06 # date【必须】当前图片创建时间,仅当 type 为 1 时有效
+#       content:  # string 【可选】当前图片描述内容
+#       address: 精美壁纸 # string【必须】当前图片地址标签
+#       from: # string 【可选】当前图片的创建人，未填写则不显示
+#       image: # list【必须】当前图片集，可以多张  
+
+#     - date: 2023-5-12 16:16:06 # date【必须】当前图片创建时间
+#       content:  # string 【可选】当前图片描述内容
+#       address: 精美壁纸 # string【必须】当前图片地址标签
+#       from: # string 【可选】当前图片的创建人，未填写则不显示
+#       image: # list【必须】当前图片集，可以多张  
