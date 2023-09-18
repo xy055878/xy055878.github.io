@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>001.git pull --tags origin main</title>
+      <link href="/posts/2327915666.html"/>
+      <url>/posts/2327915666.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="报错">报错</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; git pull --tags origin main kex_exchange_identification: <span class="built_in">read</span>: Software caused connection abort </span><br><span class="line">banner exchange: Connection to 20.205.243.160 port 22: Software caused connection abort </span><br><span class="line">fatal: Could not <span class="built_in">read</span> from remote repository.  </span><br><span class="line"></span><br><span class="line">Please make sure you have the correct access rights and the repository exists.</span><br></pre></td></tr></table></figure><h2 id="解决">解决</h2><p>在项目目录下输入如下命令，重新建立连接，这里会在次输入相关远程仓库的账号密码。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin 路径</span><br></pre></td></tr></table></figure><ul><li><p>🍒例如</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin https://github.com/xy055878/hexo-BlogSourceCode.git</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> git报错 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>002.解决GitHub图床图片无法显示</title>
       <link href="/posts/2389159269.html"/>
       <url>/posts/2389159269.html</url>
