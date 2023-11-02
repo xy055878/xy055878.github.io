@@ -4,6 +4,48 @@
   
     
     <entry>
+      <title>002.JS之Hello World</title>
+      <link href="/posts/2599898291.html"/>
+      <url>/posts/2599898291.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="alert">alert()</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;hello world&#x27;</span>)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><p><img src="https://pic.tany.top/imgs/image-20231102184841204.png" alt="image-20231102184841204"></p><h2 id="document-write">document.write()</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="title function_">write</span>(<span class="string">&#x27;hello world&#x27;</span>)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><p><img src="https://pic.tany.top/imgs/image-20231102185031963.png" alt="image-20231102185031963"></p><h2 id="console-log">console.log()</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;hello world&#x27;</span>)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><p><img src="https://pic.tany.top/imgs/image-20231102185126122.png" alt="image-20231102185126122"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端导论 </category>
+          
+          <category> JavaScript教程 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>005.介词</title>
+      <link href="/posts/974830156.html"/>
+      <url>/posts/974830156.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、介词的含义">一、介词的含义</h2><p>介词{<font color='#FF2D00'>prep.</font>}又称为前置词，</p><ul><li>是一种虚词，用于表示句子中{词<font color='#00b16a'>与</font>词}之间的关系。</li><li>🔔提示<ul><li>介词不能单独使用，<ul><li>只有在加上宾语从而构成 ➾ 介词短语时，</li><li>才可以在句子里充当语法成分 ➾ 介词 ＋ 名词/动词ing。</li></ul></li></ul></li></ul><h2 id="二、常用介词的用法">二、常用介词的用法</h2><h3 id="1-表示时间的介词">1)表示时间的介词</h3><ul><li><p>at</p><ul><li>表示在…时间点。<ul><li>🍒例如<ol><li>at 4:30<ul><li>在4:30</li></ul></li><li>at Christmas<ul><li>在圣诞节</li></ul></li><li>at noon/dawn/midnight<ul><li>在中午/黎明/午夜</li></ul></li><li>at theend/beginning/age of<ul><li>在最后/开始/</li></ul></li></ol></li></ul></li></ul></li><li></li></ul><ol start="2"><li></li><li></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 升本英语 </category>
+          
+          <category> 基础课程{词法} </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>001.JavaScript简史</title>
       <link href="/posts/4166196035.html"/>
       <url>/posts/4166196035.html</url>
