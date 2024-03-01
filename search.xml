@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>「Linux故障合集」</title>
+      <link href="/posts/1503781364.html"/>
+      <url>/posts/1503781364.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 云计算导论 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>011.组件</title>
       <link href="/posts/3781362968.html"/>
       <url>/posts/3781362968.html</url>
@@ -599,7 +618,7 @@
     
     
     <entry>
-      <title>一生源理</title>
+      <title>「一生源理」</title>
       <link href="/posts/554392423.html"/>
       <url>/posts/554392423.html</url>
       
@@ -625,7 +644,7 @@
     
     
     <entry>
-      <title>五险一金</title>
+      <title>「五险一金」</title>
       <link href="/posts/2275170095.html"/>
       <url>/posts/2275170095.html</url>
       
@@ -1037,7 +1056,7 @@
     
     
     <entry>
-      <title>anzhiyu主题标签</title>
+      <title>「AZY主题标签」</title>
       <link href="/posts/d50a.html"/>
       <url>/posts/d50a.html</url>
       
@@ -1477,25 +1496,6 @@
     
     
     <entry>
-      <title>hexo博客问题记录</title>
-      <link href="/posts/697168895.html"/>
-      <url>/posts/697168895.html</url>
-      
-        <content type="html"><![CDATA[<ul><li><p>写hexo博客时报错</p><ul><li><code>TypeError: Cannot read properties of undefined (reading 'trim')</code></li></ul></li><li><p>原因</p><ul><li>hexo转义时候发生的错误，<ul><li>你文章中可能出现了<code>&#123;&#123;&#125;&#125;，&#123;% %&#125;</code>这种hexo无法转义的字符。</li></ul></li></ul></li></ul><div calss='anzhiyu-tag-link'><a class="tag-Link" target="_blank" href="https://blog.csdn.net/kuashijidexibao/article/details/105517937">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left" style="background-image: url(https://ts1.cn.mm.bing.net/th?id=ODLS.0b3ab3c6-5a37-48a2-9392-fd2793d6c3ba&w=32&h=32&qlt=95&pcl=fffffa&o=6&pid=1.2);"></div>        <div class="tag-link-right">            <div class="tag-link-title">CSDN</div>            <div class="tag-link-sitename">解决方法</div>        </div>        <i class="anzhiyufont anzhiyu-icon-angle-right"></i>    </div>    </a></div><hr><ul><li>写hexo博客时报错</li></ul><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">fatal</span><span class="operator">:</span> <span class="variable">unable</span> <span class="variable">to</span> <span class="variable">access</span> <span class="operator">&#x27;</span><span class="variable">https</span><span class="operator">://</span><span class="variable">github</span><span class="operator">.</span><span class="variable">com</span><span class="operator">/</span><span class="variable">xxx</span><span class="operator">/</span><span class="variable">autowrite</span><span class="operator">.</span><span class="variable">git</span><span class="operator">/&#x27;:</span> </span><br><span class="line"><span class="variable">OpenSSL</span> <span class="type">SSL_read</span><span class="operator">:</span> <span class="variable">Connection</span> <span class="variable">was</span> <span class="variable">reset</span><span class="operator">,</span> <span class="variable">errno</span> <span class="number">10054</span></span><br></pre></td></tr></table></figure><ul><li>或者</li></ul><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">fatal</span><span class="operator">:</span> <span class="variable">unable</span> <span class="variable">to</span> <span class="variable">access</span> <span class="operator">&#x27;</span><span class="variable">https</span><span class="operator">://</span><span class="variable">github</span><span class="operator">.</span><span class="variable">com</span><span class="operator">/</span><span class="variable">xxx</span><span class="operator">/</span><span class="variable">autowrite</span><span class="operator">.</span><span class="variable">git</span><span class="operator">/&#x27;:</span></span><br><span class="line"><span class="variable">Failed</span> <span class="variable">to</span> <span class="variable">connect</span> <span class="variable">to</span> <span class="variable">github</span><span class="operator">.</span><span class="variable">com</span> <span class="variable">port</span> <span class="number">443</span><span class="operator">:</span> <span class="variable">Timed</span> <span class="variable">out</span></span><br></pre></td></tr></table></figure><ul><li><p>原因</p><ul><li>因为git在拉取或者提交项目时，中间会有git的http和https代理，<ul><li>但是我们本地环境本身就有SSL协议了，</li><li>所以取消git的https代理即可，不行再取消http的代理。</li></ul></li></ul></li><li><p>后续</p><ul><li>原因还有一个，当前<code>代理网速过慢</code>，所以偶尔会成功，偶尔失败。</li></ul></li><li><p>解决方法</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git config --global --<span class="built_in">unset</span> http.proxy </span><br><span class="line">git config --global --<span class="built_in">unset</span> https.proxy</span><br><span class="line"></span><br><span class="line">解决方案: cmd下命令执行 ipconfig/flushdns</span><br><span class="line">清理dns缓存</span><br></pre></td></tr></table></figure></li></ul><hr><ul><li>写hexo博客时报错</li></ul><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">err</span><span class="operator">:</span> <span class="variable">Error</span> <span class="punctuation">[</span><span class="variable">Nunjucks</span> <span class="variable">Error</span><span class="punctuation">]</span><span class="operator">:</span> <span class="type">_posts</span><span class="operator">/</span><span class="number">009</span><span class="operator">-</span>移动端布局<span class="operator">.</span><span class="variable">md</span> <span class="punctuation">[</span><span class="built_in">Line</span> <span class="number">556</span><span class="operator">,</span> <span class="built_in">Column</span> <span class="number">667</span><span class="punctuation">]</span> <span class="variable">parseSignature</span><span class="operator">:</span> <span class="variable">expected</span> <span class="variable">comma</span> <span class="variable">after</span> <span class="variable">expression</span> </span><br></pre></td></tr></table></figure><ul><li><p>原因</p><ul><li>转义内容 <a href="https://so.csdn.net/so/search?q=Hexo&amp;spm=1001.2101.3001.7020">Hexo</a>使用Nunjucks渲染帖子（较早的版本使用Swig，它们具有相似的语法）。</li><li>用<code>&#123; &#123; &#125; &#125;</code>或<code>&#123; ％ ％ &#125;</code>包装的内容将被解析，并可能导致问题。</li><li>您可以使用原始标签插件包装敏感内容。<br>找到正文里面<code>&#123; &#123;</code>、<code>&#125; &#125;</code>、<code>&#123; %</code>、<code>% &#125;</code>这样的语句，</li></ul></li><li><p>作如下修改</p><figure class="highlight d"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; &#123;和&#125; &#125;之间加上空格变成&#123; &#123;和&#125; &#125;（这里看不出区别，知道这个意思就行…） &#123; %和% &#125;之间加上空格变成&#123; %和% &#125;</span><br></pre></td></tr></table></figure></li><li><p>写hexo博客时报错</p></li></ul><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">LaTeX</span><span class="operator">-</span><span class="variable">incompatible</span> <span class="variable">input</span> <span class="variable">and</span> <span class="variable">strict</span> <span class="variable">mode</span> <span class="variable">is</span> <span class="variable">set</span> <span class="variable">to</span> <span class="operator">&#x27;</span><span class="variable">warn</span><span class="operator">&#x27;:</span> <span class="variable">Unicode</span> <span class="variable">text</span> <span class="variable">character</span> <span class="string">&quot;＝&quot;</span> <span class="variable">used</span> <span class="variable">in</span> <span class="variable">math</span> <span class="variable">mode</span> <span class="punctuation">[</span><span class="variable">unicodeTextInMathMode</span><span class="punctuation">]</span></span><br></pre></td></tr></table></figure><ul><li>原因<ul><li>数学公式中有中文的符号，比如<code>等号＝</code></li></ul></li></ul><hr><ul><li>写hexo博客时报错</li></ul><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">LaTeX</span><span class="operator">-</span><span class="variable">incompatible</span> <span class="variable">input</span> <span class="variable">and</span> <span class="variable">strict</span> <span class="variable">mode</span> <span class="variable">is</span> <span class="variable">set</span> <span class="variable">to</span> <span class="operator">&#x27;</span><span class="variable">warn</span><span class="operator">&#x27;:</span> <span class="variable">Unicode</span> <span class="variable">text</span> <span class="variable">character</span> <span class="string">&quot;比&quot;</span> <span class="variable">used</span> <span class="variable">in</span> <span class="variable">math</span> <span class="variable">mode</span> <span class="punctuation">[</span><span class="variable">unicodeTextInMathMode</span><span class="punctuation">]</span>   </span><br></pre></td></tr></table></figure><ul><li><p>原因</p><ul><li>katex不支持中文。</li></ul></li><li><p>作如下修改</p><ul><li>这种情况的话在 <code>$...$</code> 中用 <code>\text&#123;&#125;</code> 对中文包裹应该可以解决这个问题，比如 <code>$\text&#123;中文&#125;$</code> 。另外这样的警告应该不会对渲染造成任何的影响，一定程度上可以忽视。</li></ul></li></ul><hr><p><strong>github对英文大小写不敏感</strong></p><p>会将文件加小写名称改为大写</p><hr><p><strong>对于mark——latex公式</strong></p><p>%需要变成%</p><p><code>&#123;% wavy  's所有格和of所有格 %&#125;</code></p><p>会有问题</p><p>需要改成</p><p><code>&#123;% wavy  ‘s所有格和of所有格 %&#125;</code></p><hr><p><strong>html实际代码下，</strong></p><ul><li>必须要有一行空格。</li></ul><hr><p><font color='#FF2D00'>‘-’</font>要分开则要水平线，</p><ul><li>不能要空格。</li></ul><hr><p>写hexo博客时报错</p><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"> <span class="variable">reason</span><span class="operator">:</span> <span class="operator">&#x27;</span><span class="variable">incomplete</span> <span class="variable">explicit</span> <span class="variable">mapping</span> <span class="variable">pair</span><span class="operator">;</span> <span class="variable">a</span> <span class="variable">key</span> <span class="variable">node</span> <span class="variable">is</span> <span class="variable">missed</span><span class="operator">;</span> <span class="variable">or</span> <span class="variable">followed</span> <span class="variable">by</span> <span class="variable">a</span> <span class="variable">non</span><span class="operator">-</span><span class="variable">tabulated</span> <span class="variable">empty</span> <span class="variable">line</span><span class="operator">&#x27;,</span></span><br><span class="line">    <span class="variable">mark</span><span class="operator">:</span> <span class="variable">Mark</span> <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="variable">name</span><span class="operator">:</span> <span class="variable">null</span><span class="operator">,</span></span><br><span class="line">      <span class="variable">buffer</span><span class="operator">:</span> <span class="operator">&#x27;</span><span class="variable">title</span><span class="operator">:</span> 语言艺术\<span class="variable">n</span><span class="operator">&#x27;</span> <span class="operator">+</span></span><br><span class="line">        <span class="operator">&#x27;</span><span class="variable">author</span><span class="operator">:</span> 糖丸\<span class="variable">n</span><span class="operator">&#x27;</span> <span class="operator">+</span></span><br><span class="line">        <span class="operator">&#x27;</span><span class="type">author_id</span><span class="operator">:</span> 糖丸<span class="number">9587</span>\<span class="variable">n</span><span class="operator">&#x27;</span> <span class="operator">+</span></span><br><span class="line">        <span class="operator">&#x27;</span><span class="variable">categories</span><span class="operator">:</span> <span class="punctuation">[</span><span class="punctuation">]</span>\<span class="variable">n</span><span class="operator">&#x27;</span> <span class="operator">+</span></span><br><span class="line">        <span class="operator">&#x27;</span><span class="type">toc_number</span><span class="operator">:</span> <span class="variable">true</span>\<span class="variable">n</span><span class="operator">&#x27;</span> <span class="operator">+</span></span><br><span class="line">        <span class="operator">&#x27;</span><span class="variable">tags</span><span class="operator">:</span> \<span class="variable">n</span><span class="operator">&#x27;</span> <span class="operator">+</span></span><br><span class="line">        <span class="operator">&#x27;</span>  <span class="operator">-</span> 认知觉醒\<span class="variable">n</span><span class="operator">&#x27;</span> <span class="operator">+</span></span><br><span class="line">        <span class="operator">&#x27;</span><span class="variable">abbrlink</span><span class="operator">:</span> <span class="number">2044951329</span>\<span class="variable">n</span><span class="operator">&#x27;</span> <span class="operator">+</span></span><br><span class="line">        <span class="operator">&#x27;</span><span class="variable">date</span><span class="operator">:</span> <span class="number">2023</span><span class="operator">-</span><span class="number">06</span><span class="operator">-</span><span class="number">14</span> <span class="number">11</span><span class="operator">:</span> <span class="number">03</span><span class="operator">:</span> <span class="number">00</span>\<span class="variable">n</span><span class="operator">&#x27;</span> <span class="operator">+</span></span><br><span class="line">        <span class="operator">&#x27;</span>\<span class="variable">x00</span><span class="operator">&#x27;,</span></span><br><span class="line">      <span class="variable">position</span><span class="operator">:</span> <span class="number">129</span><span class="operator">,</span></span><br><span class="line">      <span class="variable">line</span><span class="operator">:</span> <span class="number">8</span><span class="operator">,</span></span><br><span class="line">      <span class="variable">column</span><span class="operator">:</span> <span class="number">19</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span> <span class="variable">Process</span> <span class="variable">failed</span><span class="operator">:</span> <span class="operator">%</span><span class="variable">s</span> <span class="type">_posts</span><span class="operator">/</span>语言艺术<span class="operator">.</span><span class="variable">md</span></span><br></pre></td></tr></table></figure><p>原因</p><ul><li><code>date: 2023-06-14 11: 03: 00</code></li></ul><hr><p>上次透明图片步骤 ➾ </p><ol><li>〔<a href="https://www.remove.bg/zh">去除背景</a>〕，</li><li>〔<a href="https://imagestool.com/webp2jpg-online/">压缩图片</a>〕，</li><li>将扩展名{png}改为{webp}，</li><li>Picgo上传。</li></ol><hr><p>解决Typora+PicGo+Github</p><ul><li>自动上传图床{“success“:false,“message“:“upload error. see C:\XXX\picgo.log}</li></ul><p>一、前言<br>出现这个问题，有三点错误</p><ol><li>PicGo连接的配置没有正确</li><li>还有就是下载的Gitee插件不对</li><li>配置完忘记重启</li></ol>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Hexo + Markdown </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>MD代码块语言演示</title>
       <link href="/posts/513978782.html"/>
       <url>/posts/513978782.html</url>
@@ -1515,7 +1515,7 @@
     
     
     <entry>
-      <title>Markdown和hexo</title>
+      <title>「Markdown和hexo」</title>
       <link href="/posts/124020408.html"/>
       <url>/posts/124020408.html</url>
       
