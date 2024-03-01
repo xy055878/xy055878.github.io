@@ -4,11 +4,32 @@
   
     
     <entry>
+      <title>003.远程连接</title>
+      <link href="/posts/544501351.html"/>
+      <url>/posts/544501351.html</url>
+      
+        <content type="html"><![CDATA[<h1>远程连接</h1><p>工作中通过远程连接工具连接Linux系统。输入命令，管理维护Linux。</p><h2 id="一、远程连接流程">一、远程连接流程</h2><h4 id="⑴新建会话">⑴新建会话</h4><img src="https://pic.tany.top/imgs/image-20240301212426295.png" alt="image-20240301212426295" style="zoom:50%;" /><h4 id="⑵连接会话">⑵连接会话</h4><p>双击会话或点击连接按钮。</p><ul><li><p>🔔提示</p><ol><li>用户名<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>: </mtext></mrow><annotation encoding="application/x-tex">\text{: }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord text"><span class="mord">: </span></span></span></span></span>root</li><li>密码<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>: </mtext></mrow><annotation encoding="application/x-tex">\text{: }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord text"><span class="mord">: </span></span></span></span></span>tany</li></ol><img src="https://pic.tany.top/imgs/gif-240301213246.gif" alt="gif-240301213246" style="zoom:50%;" /></li></ul><h4 id="⑶快速连接会话">⑶快速连接会话</h4><img src="https://pic.tany.top/imgs/gif-240301215558.gif" alt="gif-240301215558" style="zoom:50%;" /><h2 id="二、快照">二、快照</h2><p>用于虚拟机当前状态保存下来。遇到「故障」的时候可以通过快照进行恢复。</p><h4 id="⑴拍摄快照">⑴拍摄快照</h4><ol><li><p>方法一{右击虚拟机}</p><ol><li><p>第一步</p><img src="https://pic.tany.top/imgs/image-20240301214437790.png" alt="image-20240301214437790" style="zoom:50%;" /></li><li><p>第二步</p><img src="https://pic.tany.top/imgs/image-20240301214456928.png" alt="image-20240301214456928" style="zoom:67%;" /></li></ol></li><li><p>方法二{点击图标}</p><ol><li><p>第一步</p><p><img src="https://pic.tany.top/imgs/image-20240301214700875.png" alt="image-20240301214700875"></p></li><li><p>第二步</p><img src="https://pic.tany.top/imgs/image-20240301214456928.png" alt="image-20240301214456928" style="zoom:67%;" /></li></ol></li></ol><h4 id="⑵管理快照">⑵管理快照</h4><ol><li><p>方法一{右击虚拟机}</p><ol><li><p>第一步</p><img src="https://pic.tany.top/imgs/image-20240301215209845.png" alt="image-20240301215209845" style="zoom:50%;" /></li><li><p>第二步</p><img src="https://pic.tany.top/imgs/image-20240301215004926.png" alt="image-20240301215004926" style="zoom:50%;" /></li></ol></li><li><p>方法二{点击图标}</p><ol><li><p>第一步</p><p><img src="https://pic.tany.top/imgs/image-20240301214811436.png" alt="image-20240301214811436"></p></li><li><p>第二步</p><img src="https://pic.tany.top/imgs/image-20240301215004926.png" alt="image-20240301215004926" style="zoom:50%;" /></li></ol></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 云计算导论 </category>
+          
+          <category> Linux概述与系统部署{k1} </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>002.虚拟机概述</title>
       <link href="/posts/3789849673.html"/>
       <url>/posts/3789849673.html</url>
       
-        <content type="html"><![CDATA[<p>不同的系统可以通过虚拟机运行，不同的虚拟机之间互不影响。使用虚拟机与未来工作环境类似。</p><p><img src="https://pic.tany.top/imgs/image-20240301181011011.png" alt="image-20240301181011011"></p>]]></content>
+        <content type="html"><![CDATA[<h1>虚拟机概述</h1><p>不同的系统可以通过虚拟机运行，不同的虚拟机之间互不影响。使用虚拟机与未来工作环境类似。</p><p><img src="https://pic.tany.top/imgs/image-20240301181011011.png" alt="image-20240301181011011"></p>]]></content>
       
       
       <categories>
@@ -29,7 +50,7 @@
       <link href="/posts/1890668475.html"/>
       <url>/posts/1890668475.html</url>
       
-        <content type="html"><![CDATA[<h2 id="一、Linux组成">一、Linux组成</h2><h3 id="⑴鸡蛋">⑴鸡蛋</h3><ol><li><p>蛋壳</p><ul><li>各种命令、服务、软件。</li></ul></li><li><p>蛋清</p><ul><li>命令解释器(shell)。</li><li>✨作用<ul><li>解释运行Linux命令。</li></ul></li></ul></li><li><p>蛋黄</p><ul><li>Linux内核(控制硬件)、无法直接操作内核。</li></ul><p><img src="https://pic.tany.top/imgs/image-20240301160051522.png" alt="image-20240301160051522"></p></li></ol><h2 id="二、-Linux发行版本">二、 Linux发行版本</h2><p>Linux发行版本通过内核 ＋ 命令解释器 ＋ 不同应用程序/桌面组成。</p><h3 id="⑴主流-Linux系统">⑴主流 Linux系统</h3><h4 id="1-Debian系列">1.Debian系列</h4><h5 id="1ºDebian系统🌟🌟">1ºDebian系统🌟🌟</h5><p>更新频率低，较为稳定与安全。 可以用于企业环境。</p><h5 id="2ºUbuntu系统🌟🌟">2ºUbuntu系统🌟🌟</h5><p>乌班图，桌面美观，使用方便，开发使用。 也有企业版本(服务器版本)。</p><h4 id="2-红帽系列">2.红帽系列</h4><h5 id="1ºRedhat-Enterprise-Linux">1ºRedhat Enterprise Linux</h5><p>RHEL红帽企业版(属于IBM)。</p><h5 id="2ºCentOS系统🌟🌟🌟🌟">2ºCentOS系统🌟🌟🌟🌟</h5><p>基本国内最常用的Linux系统。(被红帽收购，红帽CentOS Stream测试版)。</p><h5 id="3ºRocky-Linux">3ºRocky Linux</h5><p>CentOS系统创始人，新出的Linux系统。</p><h4 id="3-国产系列">3.国产系列</h4><h5 id="1º中标麒麟-Kylin-🌟🌟🌟">1º中标麒麟(Kylin)🌟🌟🌟</h5><p>国产Linux，有桌面环境，有服务器版本。</p><h5 id="2º红旗Linux">2º红旗Linux</h5><h4 id="4-其他-了解">4.其他(了解)</h4><h5 id="1ºUOS-Linux">1ºUOS Linux</h5><h5 id="2º各种厂商的Linux系统">2º各种厂商的Linux系统</h5><h5 id="3º欧拉系统-openeuler-华为">3º欧拉系统 openeuler(华为)</h5><h5 id="4º龙蜥anonlis-阿里">4º龙蜥anonlis(阿里)</h5><h5 id="5ºSuse、OpenSUSE-德国">5ºSuse、OpenSUSE(德国)</h5><h2 id="三、Linux版本选型">三、Linux版本选型</h2><p>推荐选择LTS版本或稳定版。</p><ul><li>🔔提示<ul><li>LTS版本<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>: </mtext></mrow><annotation encoding="application/x-tex">\text{: }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord text"><span class="mord">: </span></span></span></span></span>长期维护版本，官方维护与支持周期更长。</li></ul></li></ul><h3 id="⑴系统版本">⑴系统版本</h3><h4 id="1-Ubuntu">1.Ubuntu</h4><p>LTS 18.04 20.04 22.04。</p><h4 id="2-Debian">2.Debian</h4><p>没有LTS，选择较为新的即可。</p><h4 id="3-CentOS">3.CentOS</h4><p>没有LTS，选择较为新的即可。CentOS 7.x 7.9。</p><h4 id="4-麒麟">4.麒麟</h4><p>kylin v10(与centos 7类似，但是更新了内核)。</p>]]></content>
+        <content type="html"><![CDATA[<h1>Linux基础概念</h1><h2 id="一、Linux组成">一、Linux组成</h2><h3 id="⑴鸡蛋">⑴鸡蛋</h3><ol><li><p>蛋壳</p><ul><li>各种命令、服务、软件。</li></ul></li><li><p>蛋清</p><ul><li>命令解释器(shell)。</li><li>✨作用<ul><li>解释运行Linux命令。</li></ul></li></ul></li><li><p>蛋黄</p><ul><li>Linux内核(控制硬件)、无法直接操作内核。</li></ul><p><img src="https://pic.tany.top/imgs/image-20240301160051522.png" alt="image-20240301160051522"></p></li></ol><h2 id="二、-Linux发行版本">二、 Linux发行版本</h2><p>Linux发行版本通过内核 ＋ 命令解释器 ＋ 不同应用程序/桌面组成。</p><h3 id="⑴主流-Linux系统">⑴主流 Linux系统</h3><h4 id="1-Debian系列">1.Debian系列</h4><h5 id="1ºDebian系统🌟🌟">1ºDebian系统🌟🌟</h5><p>更新频率低，较为稳定与安全。 可以用于企业环境。</p><h5 id="2ºUbuntu系统🌟🌟">2ºUbuntu系统🌟🌟</h5><p>乌班图，桌面美观，使用方便，开发使用。 也有企业版本(服务器版本)。</p><h4 id="2-红帽系列">2.红帽系列</h4><h5 id="1ºRedhat-Enterprise-Linux">1ºRedhat Enterprise Linux</h5><p>RHEL红帽企业版(属于IBM)。</p><h5 id="2ºCentOS系统🌟🌟🌟🌟">2ºCentOS系统🌟🌟🌟🌟</h5><p>基本国内最常用的Linux系统。(被红帽收购，红帽CentOS Stream测试版)。</p><h5 id="3ºRocky-Linux">3ºRocky Linux</h5><p>CentOS系统创始人，新出的Linux系统。</p><h4 id="3-国产系列">3.国产系列</h4><h5 id="1º中标麒麟-Kylin-🌟🌟🌟">1º中标麒麟(Kylin)🌟🌟🌟</h5><p>国产Linux，有桌面环境，有服务器版本。</p><h5 id="2º红旗Linux">2º红旗Linux</h5><h4 id="4-其他-了解">4.其他(了解)</h4><h5 id="1ºUOS-Linux">1ºUOS Linux</h5><h5 id="2º各种厂商的Linux系统">2º各种厂商的Linux系统</h5><h5 id="3º欧拉系统-openeuler-华为">3º欧拉系统 openeuler(华为)</h5><h5 id="4º龙蜥anonlis-阿里">4º龙蜥anonlis(阿里)</h5><h5 id="5ºSuse、OpenSUSE-德国">5ºSuse、OpenSUSE(德国)</h5><h2 id="三、Linux版本选型">三、Linux版本选型</h2><p>推荐选择LTS版本或稳定版。</p><ul><li>🔔提示<ul><li>LTS版本<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>: </mtext></mrow><annotation encoding="application/x-tex">\text{: }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord text"><span class="mord">: </span></span></span></span></span>长期维护版本，官方维护与支持周期更长。</li></ul></li></ul><h3 id="⑴系统版本">⑴系统版本</h3><h4 id="1-Ubuntu">1.Ubuntu</h4><p>LTS 18.04 20.04 22.04。</p><h4 id="2-Debian">2.Debian</h4><p>没有LTS，选择较为新的即可。</p><h4 id="3-CentOS">3.CentOS</h4><p>没有LTS，选择较为新的即可。CentOS 7.x 7.9。</p><h4 id="4-麒麟">4.麒麟</h4><p>kylin v10(与centos 7类似，但是更新了内核)。</p>]]></content>
       
       
       <categories>
